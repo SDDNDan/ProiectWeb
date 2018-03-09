@@ -1,0 +1,176 @@
+body {
+    background-color: #82ccdd;
+    color: #0a3d62;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0px;
+    line-height: 42px;
+    float: left;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    background-color: transparent;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.container__bucket {
+    margin: 2.5px 0px 2.5px 0px;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to top left, #079992,#78e08f);
+    border: 2px solid rgb(124, 15, 134);
+    padding: 10px;
+}
+
+/*TO-DO:FIX THIS WIDTH THINGY !!!*/
+.container__bucket--small {
+    display: inline-block;
+    position: relative;
+    top: -305px;
+    width: 29%;
+    height: 300px;
+}
+
+/*TO-DO:FIX THIS WIDTH THINGY !!!*/
+.container__bucket--medium {
+    display: inline-block;
+    width: 66.4%;
+    height: auto;
+}
+
+.container__bucket--large {
+    width: auto;
+}
+
+/*TO-DO: FIX THIS WIDTH THINGY !!!
+ *       AND HEIGHT APPARENTLY
+ */
+
+/* START card and card--round */
+.card {
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    border: 3px solid #1e3799;
+    border-radius: 40px;
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card--round {
+    position: absolute;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 50%;
+    background: linear-gradient(#f6b93b, #b71540);
+}
+
+.card--round h2 {
+    position: relative;
+    top: 35%;
+}
+
+.card--round p {
+    display: none;
+}
+
+/* END Badge */
+/************************/
+/* START TrafficLights */
+
+.traffic-light {
+    margin: 0% 40%;
+}
+
+.traffic-light__square {
+    margin-bottom: 3px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.traffic-light__square--red {
+
+    background-color: #eb2f06;
+}
+
+.traffic-light__square--yellow{
+    background-color: #f6b93b;
+}
+
+.traffic-light__square--green{
+    background-color: #26de81;
+}
+
+/* END TrafficLights */
+/********************/
+/* START Slider */
+
+img {
+    width: 640px;
+    height: 300px;
+    display: inline;
+    margin: 0;
+}
+
+.slider {
+    width: 640px;
+    height: 300px;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 3px solid #1e3799;
+}
+
+.slide-in {
+    margin-left: 0;
+    animation: img 6s 1s infinite alternate;
+}
+
+@keyframes img {
+    0% {
+        margin-left: 0;
+    }
+    33% {
+        margin-left: -100%;
+    }
+    66% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+/* END Slider */
+/************************/
+/*START Twitter-Mockup*/
+
+.form--error > input{
+    border: 2px solid red;
+
+}
+
+.form--error > button{
+    border: 2px solid red;
+}
+
+.form--error #error-message{
+    display: block;
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* END Twitter-Mockup */
