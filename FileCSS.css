@@ -14,8 +14,29 @@
 }
 h1{
     margin-right: 50%;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Arial Rounded MT Bold", serif;
     font-size: 25px;
     font-weight: normal;
 }
+h2{
+    background-color: rgb(254, 97, 97);
+    border: double 4px transparent;
+    position: absolute;
+    right: 10%;
+    width: 130px;
+    height: 40px;
+    margin: -54px 10px 0px 0px;
+    margin-right: 40%;
+    border-radius: 80px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: "Eras Bold ITC";
 
+
+
+
+
+}
