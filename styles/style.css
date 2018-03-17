@@ -36,7 +36,14 @@ h1{
 
 #up_title{
     text-align: center;
+    width: 100%;
+    bottom: -100%;
+    height: 0%;
+    color : blue;
 
+}
+.delimitator{
+    height: 50%;
 }
 
 
