@@ -1,7 +1,7 @@
 
 
 body {
-
+    margin: 0;
     /* The image used */
     background-image: url("introducing-web-technologies.jpg");
     /* Full height */
@@ -65,20 +65,16 @@ a{
 
 }
 
-
-
 .section__about {
     background: #d1e0eb;
-    height: 70vh;
-
-
-
+    height: 60vh;
 }
 
 .section__title {
+    position: relative;
+    top: 40px;
     margin: auto;
-
-    width: 50%;
+    width: 100%;
     height: 30%;
     padding: auto auto;
     text-align: center;
@@ -87,16 +83,22 @@ a{
     font: 700 79px normal raleway, sans-serif;
 }
 
-.description__text {
+.section__text {
+    position: relative;
+    top: 40px;
     margin-left : auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
+    height: 40%;
     text-align: center;
     color: #0c3c60;
     line-height: 21px;
     font: 400 14px normal open sans, sans-serif;
 }
 .more {
+    position: relative;
+    top: 40px;
+    margin:auto;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -105,6 +107,15 @@ a{
     padding: 10px 30px;
     font: 16px normal open avenir-lt-w01_35-light1475496, sans-serif;
 }
+
+.button__container {
+    margin-left : auto;
+    margin-right: auto;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}
+
 footer{
     color : white;
     background: #0c3c60;
