@@ -67,7 +67,8 @@ button {
 {
     float: right;
     list-style-type: none;
-    margin: -35px 50px 100px 0;
+
+    margin: -35px 70px 100px 0;
     display: inline;
 
 
@@ -78,7 +79,6 @@ button {
     font-family: "open sans", sans-serif;
     font-size: 15px;
     color:white;
-    padding: 16px;
     text-decoration: none;
 
 }
