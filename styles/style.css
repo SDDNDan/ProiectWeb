@@ -27,7 +27,6 @@ header {
 h1{
     margin-right: 50%;
     font-family: raleway, sans-serif;
-    font-weight : bolder;
     font-size: 25px;
     font-weight: normal;
     margin-left : 20%;
@@ -67,9 +66,17 @@ button {
 
 a{
     font-family: "open sans", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color:white;
-    line-height: 23px;
+    line-height: 20px;
+    margin-left: 3%;
+    position:relative;
+    left: 30%;
+    top: -38px;
+    text-decoration: none;
+
+
+
 
 }
 
