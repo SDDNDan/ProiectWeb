@@ -50,15 +50,17 @@ button {
     font-family: "Eras Bold ITC", serif;
 }
 
-#about {
+.section__about {
     background: #d1e0eb;
     height: 70vh;
 }
 
 .section__title {
-    margin-left : auto;
-    margin-right: auto;
+    margin: auto;
+
     width: 50%;
+    height: 30%;
+    padding: auto auto;
     text-align: center;
     color: rgb(12, 60, 96);
     line-height: 95px;
