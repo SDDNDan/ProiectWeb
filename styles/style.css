@@ -26,28 +26,42 @@ header {
 }
 h1{
     margin-right: 50%;
-    font-family: "Arial Rounded MT Bold", serif;
+    font-family: raleway, sans-serif;
+    font-weight : bolder;
     font-size: 25px;
     font-weight: normal;
     margin-left : 20%;
     position: relative;
 }
 button {
+
     background-color: rgb(254, 97, 97);
     border: double 4px transparent;
-    position: relative;
-    right: 10%;
     width: 130px;
     height: 40px;
     border-radius: 80px;
-    line-height: 40px;
-    font-size: 13px;
-    font-family: "Eras Bold ITC", serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
     color : white;
     text-align: center;
     margin-left : 50%;
+    top:20%;
+    position: absolute;
+
+}
+
+a{
+    font-family: "open sans", sans-serif;
+    font-size: 13px;
+    color:white;
+    line-height: 23px;
+
+}
 
 
+.content{
+    margin-left : 40%;
 
 }
 
