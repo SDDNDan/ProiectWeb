@@ -33,6 +33,13 @@ h1{
     margin-left : 20%;
     position: relative;
 }
+
+#up_title{
+    text-align: center;
+
+}
+
+
 button {
     background-color: rgb(254, 97, 97);
     border: double 4px transparent;
