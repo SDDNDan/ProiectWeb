@@ -119,6 +119,7 @@ a{
 .more {
     position: relative;
     top: 40px;
+    left: 0;
     margin:auto;
     text-align: center;
     color: #ffffff;
