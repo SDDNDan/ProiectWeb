@@ -37,7 +37,6 @@ h1{
     text-align: center;
     width: 100%;
     bottom: -100%;
-    height: 0%;
     color : blue;
 
 }
@@ -64,16 +63,26 @@ button {
 
 }
 
-a{
+.link__header
+{
+    float: right;
+    list-style-type: none;
+    margin: -35px 50px 100px 0;
+    display: inline;
+
+
+
+
+}
+.list__link{
     font-family: "open sans", sans-serif;
     font-size: 15px;
     color:white;
-    line-height: 20px;
-    margin-left: 3%;
-    position:relative;
-    left: 30%;
-    top: -38px;
+    padding: 16px;
     text-decoration: none;
+
+}
+li{
 
 
 
