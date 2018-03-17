@@ -44,11 +44,9 @@ h1{
     height: 50%;
 }
 
-
-button {
-
+.button__login{
     background-color: rgb(254, 97, 97);
-    border: double 4px transparent;
+    border: transparent;
     width: 130px;
     height: 40px;
     border-radius: 80px;
@@ -60,7 +58,53 @@ button {
     margin-left : 50%;
     top:20%;
     position: absolute;
+}
+.courses__textbuttons1
+ {
+     font-family: avenir-lt-w01_35-light1475496, sans-serif;
+     font-weight: 400;
+     line-height: 22px;
+     font-style: normal;
+     size: 16px;
+     color:white;
+     background-color: #0c3c60;
+     border: transparent;
+     width: 140px;
+     height: 40px;
+     display: inline-block;
+     margin: 20px 20px;
 
+
+ }
+
+.courses__textbuttons2
+{
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    size: 16px;
+    color:white;
+    background-color: #0c3c60;
+    border: transparent;
+    width: 140px;
+    height: 40px;
+    display: inline-block;
+    margin: 20px 150px;
+    float:right;
+
+
+}
+.courses__textinfo
+{
+    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size:20px;
+    line-height: 24px;
+    color: #292929;
+    display:inline;
+    margin: 0;
 }
 
 .link__header
@@ -98,6 +142,14 @@ li{
 .section__about {
     background: #d1e0eb;
     height: 60vh;
+}
+
+.courses__page
+{
+    height: 70vh;
+    background-color: #3699ec;
+    margin-left:25%;
+    margin-right: 25%;
 }
 
 .section__title {
