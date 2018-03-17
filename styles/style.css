@@ -1,9 +1,15 @@
-body {
-    margin : 0;
-}
+
 
 body {
-   background: url("/images/introducing-web-technologies.jpg") no-repeat center center fixed;
+    margin: 0;
+    /* The image used */
+    background-image: url("introducing-web-technologies.jpg");
+    /* Full height */
+    height: 100%;
+    width : 100%;
+    z-index: 1;
+
+    /* Center and scale the image nicely */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,13 +52,15 @@ button {
 
 .section__about {
     background: #d1e0eb;
-    height: 70vh;
+    position: relative;
+    height: 60vh;
 }
 
 .section__title {
+    position: relative;
+    top: 40px;
     margin: auto;
-
-    width: 50%;
+    width: 100%;
     height: 30%;
     padding: auto auto;
     text-align: center;
@@ -62,15 +70,21 @@ button {
 }
 
 .section__text {
+    position: relative;
+    top: 40px;
     margin-left : auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
+    height: 40%;
     text-align: center;
     color: #0c3c60;
     line-height: 21px;
     font: 400 14px normal open sans, sans-serif;
 }
 .more {
+    position: relative;
+    top: 40px;
+    margin:auto;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -86,4 +100,17 @@ button {
     width: 50%;
     height: 20%;
     text-align: center;
+}
+
+footer{
+    color : white;
+    background: #0c3c60;
+    font-size: xx-large;
+    line-height: normal;
+    height: 3%;
+    border-radius: 80px;
+    text-align: left;
+}
+h6{
+    margin-left: 5%;
 }
