@@ -1,7 +1,7 @@
 
 
 body {
-
+    margin: 0;
     /* The image used */
     background-image: url("introducing-web-technologies.jpg");
     /* Full height */
@@ -22,6 +22,7 @@ header {
     position : fixed;
     width : 100%;
     background: #0c3c60;
+    padding: 5px;
 
 }
 h1{
@@ -35,12 +36,16 @@ h1{
 button {
     background-color: rgb(254, 97, 97);
     border: double 4px transparent;
-    position: relative;
+    position: absolute;
     right: 10%;
     width: 130px;
     height: 40px;
+    margin: -54px 40% 0 0;
     border-radius: 80px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     line-height: 40px;
+    vertical-align: middle;
     font-size: 13px;
     font-family: "Eras Bold ITC", serif;
     color : white;
@@ -51,20 +56,17 @@ button {
 
 }
 
-
-
 .section__about {
     background: #d1e0eb;
-    height: 70vh;
-
-
-
+    position: relative;
+    height: 60vh;
 }
 
 .section__title {
+    position: relative;
+    top: 40px;
     margin: auto;
-
-    width: 50%;
+    width: 100%;
     height: 30%;
     padding: auto auto;
     text-align: center;
@@ -73,16 +75,22 @@ button {
     font: 700 79px normal raleway, sans-serif;
 }
 
-.description__text {
+.section__text {
+    position: relative;
+    top: 40px;
     margin-left : auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
+    height: 40%;
     text-align: center;
     color: #0c3c60;
     line-height: 21px;
     font: 400 14px normal open sans, sans-serif;
 }
 .more {
+    position: relative;
+    top: 40px;
+    margin:auto;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -91,6 +99,15 @@ button {
     padding: 10px 30px;
     font: 16px normal open avenir-lt-w01_35-light1475496, sans-serif;
 }
+
+.button__container {
+    margin-left : auto;
+    margin-right: auto;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+}
+
 footer{
     color : white;
     background: #0c3c60;
