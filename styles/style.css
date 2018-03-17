@@ -1,0 +1,70 @@
+body {
+    margin : 0;
+}
+header {
+    color: white;
+    height: 4.5em;
+    width: available;
+    text-align: center;
+    line-height: normal;
+    border: 1px solid #0c3c60;
+    background: #0c3c60;
+    padding: 5px;
+
+}
+h1{
+    margin-right: 50%;
+    font-family: "Arial Rounded MT Bold", serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+h2{
+    background-color: rgb(254, 97, 97);
+    border: double 4px transparent;
+    position: absolute;
+    right: 10%;
+    width: 130px;
+    height: 40px;
+    margin: -54px 40% 0 0;
+    border-radius: 80px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: "Eras Bold ITC", serif;
+}
+
+#about {
+    background: #d1e0eb;
+    height: 70vh;
+}
+
+.section__title {
+    margin-left : auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    color: rgb(12, 60, 96);
+    line-height: 95px;
+    font: 700 79px normal raleway, sans-serif;
+}
+
+.description__text {
+    margin-left : auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    color: #0c3c60;
+    line-height: 21px;
+    font: 400 14px normal open sans, sans-serif;
+}
+.more {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 22px;
+    background: #0c3c60;
+    padding: 10px 30px;
+    font: 16px normal open avenir-lt-w01_35-light1475496, sans-serif;
+}
