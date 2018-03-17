@@ -22,12 +22,12 @@ header {
     position : fixed;
     width : 100%;
     background: #0c3c60;
-    padding: 5px;
 
 }
 h1{
     margin-right: 50%;
-    font-family: "Arial Rounded MT Bold", serif;
+    font-family: raleway, sans-serif;
+    font-weight : bolder;
     font-size: 25px;
     font-weight: normal;
     margin-left : 20%;
@@ -41,25 +41,34 @@ h1{
 
 
 button {
+
     background-color: rgb(254, 97, 97);
     border: double 4px transparent;
-    position: absolute;
-    right: 10%;
     width: 130px;
     height: 40px;
-    margin: -54px 40% 0 0;
     border-radius: 80px;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    line-height: 40px;
-    vertical-align: middle;
-    font-size: 13px;
-    font-family: "Eras Bold ITC", serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
     color : white;
     text-align: center;
     margin-left : 50%;
+    top:20%;
+    position: absolute;
+
+}
+
+a{
+    font-family: "open sans", sans-serif;
+    font-size: 13px;
+    color:white;
+    line-height: 23px;
+
+}
 
 
+.content{
+    margin-left : 40%;
 
 }
 
