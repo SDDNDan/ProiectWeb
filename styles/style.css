@@ -1,6 +1,6 @@
 
 
-body {
+#indexbody {
     margin: 0;
     /* The image used */
     background-image: url("introducing-web-technologies.jpg");
@@ -59,6 +59,18 @@ h1{
     top:20%;
     position: absolute;
 }
+
+.courses__page
+{
+    height: 70vh;
+    background-color: #3699ec;
+    margin-left:25%;
+    margin-right: 25%;
+}
+.p-top-80{
+    padding-top:80px;
+}
+
 .courses__textbuttons1
  {
      font-family: avenir-lt-w01_35-light1475496, sans-serif;
@@ -93,7 +105,7 @@ h1{
     margin: 20px 150px;
     float:right;
 
-    
+
 
 }
 .courses__textinfo
@@ -108,6 +120,33 @@ h1{
     margin: 0;
 }
 
+.about__page
+{
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+}
+
+.about__title
+{
+    font-family: raleway, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size:70px;
+    line-height: 84px;
+    color: #6ea4ca;
+    text-align: center;
+
+}
+.about__title:after
+{
+    display: block;
+    position: absolute;
+    content:"__";
+    width: 100%; top: 10px;
+    text-align: center;
+    left: 0;
+}
 .link__header
 {
     float: right;
@@ -115,8 +154,6 @@ h1{
 
     margin: -35px 70px 100px 0;
     display: inline;
-
-
 
 
 }
@@ -145,13 +182,7 @@ li{
     height: 60vh;
 }
 
-.courses__page
-{
-    height: 70vh;
-    background-color: #3699ec;
-    margin-left:25%;
-    margin-right: 25%;
-}
+
 
 .section__title {
     position: relative;
