@@ -234,7 +234,6 @@ h1 {
 }
 
 .section__title {
-    position: relative;
     top: 40px;
     margin: auto;
     width: 100%;
@@ -247,7 +246,7 @@ h1 {
 }
 
 .section__text {
-    position: relative;
+
     top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -400,7 +399,10 @@ h6 {
 }
 .contact__map
 {
-     margin-left: 17%;
+
+    margin-left: 15%;
+    width: 700px;
+    height: 500px;
 
 }
 .contact__paragraph
@@ -420,14 +422,15 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    margin-left: 45%;
+    margin-left: 54%;
     margin-top: -26%;
     width: 22%;
 }
 
 .contact__positionsend
 {
-    margin-left: 46%;
+    margin-left: 55%;
+    margin-top: -22%;
 }
 .contact_textstyleSend
 {
