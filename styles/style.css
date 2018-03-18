@@ -366,6 +366,7 @@ h6 {
 }
 .contact__paragraph
 {
+
     margin-left: 49%;
     margin-top: -24%;
     width: 18%;
@@ -434,3 +435,54 @@ h6 {
     margin-top: -25px;
 
 }
+
+.GradesStatistics__SquarePromovabilitate
+{
+    margin-left: 25%;
+    margin-top: 7%;
+    height: 260px;
+    width: 400px;
+    background-color: #0c3c60;
+    display: inline-block;
+    z-index: -1;
+    margin-bottom: 0;
+}
+.GradesStatistics__textStyle1
+{
+    font-family: raleway, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: -1%;
+
+}
+.GradesStatistics__SquareLinkStatistics
+{
+
+    margin-left: 50%;
+    margin-top: 7%;
+    height: 260px;
+    width: 400px;
+    background-color: #0c3c60;
+    display: inline-block;
+    z-index: -1;
+    margin-bottom: 0;
+}
+.GradesStatistics__textStyle2
+{
+
+    font-family: raleway, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: -1%;
+}
+
+
+
