@@ -8,18 +8,21 @@
     margin-top: 40%;
 }
 #big_title, #up_title, .bibliography{
-    background-color: white;
+
     height: 20%;
 
 }
 #big_title{
-    margin-bottom: 2%;
+    margin-bottom: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .bibliography{
     width: 33.333%;
     height: 50%;
     text-align: center;
+    background-color: white;
 }
 
 #left{
@@ -93,6 +96,8 @@ h1 {
     color: #0c3c60;
     font-size: xx-large;
     height: fit-content;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
  }
 
 .button__login {
