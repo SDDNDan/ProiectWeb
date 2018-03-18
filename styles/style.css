@@ -268,6 +268,7 @@ h1 {
     top: 40px;
     left: 0;
     margin: auto;
+    
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -287,17 +288,16 @@ h1 {
 }
 
 footer {
-    color: white;
-    background: #0c3c60;
+    color: #0c3c60;
+    background: #d1e0eb;
     font-size: xx-large;
     line-height: normal;
-    height: 3%;
-    border-radius: 80px;
+    height: 4%;
     text-align: left;
 }
 
 h6 {
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 .player__square {
