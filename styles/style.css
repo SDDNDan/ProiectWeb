@@ -58,7 +58,6 @@
     /* Full height */
     height: 100%;
     width: 100%;
-    z-index: 1;
 
     /* Center and scale the image nicely */
     -webkit-background-size: cover;
@@ -74,7 +73,7 @@ header {
     top: 0;
     width: 100%;
     background: #0c3c60;
-
+    z-index: 1;
 }
 
 h1 {
