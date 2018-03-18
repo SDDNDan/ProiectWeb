@@ -198,13 +198,6 @@ h1{
     text-decoration: none;
 
 }
-li{
-
-
-
-
-}
-
 
 .content{
 
@@ -277,4 +270,90 @@ footer{
 }
 h6{
     margin-left: 5%;
+}
+
+
+.player__square
+{
+    margin-left: 18%;
+    margin-top: 7%;
+    height: 120px;
+    width: 430px;
+    background-color: #0c3c60 ;
+    display: inline-block;
+    z-index: -1;
+    margin-bottom: 0;
+
+}
+.player__textstyle
+{
+    font-family: raleway, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color:white;
+    text-align: center;
+    margin-top: -75px;
+    margin-left: 30px;
+
+}
+
+.player1_margins
+{
+
+    margin-left: 22%;
+}
+.player2_margins
+{
+    margin-left: 10%;
+}
+.player3_margins {
+    margin-left: 22%;
+    margin-top: 1%;
+}
+.player4_margins
+{
+    margin-left: 10%;
+    margin-top: 0;
+}
+.about_paragraph
+{
+    font-family: "open sans", sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    color: #39729b;
+    width: 30%;
+    margin-left: 22%;
+    margin-top: 3%;
+
+
+}
+
+.about_paragraph_1
+{
+    margin-left: 35%;
+}
+
+.about_paragraph_2
+{
+    margin-left: 18%;
+    margin-top: 1%;
+}
+.about_paragraph_3
+{
+    margin-top: -5%;
+    margin-left: 50%;
+}
+.about_paragraph_4
+{
+    margin-left: 18%;
+    margin-top: 1%;
+}
+.about_paragraph_5
+{
+    margin-top: -5%;
+    margin-left: 50%;
 }
