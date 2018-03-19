@@ -1,8 +1,35 @@
+/*@media only screen and (max-width:800px) {
+   --------FOR TABLETS.
+  body {
+      height : 70vh;
+  }
+}
+*/
+
+
 * {
     margin: 0;
     padding: 0;
     display: block;
 }
+
+/*FOOTER !!! */
+
+footer {
+    color: #0c3c60;
+    background: #d1e0eb;
+    font-size: xx-large;
+    line-height: normal;
+    height: 4%;
+    text-align: left;
+    bottom:0;
+}
+
+h6 {
+    margin-left: 2%;
+}
+
+
 .readMore{
     text-decoration: none;
 
@@ -44,13 +71,13 @@
     background-color: white;
 }
 
-#left{
+#homeLeft{
     float:left;
 }
-#center{
+#homeCenter{
     display: inline-block;
 }
-#right{
+#homeRight{
     float:right;
 }
 
@@ -195,6 +222,8 @@ h1 {
     margin: 0;
 }
 
+/*PAGINA ABOUT US!!!*/
+
 .about__maincontainer {
     height: 120vh;
 }
@@ -207,26 +236,59 @@ h1 {
 }
 
 .about__title {
-    font-family: raleway, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 70px;
-    line-height: 84px;
-    color: #6ea4ca;
-    display: block;
-    margin: 40px 0 0 0;
+    top: 40px;
+    width: 100%;
+    height: 30%;
     text-align: center;
+    color: #3699ec;
+    font: 700 79px normal raleway, sans-serif;
+    margin: auto;
+    margin-top:3%;
+    margin-bottom: 3%;
+
+}
+.about__subtitle{
+    margin:auto;
+    width: 50%;
+    height: 20%;
+    text-align: center;
+    color: #292929;
+    font: italic 30px normal raleway, sans-serif;
+    margin-bottom: 10%;
 
 }
 
-.about__title:after {
-    display: block;
-    content: "__";
-    width: 100%;
+.player{
+    position: static;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-right: 0;
+    width: 30%;
+    display: inline-block;
+    background-color: #0c3c60;
+}
+
+.imgPlayer{
+    height: 30%;
+    width : 30%;
+    display:inline-block;
+}
+
+.playerName{
+    width: 50%;
+    display:inline-block;
+    margin: auto;
     text-align: center;
-    position: relative;
-    z-index: -10;
-    margin: -70px 0 0 0;
+    color: white;
+}
+
+.playerJob{
+    background-color: white;
+    text-align: center;
+    font-size: x-large;
+    margin: auto;
+    padding-top: 5%;
 
 }
 
@@ -254,10 +316,81 @@ h1 {
 
 
 .content {
-
     display: inline-block;
     margin-left: 120px;
 }
+
+.content {
+    display: inline-block;
+}
+
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: 20px;
+}
+
+.dropdown__button {
+    background: url("../images/dropdown.png") no-repeat scroll 0 0 ;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.dropdown__content {
+    display: none;
+    background-color: #0c3c60;
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.dropdown__link {
+    text-align: center;
+    background-color: #0c3c60;
+    font-family: "open sans", sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 10px 0px;
+}
+
+.dropdown:hover .dropdown__content {
+    display: block;
+}
+
+
+@media only screen and (max-width:1000px) {
+    /* For tablets: */
+    .dropdown {
+        display: block;
+    }
+    .content {
+        display: none;
+    }
+    .button__login {
+        position: absolute;
+        left: -30px;
+        top: 20px;
+    }
+    .index__title {
+        font-size: medium;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+}
+
+
+
 
 .section__about {
     background: #d1e0eb;
@@ -317,99 +450,12 @@ h1 {
     text-align: center;
 }
 
-footer {
-    color: #0c3c60;
-    background: #d1e0eb;
-    font-size: xx-large;
-    line-height: normal;
-    height: 4%;
-    text-align: left;
-}
 
-h6 {
-    margin-left: 2%;
-}
 
-.player__square {
-    margin-left: 18%;
-    margin-top: 7%;
-    height: 120px;
-    width: 430px;
-    background-color: #0c3c60;
-    display: inline-block;
-    z-index: -1;
-    margin-bottom: 0;
 
-}
 
-.player__textstyle {
-    font-family: raleway, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    margin-top: -75px;
-    margin-left: 30px;
+/*PAGINA CONTACT !!!*/
 
-}
-
-.player1_margins {
-
-    margin-left: 22%;
-}
-
-.player2_margins {
-    margin-left: 10%;
-}
-
-.player3_margins {
-    margin-left: 22%;
-    margin-top: 1%;
-}
-
-.player4_margins {
-    margin-left: 10%;
-    margin-top: 0;
-}
-
-.about_paragraph {
-    font-family: "open sans", sans-serif;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    font-size: 16px;
-    color: #39729b;
-    width: 30%;
-    margin-left: 22%;
-    margin-top: 3%;
-
-}
-
-.about_paragraph_1 {
-    margin-left: 35%;
-}
-
-.about_paragraph_2 {
-    margin-left: 18%;
-    margin-top: 1%;
-}
-
-.about_paragraph_3 {
-    margin-top: -5%;
-    margin-left: 50%;
-}
-
-.about_paragraph_4 {
-    margin-left: 18%;
-    margin-top: 1%;
-}
-
-.about_paragraph_5 {
-    margin-top: -5%;
-    margin-left: 50%;
-}
 
 .contact__page {
     height: 100%;
