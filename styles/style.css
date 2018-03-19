@@ -276,6 +276,10 @@ h1 {
     font: 700 79px normal raleway, sans-serif;
 }
 
+#about_us {
+    padding-top: 3.5%;
+}
+
 .section__text {
 
     top: 40px;
