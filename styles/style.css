@@ -254,10 +254,81 @@ h1 {
 
 
 .content {
-
     display: inline-block;
     margin-left: 120px;
 }
+
+.content {
+    display: inline-block;
+}
+
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: 20px;
+}
+
+.dropdown__button {
+    background: url("../images/dropdown.png") no-repeat scroll 0 0 ;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.dropdown__content {
+    display: none;
+    background-color: #0c3c60;
+    position: relative;
+    top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.dropdown__link {
+    text-align: center;
+    background-color: #0c3c60;
+    font-family: "open sans", sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 10px 0px;
+}
+
+.dropdown:hover .dropdown__content {
+    display: block;
+}
+
+
+@media only screen and (max-width:1000px) {
+    /* For tablets: */
+    .dropdown {
+        display: block;
+    }
+    .content {
+        display: none;
+    }
+    .button__login {
+        position: absolute;
+        left: -30px;
+        top: 20px;
+    }
+    .index__title {
+        font-size: medium;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+}
+
+
+
 
 .section__about {
     background: #d1e0eb;
