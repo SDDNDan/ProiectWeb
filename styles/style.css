@@ -118,6 +118,7 @@ h1 {
     height: fit-content;
     position: relative;
     background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 2.5%;
  }
 
 .button__login {
@@ -269,6 +270,10 @@ h1 {
     color: rgb(12, 60, 96);
     line-height: 95px;
     font: 700 79px normal raleway, sans-serif;
+}
+
+#about_us {
+    padding-top: 3.5%;
 }
 
 .section__text {
