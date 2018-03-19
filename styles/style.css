@@ -3,6 +3,14 @@
     padding: 0;
     display: block;
 }
+.readMore{
+    font-style: normal;
+    font-size: xx-large;
+    font-family: raleway,sans-serif;
+    text-decoration: none;
+
+}
+
 
 .section__about_first{
     margin-top: 40%;
@@ -44,6 +52,10 @@
 }
 
 .definitii{
+    font-family: raleway, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
     stroke-width: 50%;
     align-content: center;
     margin-left: 15%;
@@ -387,7 +399,7 @@ h6 {
     position: absolute;
     background-color: #0c3c60;
     z-index: -1;
-    margin-top: 70px;
+
 }
 .contact_title
 {
