@@ -4,11 +4,21 @@
     display: block;
 }
 .readMore{
-    font-style: normal;
-    font-size: xx-large;
-    font-family: raleway,sans-serif;
     text-decoration: none;
 
+    position: relative;
+
+    left: 0;
+    margin: auto;
+
+    text-align: center;
+    color: #ffffff;
+
+    line-height: 22px;
+    background: #6ea4ca;
+    padding: 10px 30px;
+    font: xx-large normal open raleway, sans-serif;
+    width: fit-content;
 }
 
 
@@ -35,11 +45,9 @@
 
 #left{
     float:left;
-
 }
 #center{
     display: inline-block;
-
 }
 #right{
     float:right;
