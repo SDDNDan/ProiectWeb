@@ -37,6 +37,7 @@
 }
 
 .bibliography{
+    overflow: auto;
     width: 33.333%;
     height: 50%;
     text-align: center;
