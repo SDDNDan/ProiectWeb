@@ -87,6 +87,9 @@
     -o-background-size: cover;
     background-size: cover;
 }
+.bodyContent{
+    background-color: #0c3c60;
+}
 
 header {
     color: white;
@@ -119,7 +122,7 @@ h1 {
     height: fit-content;
     position: relative;
     background-color: rgba(255, 255, 255, 0.5);
-    padding-top: 1.5%;
+    padding-top: 2.5%;
  }
 
 .button__login {
@@ -416,37 +419,39 @@ h6 {
 {
     position: relative;
     top: 40px;
-    margin: auto;
     width: 100%;
     height: 30%;
-    padding: auto auto;
     text-align: center;
     color: white;
-    line-height: 95px;
     font: 700 79px normal raleway, sans-serif;
+    margin-top:3%;
 }
-.contact__map
-{
 
-    margin-left: 15%;
+.contact__map {
+    margin-left: 10%;
     width: 700px;
     height: 500px;
-
-}
-.contact__paragraph
-{
-
-    margin-left: 49%;
-    margin-top: -24%;
-    width: 18%;
-    text-align: center;
 }
 
-.contact__textstyle
-{
+.contact__paragraph{
+    width: 350px;
+    top: 0;
+    font-size: x-large;
+    color: #ffffff;
+}
+
+.formAndParagraph {
+    font-size: larger;
+    width: 700px;
+    height: 500px;
+    margin-left: 10%;
+
+}
+
+.contact__textstyle {
     font-family: raleway, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -455,16 +460,14 @@ h6 {
     width: 22%;
 }
 
-.contact__positionsend
-{
+.contact__positionsend {
     margin-left: 55%;
     margin-top: -22%;
 }
-.contact_textstyleSend
-{
+.contact_textstyleSend {
     font-family: "open sans", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 14px;
     line-height: 20px;
     color: #0a3942;
@@ -472,11 +475,10 @@ h6 {
     height: 30px;
 }
 
-.contact_textstyleSendbutton
-{
+.contact_textstyleSendbutton {
     font-family: "open sans", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 14px;
     line-height: 20px;
     color: #0a3942;
@@ -484,30 +486,22 @@ h6 {
     height: 30px;
 
 }
-.contact__inputposition1
-{
+.contact__inputposition1 {
     margin-top: -25px;
 }
-.contact__inputposition2
-{
+.contact__inputposition2 {
     margin-top: -25px;
 }
-.contact__inputposition3
-{
+.contact__inputposition3 {
     margin-top: -25px;
     height: 110px;
     resize: none;
-
-
 }
-.contact__inputposition4
-{
+.contact__inputposition4 {
     margin-top: -25px;
-
 }
 
-.GradesStatistics__SquarePromovabilitate
-{
+.GradesStatistics__SquarePromovabilitate {
     margin-left: 25%;
     margin-top: 7%;
     height: 260px;
@@ -517,8 +511,7 @@ h6 {
     z-index: -1;
     margin-bottom: 0;
 }
-.GradesStatistics__textStyle1
-{
+.GradesStatistics__textStyle1 {
     font-family: raleway, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -527,11 +520,8 @@ h6 {
     text-align: center;
     margin-top: 10%;
     margin-left: -1%;
-
 }
-.GradesStatistics__SquareLinkStatistics
-{
-
+.GradesStatistics__SquareLinkStatistics {
     margin-left: 50%;
     margin-top: 7%;
     height: 260px;
@@ -541,9 +531,7 @@ h6 {
     z-index: -1;
     margin-bottom: 0;
 }
-.GradesStatistics__textStyle2
-{
-
+.GradesStatistics__textStyle2 {
     font-family: raleway, sans-serif;
     font-style: normal;
     font-weight: 400;
