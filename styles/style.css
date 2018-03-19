@@ -49,6 +49,7 @@
     font-size: xx-large;
     color: #0c3c60;
     margin-bottom: 5%;
+    margin-top : 5%;
 }
 
 .definitii{
@@ -109,6 +110,7 @@ h1 {
     height: fit-content;
     position: relative;
     background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 1.5%;
  }
 
 .button__login {
