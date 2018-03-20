@@ -399,16 +399,26 @@ h1 {
 }
 @media only screen and (max-width:660px) {
     /* For mobile phones: */
+
+    .dropdown__button {
+        background: url("../images/dropdown_phone.png") no-repeat scroll 0 0;
+        width: 30px;
+        height: 30px;
+        top: 5px;
+    }
+
     .button__login {
+        width: 100px;
+        height: 30px;
         position: absolute;
         left: 0;
-        top: 20px;
+        top: 25px;
         margin-left: 10px;
     }
     .index__title {
-        font-size: medium;
-        margin-top: 30px;
-        margin-left: 160px;
+        font-size: small;
+        margin-top: 35px;
+        margin-left: 140px;
     }
 
     #up_title {
