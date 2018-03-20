@@ -1,11 +1,3 @@
-/*@media only screen and (max-width:800px) {
-   --------FOR TABLETS.
-  body {
-      height : 70vh;
-  }
-}
-*/
-
 
 * {
     margin: 0;
@@ -106,7 +98,6 @@ h6 {
     background-image: url("introducing-web-technologies.jpg");
     /* Full height */
     height: 100%;
-    width: 100%;
 
     /* Center and scale the image nicely */
     -webkit-background-size: cover;
@@ -168,17 +159,37 @@ h1 {
 }
 
 .courses__page {
-    height: 70vh;
+    height: 110vh;
     background-color: #3699ec;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: auto;
 }
 
 .p-top-60 {
     padding-top: 60px;
+    width:100%;
+}
+.cursSiLaborator{
+    text-align: center;
+    padding-left: 10%;
+
+}
+.courseColoumn{
+    height : fit-content;
+    display: inline-block;
+    width: 600px;
+    float: left;
+    margin-bottom: 3%;
 }
 
-.courses__textbuttons1 {
+.laboratorColoumn{
+    height: 40px;
+    display : inline-block;
+    width : 300px;
+    margin-bottom: 3%;
+
+}
+
+.courseButton {
     font-family: avenir-lt-w01_35-light1475496, sans-serif;
     font-weight: 400;
     line-height: 22px;
@@ -190,11 +201,18 @@ h1 {
     width: 140px;
     height: 40px;
     display: inline-block;
-    margin: 20px 20px;
+    position: relative;
+    float: left;
+}
+
+.courseName{
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
 
 }
 
-.courses__textbuttons2 {
+.laboratorButton {
     font-family: avenir-lt-w01_35-light1475496, sans-serif;
     font-weight: 400;
     line-height: 22px;
@@ -206,21 +224,8 @@ h1 {
     width: 140px;
     height: 40px;
     display: inline-block;
-    margin: 20px 150px;
-    float: right;
-
 }
 
-.courses__textinfo {
-    font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #292929;
-    display: inline;
-    margin: 0;
-}
 
 /*PAGINA ABOUT US!!!*/
 
@@ -264,7 +269,7 @@ h1 {
     margin-bottom: 5%;
     margin-left: 15%;
     margin-right: 0;
-    width: 30%;
+    width: 400px;
     display: inline-block;
     background-color: #0c3c60;
 }
@@ -384,6 +389,16 @@ h1 {
         font-size: medium;
         margin-top: 30px;
     }
+
+    .courseColoumn{
+        display : block;
+        margin-bottom: 1%;
+    }
+    .laboratorColoumn{
+        display : block;
+        text-align: left;
+        margin-bottom: 10%;
+    }
 }
 @media only screen and (max-width:500px) {
     /* For mobile phones: */
@@ -406,7 +421,8 @@ h1 {
     text-align: center;
     color: rgb(12, 60, 96);
     line-height: 95px;
-    font: 700 79px normal raleway, sans-serif;
+    font: 600 65px normal raleway, sans-serif;
+    padding-top: 3%;
 }
 
 #about_us {
