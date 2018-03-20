@@ -345,15 +345,17 @@ h1 {
     width: 40px;
     height: 40px;
     margin-left: 20px;
+    position: absolute;
+    right: 0;
 }
 
 .dropdown__content {
     display: none;
+
     background-color: #0c3c60;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
     position: relative;
-    top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    top: 60px;
 }
 
 .dropdown__link {
@@ -363,14 +365,24 @@ h1 {
     font-size: 15px;
     color: white;
     text-decoration: none;
-    padding: 10px 0;
-    margin: 10px 0px;
+    padding: 20px 10px;
+    border-top: groove 1px black;
+
 }
 
 .dropdown:hover .dropdown__content {
     display: block;
 }
 
+.dropdown:hover .dropdown__button {
+    background-color: #116ea5;
+    border-radius: 10px;
+}
+
+.dropdown__link:hover {
+    background-color: #6ea4ca;
+
+}
 
 @media only screen and (max-width:1000px) {
     /* For tablets: */
@@ -386,7 +398,7 @@ h1 {
         top: 20px;
     }
     .index__title {
-        font-size: medium;
+        font-size: large;
         margin-top: 30px;
     }
 
@@ -400,8 +412,66 @@ h1 {
         margin-bottom: 10%;
     }
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:660px) {
     /* For mobile phones: */
+
+    .dropdown__button {
+        background: url("../images/dropdown_phone.png") no-repeat scroll 0 0;
+        width: 30px;
+        height: 30px;
+        top: 5px;
+    }
+
+    .button__login {
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        top: 25px;
+        margin-left: 10px;
+    }
+    .index__title {
+        font-size: small;
+        margin-top: 35px;
+        margin-left: 140px;
+    }
+
+    #up_title {
+        font-size: large;
+    }
+
+    #big_title {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    #about_us {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    footer {
+        height: 7%;
+        font-size: 1em;
+    }
+
+    h6 {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+
+    .abreviations {
+        font-size: x-large;
+    }
+
+    .definitii {
+        font-size: 13px;
+    }
+
+    .readMore {
+        padding: 10px 20px;
+        font-size: small;
+    }
 }
 
 
