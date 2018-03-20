@@ -397,8 +397,19 @@ h1 {
         margin-top: 30px;
     }
 }
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:660px) {
     /* For mobile phones: */
+    .button__login {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        margin-left: 10px;
+    }
+    .index__title {
+        font-size: medium;
+        margin-top: 30px;
+        margin-left: 160px;
+    }
 }
 
 
