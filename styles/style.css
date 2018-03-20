@@ -159,7 +159,7 @@ h1 {
 }
 
 .courses__page {
-    height: 110vh;
+    height: 100vh;
     background-color: #3699ec;
     margin: auto;
 }
@@ -410,6 +410,14 @@ h1 {
         display : block;
         text-align: left;
         margin-bottom: 10%;
+    }
+
+    .section__title{
+        height:fit-content;
+        margin-bottom: 10%;
+    }
+    .courses__page{
+        height: 100vh;
     }
 }
 @media only screen and (max-width:660px) {
