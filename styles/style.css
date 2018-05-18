@@ -525,7 +525,7 @@ h1 {
     top: 40px;
     left: 0;
     margin: auto;
-    
+
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -575,6 +575,7 @@ h1 {
     margin-left: 10%;
     width: 700px;
     height: 500px;
+    display:inline-block;
 }
 
 .contact__paragraph{
