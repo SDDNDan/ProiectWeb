@@ -687,5 +687,56 @@ h1 {
     margin-left: -1%;
 }
 
+/* MANAGE STUDENT*/
 
+.section__manage__student {
+    margin-top: 100px;
+}
 
+head {
+    display: none;
+}
+
+.student__name__container {
+    text-align: center;
+}
+
+.grades__container {
+}
+
+.presence__container {
+}
+
+.bonus__container {
+}
+
+.grades__container{
+    border: 1px black solid;
+    margin: auto;
+    margin-top: 20px;
+    height:auto;
+    width: 30%;
+}
+
+.grades__list {
+    padding: 0;
+}
+
+.grade__item {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.grade__item:hover {
+    background-color: #d4d4d4;
+}
+
+.grade__value {
+    text-align: left;
+
+}
+
+.grade__date {
+    text-align: right;
+}

@@ -1,0 +1,112 @@
+body {
+    background: #0c3c60;
+    height: 100vh;
+    display: flex;
+}
+
+.login__container {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    width: 670px;
+    height: 556px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.login__picture {
+    background-image: url("../images/loginPicture.jpg");
+    height: 30%;
+}
+
+.form__container {
+    height: 70%;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    padding-top:30px;
+}
+
+.label__container {
+    text-align: right;
+    display: inline-block;
+}
+
+.field__container {
+    display: inline-block;
+    right: 0;
+    width: 75%;
+}
+
+.form__line__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.username__input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #9ba8ae;
+}
+
+.password__input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #9ba8ae;
+}
+
+.username__input {
+    border-color: #9ba8ae;
+}
+
+.username__input:focus {
+    border-color: #57b846;
+}
+
+.password__input {
+    border-color: #9ba8ae;
+}
+
+.password__input:focus {
+    border-color: #57b846;
+}
+
+.remember__me__container {
+    display: inline-block;
+}
+
+.field__label {
+    color: #807889;
+    font: 16px Helvetica sans-serif;
+}
+
+.remember__me__label {
+    font: 13px normal Helvetica sans-serif;
+}
+
+.forgot__password__container {
+    display: inline-block;
+}
+
+.checkboxes__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:15px;
+    margin-top: 20px;
+}
+
+.forgot__password__link {
+    text-decoration: none;
+    color: #9ba8ae;
+    font: 14px Helvetica sans-serif;
+}
+
+.forgot__password__link:hover {
+    transition-duration: 0.3s;
+    color: #57b846;
+}
