@@ -340,7 +340,7 @@ h1 {
 }
 
 .dropdown__button {
-    background: url("../MVC/public_html/images/dropdown.png") no-repeat scroll 0 0 ;
+    background: url("../images/dropdown.png") no-repeat scroll 0 0 ;
     border: none;
     width: 40px;
     height: 40px;
@@ -424,7 +424,7 @@ h1 {
     /* For mobile phones: */
 
     .dropdown__button {
-        background: url("../MVC/public_html/images/dropdown_phone.png") no-repeat scroll 0 0;
+        background: url("../images/dropdown_phone.png") no-repeat scroll 0 0;
         width: 30px;
         height: 30px;
         top: 5px;

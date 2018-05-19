@@ -15,7 +15,7 @@ body {
 }
 
 .login__picture {
-    background-image: url("../MVC/public_html/images/loginPicture.jpg");
+    background-image: url("../images/loginPicture.jpg");
     height: 30%;
 }
 
