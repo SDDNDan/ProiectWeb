@@ -34,7 +34,7 @@ body {
 }
 
 .login__picture {
-    background-image: url("../images/loginPicture.jpg");
+    background-image: url("../MVC/public_html/images/loginPicture.jpg");
     height: 100%;
     opacity: 0.4;
 }
@@ -43,7 +43,7 @@ body {
     position: relative;
     height: 70%;
     width: 60%;
-    margin: 30px 35px 0px 200px;
+    margin: 30px 35px 0 200px;
     padding-top: 30px;
 }
 
