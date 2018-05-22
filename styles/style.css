@@ -23,18 +23,13 @@ h6 {
     margin-left: 2%;
 }
 
-
 .readMore{
     text-decoration: none;
-
     position: relative;
-
     left: 0;
     margin: auto;
-
     text-align: center;
     color: #ffffff;
-
     line-height: 22px;
     background: #6ea4ca;
     padding: 10px 30px;
@@ -111,6 +106,8 @@ h6 {
     background-color: #0c3c60;
 }
 
+/*HEADER*/
+
 header {
     color: white;
     height: 80px;
@@ -126,14 +123,12 @@ h1 {
     font-family: raleway, sans-serif;
     font-size: 25px;
     font-weight: normal;
-
 }
 
 .index__title {
     display: inline-block;
     margin-left: 358px;
     margin-top: 20px;
-
 }
 
 #up_title{
@@ -290,14 +285,11 @@ h1 {
     font-size: x-large;
     margin: auto;
     padding-top: 5%;
-
 }
 
 .link__header {
-
     list-style-type: none;
     display: inline;
-
 }
 
 .link__header_prop {
@@ -312,23 +304,13 @@ h1 {
     font-size: 15px;
     color: white;
     text-decoration: none;
-
 }
-
 
 .content {
     display: inline-block;
     margin-left: 120px;
 }
 
-.content {
-    display: inline-block;
-}
-
-
-.dropdown2{
-
-}
 .dropdown {
     display: none;
     position: absolute;
@@ -349,7 +331,6 @@ h1 {
 
 .dropdown__content {
     display: none;
-
     background-color: #0c3c60;
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
     position: relative;
@@ -699,6 +680,7 @@ head {
 }
 
 .grades__container {
+    padding: 10px;
 }
 
 .presence__container{
@@ -722,7 +704,10 @@ head {
 .grade__item {
     list-style-type: none;
     text-align: center;
-
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .grade__item:hover {
@@ -808,4 +793,5 @@ head {
 .drop:hover .grade__dropdown__content {
     display: flex;
 }
+
 
