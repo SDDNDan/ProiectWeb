@@ -100,35 +100,47 @@
         </ul>
     </div>
 
-    <div class="add__grade__container">
-       <div class = "drop" >
-           <button class = "grade__button">Adauga nota</button>
-           <div class="grade__dropdown__content">
-                <a>10</a>
-                <a>9</a>
-                <a>8</a>
-                <a>7</a>
-                <a>6</a>
-                <a>5</a>
-                <a>4</a>
-                <a>3</a>
-                <a>2</a>
-                <a>1</a>
-                <div class="spatiu"></div>
-           </div>
-       </div>
-
+    <div class="add__data__container">
+        <ul class="add__list">
+            <li class="add__dropdown__icon" id="grade">Add Grade</li>
+            <li class="add__dropdown__icon" id="presence">Add Presence</li>
+            <li class="add__dropdown__icon" id="bonus">Add Bonus Activity</li>
+        </ul>
     </div>
-
-    <div class="add__presence__container">
-        <div class = "presence__container">
-            <button class="presence__button">Prezent</button>
-            <button class="absence__button">Absent</button>
+    <div class="add__content__container">
+        <div class="add__grade__container">
+            <ul class="grades__dropdown__list">
+                <li class="grade__dropdown__item">1</li>
+                <li class="grade__dropdown__item">2</li>
+                <li class="grade__dropdown__item">3</li>
+                <li class="grade__dropdown__item">4</li>
+                <li class="grade__dropdown__item">5</li>
+                <li class="grade__dropdown__item">6</li>
+                <li class="grade__dropdown__item">7</li>
+                <li class="grade__dropdown__item">8</li>
+                <li class="grade__dropdown__item">9</li>
+                <li class="grade__dropdown__item">10</li>
+            </ul>
         </div>
-    </div>
-
-    <div class="add__bonus__container">
-        <button class ="bonus__button">Activitate suplimentara</button>
+        <div class="add__presence__container">
+            <div class="insert__container">
+                <label class="insert__date__label">Day:</label>
+                <input type="text" class="add__day">
+            </div>
+            <div class="insert__container">
+                <label class="insert__date__label">Month:</label>
+                <input type="text" class="add__month">
+            </div>
+            <div class="insert__container">
+                <label class="insert__date__label">Year:</label>
+                <input type="text" class="add__year">
+            </div>
+            <button class="button__submit">Add Presence</button>
+        </div>
+        <div class="add__bonus__container">
+            <textarea class="bonus__description"></textarea>
+            <button class="button__submit" id="bonusButton">Submit Bonus</button>
+        </div>
     </div>
 
 </section>
