@@ -667,8 +667,8 @@ h1 {
 /* MANAGE STUDENT*/
 
 .section__manage__student {
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin: 100px auto 30px;
+    width: 600px;
 }
 
 head {
@@ -683,18 +683,10 @@ head {
     padding: 10px;
 }
 
-.presence__container{
-
-}
-
-.bonus__container {
-}
-
-.grades__container, .presence__container, .add__bonus__container{
+.grades__container, .presence__container{
     border: 1px black solid;
     margin: 20px auto auto;
     height:auto;
-    width: 30%;
 }
 
 .grades__list {
@@ -716,82 +708,111 @@ head {
 
 .grade__value {
     text-align: left;
-
 }
 
 .grade__date {
     text-align: right;
 }
 
-.presence__button, .absence__button{
-    width:40%;
-    height:30px;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
+.add__data__container {
+    margin-top: 20px;
 }
 
-.absence__button{
-    float:right;
+.add__list {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
 }
-.spatiu{
-    width: 100vw;
+
+.add__dropdown__icon {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 10px;
+    height: 100%;
+    cursor: pointer;
 }
-.add__grade__container{
-    display: block;
-    height:50px;
-    border: 1px black solid;
+
+.add__dropdown__icon:hover {
+    background-color: #d1e0eb;
+}
+
+.add__content__container {
     margin: 20px auto auto;
-    width: 30%;
-}
-.drop {
-    float: left;
-    overflow: hidden;
-    display:block;
-    position:relative;
+    width: 50%;
 }
 
-.drop .grade__button {
-    font-size: 16px;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
+.insert__container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.insert__date__label {
+    position: absolute;
+    left: -50px;
+}
+
+.add__day, .add__month, .add__year {
+    width: 100%;
     margin: 0;
 }
 
-.drop:hover .grade__button {
-    background-color: red;
-}
-
-.grade__dropdown__content {
-    display:none;
-    background-color: #fffdfe;
-    min-width: 115px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-    position :relative;
-
-}
-
-.grade__dropdown__content a {
-    float: none;
-    color: black;
-    text-decoration: none;
-    display:flex;
+.button__submit {
+    margin: auto;
+    background-color: rgb(254, 97, 97);
+    border: transparent;
+    width: 130px;
+    height: 40px;
+    border-radius: 80px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
+    color: white;
     text-align: center;
-    height :inherit;
-    padding: 3px 10px;
-
+    cursor: pointer;
 }
 
-.grade__dropdown__content a:hover {
-    background-color: #bcbcbc;
+/*GRADE HIDDEN CONTENT*/
+.add__grade__container {
+    display: none;
 }
 
-.drop:hover .grade__dropdown__content {
+/*PRESENCE HIDDEN CONTENT*/
+.add__presence__container {
+    display: none;
+}
+
+/*BONUS HIDDEN CONTENT*/
+.add__bonus__container {
+    display: none;
+}
+
+.add__bonus__container {
+    height: 300px;
+    width: 100%;
+}
+
+.bonus__description {
+    height: 100%;
+    width: 100%;
+}
+
+#bonusButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.grades__dropdown__list {
     display: flex;
+    justify-content: space-around;
 }
 
+.grade__dropdown__item {
+    border: 1px solid black;
+    padding: 0 5px;
+    cursor: pointer;
+}
 
+.grade__dropdown__item:hover {
+    background-color: #6ea4ca;
+}
