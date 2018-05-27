@@ -721,20 +721,26 @@ head {
 .add__list {
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
-    border-radius: 10px;
 }
 
 .add__dropdown__icon {
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    padding: 10px;
+    border: none;
+    transition: all 0.3s;
+    background-color: #00afd4;
+    border-radius: 20px;
+    padding: 20px;
     height: 100%;
     cursor: pointer;
+    color: white;
+}
+
+.add__dropdown__icon:focus {
+    outline: none;
+    background-color: black;
 }
 
 .add__dropdown__icon:hover {
-    background-color: #d1e0eb;
+    background-color: black;
 }
 
 .add__content__container {
@@ -770,6 +776,11 @@ head {
     color: white;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button__submit:hover {
+    background-color: black;
 }
 
 /*GRADE HIDDEN CONTENT*/
