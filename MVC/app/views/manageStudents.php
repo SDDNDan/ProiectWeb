@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css"/>
 </head>
 <body>
 
@@ -10,13 +10,7 @@
     <h1 class="index__title">Web Technologies App</h1>
     <button type = "button" class ="button__login"> Log In</button>
     <div class="content">
-        <ul class="link__header_prop">
-            <li class = "link__header"><a class = "list__link" href="index.html">Home</a> </li>
-            <li class = "link__header"><a class = "list__link" href="courses.html">Courses</a></li>
-            <li class = "link__header"><a class = "list__link" href="GradeStatistics.html">Grade & Statistics</a></li>
-            <li class = "link__header"><a class = "list__link" href="about.html">About</a></li>
-            <li class = "link__header"><a class = "list__link" href="contact.html">Contact</a></li>
-        </ul>
+        <?php require_once("partials/nav.php"); ?>
     </div>
     <div class = "dropdown">
         <button class="dropdown__button">
@@ -145,6 +139,6 @@
 
 </section>
 
-<script type="text/javascript" src="../../../scripts/manageStudents.js"></script>
+<script type="text/javascript" src="../../scripts/manageStudents.js"></script>
 </body>
 </html>

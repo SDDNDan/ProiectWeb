@@ -3,10 +3,10 @@
  * Created by PhpStorm.
  * User: Dan
  * Date: 5/28/2018
- * Time: 12:33 AM
+ * Time: 2:20 AM
  */
 
-class manageStudents_ct extends core_controller
+class about_ct extends core_controller
 {
     public function __construct()
     {
@@ -15,7 +15,10 @@ class manageStudents_ct extends core_controller
 
     public function index()
     {
-        $this->returnView('manageStudents',[]);
+        $this->returnView('about',[]);
         $this->view->renderView();
+
     }
+
 }
+?>

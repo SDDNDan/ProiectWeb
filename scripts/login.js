@@ -3,15 +3,12 @@
  */
 
 function sendLoginData() {
-    let mockReq = new XMLHttpRequest();
-    mockReq.open( 'POST', 'https://proiectTW/loginController');
-
-    let payload = {
-        "username": document.getElementById("username").valueOf(),
-        "password": document.getElementById("password").valueOf()
-    };
-
-    mockReq.send(JSON.stringify(payload));
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "http://localhost:8000/ProjectWeb/MVC/public_html/login/makeLogin", true);
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlhttp.send("username=" + username + "&password=" + password);
 }
 
 let loginButton = document.getElementById("login");

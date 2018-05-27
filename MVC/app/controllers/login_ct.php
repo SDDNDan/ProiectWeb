@@ -19,6 +19,14 @@ class login_ct extends core_controller
         $this->returnView('login',[]);
         $this->view->renderView();
     }
+    public function makeLogin(){
+
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        var_dump($username);
+        $this->returnView('login',[]);
+        $this->view->renderView();
+    }
 
     public function student()
     {
@@ -47,7 +55,6 @@ class login_ct extends core_controller
 
         oci_free_statement($stid);
         oci_close($c);
-
 
     }
 }
