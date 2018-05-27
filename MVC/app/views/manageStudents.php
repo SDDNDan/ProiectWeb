@@ -11,22 +11,22 @@
     <button type = "button" class ="button__login"> Log In</button>
     <div class="content">
         <ul class="link__header_prop">
-            <li class = "link__header"><a class = "list__link" href="index.php">Home</a> </li>
-            <li class = "link__header"><a class = "list__link" href="courses.php">Courses</a></li>
-            <li class = "link__header"><a class = "list__link" href="GradeStatistics.php">Grade & Statistics</a></li>
-            <li class = "link__header"><a class = "list__link" href="about.php">About</a></li>
-            <li class = "link__header"><a class = "list__link" href="contact.php">Contact</a></li>
+            <li class = "link__header"><a class = "list__link" href="index.html">Home</a> </li>
+            <li class = "link__header"><a class = "list__link" href="courses.html">Courses</a></li>
+            <li class = "link__header"><a class = "list__link" href="GradeStatistics.html">Grade & Statistics</a></li>
+            <li class = "link__header"><a class = "list__link" href="about.html">About</a></li>
+            <li class = "link__header"><a class = "list__link" href="contact.html">Contact</a></li>
         </ul>
     </div>
     <div class = "dropdown">
         <button class="dropdown__button">
         </button>
         <div class="dropdown__content">
-            <a href="index.php" class="dropdown__link">Home</a>
-            <a href="courses.php" class="dropdown__link">Courses</a>
-            <a href="GradeStatistics.php" class="dropdown__link">Grades & Statistics</a>
-            <a href="about.php" class="dropdown__link">About </a>
-            <a href="contact.php" class="dropdown__link">Contact </a>
+            <a href="index.html" class="dropdown__link">Home</a>
+            <a href="courses.html" class="dropdown__link">Courses</a>
+            <a href="GradeStatistics.html" class="dropdown__link">Grades & Statistics</a>
+            <a href="about.html" class="dropdown__link">About </a>
+            <a href="contact.html" class="dropdown__link">Contact </a>
         </div>
     </div>
 </header>
@@ -100,19 +100,51 @@
         </ul>
     </div>
 
-    <div class="add__grade__container">
-        un camp si un buton pentru adaugat nota
+    <div class="add__data__container">
+        <ul class="add__list">
+            <li><button class="add__dropdown__icon" id="grade">Add Grade</button></li>
+            <li><button class="add__dropdown__icon" id="presence">Add Presence</button></li>
+            <li><button class="add__dropdown__icon" id="bonus">Add Bonus Activity</button></li>
+        </ul>
     </div>
-
-    <div class="add__presence__container">
-        un camp si un buton pentru adaugat prezente/absente
-    </div>
-
-    <div class="add__bonus__container">
-        un camp si un buton pentru adaugat interventii la ora
+    <div class="add__content__container">
+        <div class="add__grade__container">
+            <ul class="grades__dropdown__list">
+                <li class="grade__dropdown__item">1</li>
+                <li class="grade__dropdown__item">2</li>
+                <li class="grade__dropdown__item">3</li>
+                <li class="grade__dropdown__item">4</li>
+                <li class="grade__dropdown__item">5</li>
+                <li class="grade__dropdown__item">6</li>
+                <li class="grade__dropdown__item">7</li>
+                <li class="grade__dropdown__item">8</li>
+                <li class="grade__dropdown__item">9</li>
+                <li class="grade__dropdown__item">10</li>
+            </ul>
+        </div>
+        <div class="add__presence__container">
+            <div class="insert__container">
+                <label class="insert__date__label">Day:</label>
+                <input type="text" class="add__day">
+            </div>
+            <div class="insert__container">
+                <label class="insert__date__label">Month:</label>
+                <input type="text" class="add__month">
+            </div>
+            <div class="insert__container">
+                <label class="insert__date__label">Year:</label>
+                <input type="text" class="add__year">
+            </div>
+            <button class="button__submit">Add Presence</button>
+        </div>
+        <div class="add__bonus__container">
+            <textarea class="bonus__description"></textarea>
+            <button class="button__submit" id="bonusButton">Submit Bonus</button>
+        </div>
     </div>
 
 </section>
 
+<script type="text/javascript" src="../../../scripts/manageStudents.js"></script>
 </body>
 </html>

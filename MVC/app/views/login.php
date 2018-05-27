@@ -49,6 +49,7 @@
                 </div>
             </div>
             <input type="submit" name = "submit" value="Baga">
+            ?php echo $msg ?>
         </div>
         </form>
     </div>

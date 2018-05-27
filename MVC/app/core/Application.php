@@ -48,7 +48,7 @@ class Application
             #If action exists then the action will take a good value else default value
             $this->action = isset($URL[4]) ? $URL[4] : 'index';
             #Remove the rest
-            var_dump($URL);
+            //var_dump($URL);
             unset($URL[0],$URL[1],$URL[2],$URL[3],$URL[4]);
             #Set the remaining values as param
             $this->params = (!empty($URL)) ? array_values($URL) : [];

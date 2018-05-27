@@ -24,7 +24,7 @@ class login_ct extends core_controller
     {
         $name = $_POST['username'];
         $password = $_POST['password'];
-        var_dump($name.' '.$password);
+        //var_dump($name.' '.$password);
         $r = $this->do_sel_bulk($this->conn);
     }
 
@@ -37,6 +37,13 @@ class login_ct extends core_controller
         oci_execute($stid);
 
         echo $p1;   // prints 16
+
+
+        if($p1 === NULL) {
+            $mag = "Wrong user or pass";
+        }
+
+        //clude_once("../vew/logn.php");
 
         oci_free_statement($stid);
         oci_close($c);
