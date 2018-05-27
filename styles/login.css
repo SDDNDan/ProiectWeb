@@ -171,6 +171,10 @@ body {
     cursor: pointer;
 }
 
+.login__button:focus {
+    outline: none;
+}
+
 .login__button:hover {
     background-color: black;
 }
