@@ -15,11 +15,11 @@
             <button class="dropdown__button">
             </button>
             <div class="dropdown__content">
-                <a href="home.phpblic_html/index.php" class="dropdown__link">Home</a>
+                <a href="index.php" class="dropdown__link">Home</a>
                 <a href="courses.php" class="dropdown__link">Courses</a>
                 <a href="GradeStatistics.phpndex.php" class="dropdown__link">Grades & Statistics</a>
-                <a href="about.phplic_html/index.php" class="dropdown__link">About </a>
-                <a href="contact.phpc_html/index.php" class="dropdown__link">Contact </a>
+                <a href="about.php" class="dropdown__link">About </a>
+                <a href="contact.php" class="dropdown__link">Contact </a>
             </div>
         </div>
     </header>

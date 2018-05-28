@@ -16,10 +16,13 @@ class core_view{
     }
     public function renderView()
     {
+
         if(file_exists(VIEWS.$this->view_filename.'.php'))
         {
             include_once VIEWS.$this->view_filename.'.php';
         }
     }
 }
+
+
 ?>

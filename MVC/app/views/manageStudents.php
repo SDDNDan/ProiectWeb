@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
-    <link rel="stylesheet" type="text/css" href="../../styles/style.css"/>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
 <body>
 
@@ -16,15 +17,14 @@
         <button class="dropdown__button">
         </button>
         <div class="dropdown__content">
-            <a href="index.html" class="dropdown__link">Home</a>
-            <a href="courses.html" class="dropdown__link">Courses</a>
-            <a href="GradeStatistics.html" class="dropdown__link">Grades & Statistics</a>
-            <a href="about.html" class="dropdown__link">About </a>
-            <a href="contact.html" class="dropdown__link">Contact </a>
+            <a href="login.php" class="dropdown__link">Home</a>
+            <a href="courses.php" class="dropdown__link">Courses</a>
+            <a href="GradeStatistics.php" class="dropdown__link">Grades & Statistics</a>
+            <a href="about.php" class="dropdown__link">About </a>
+            <a href="contact.php" class="dropdown__link">Contact </a>
         </div>
     </div>
 </header>
-
 <section class="section__manage__student">
     <div class="student__name__container">
         <h1 class="name">
@@ -136,9 +136,7 @@
             <button class="button__submit" id="bonusButton">Submit Bonus</button>
         </div>
     </div>
-
+<script src="scripts/manageStudents.js"></script>
 </section>
-
-<script type="text/javascript" src="../../scripts/manageStudents.js"></script>
 </body>
 </html>

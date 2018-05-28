@@ -16,5 +16,7 @@ class core_controller
         $this->view = new core_view($view_filename,$view_data);
         return $this->view;
     }
+
+
 }
 ?>

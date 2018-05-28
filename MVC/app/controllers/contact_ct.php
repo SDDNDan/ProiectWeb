@@ -14,8 +14,19 @@ class contact_ct extends core_controller
 
     public function index()
     {
+
         $this->returnView('contact',[]);
         $this->view->renderView();
+
+    }
+
+    public function sendMail()
+    {
+        $email = $_POST['email'];
+        $name = $_POST['name'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+        return 200;
 
     }
 

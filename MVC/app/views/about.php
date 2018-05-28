@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
+
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
 <body>

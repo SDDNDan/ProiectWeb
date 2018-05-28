@@ -4,7 +4,7 @@
     <title>Web Technologies App</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
-<body onload="initMap()" class = "bodyContent">
+<body class = "bodyContent">
 <header>
     <h1 class="index__title">Web Technologies App</h1>
     <button type="button" class="button__login"> Log In</button>
@@ -37,26 +37,26 @@
         </div>
         <div class = "formAndParagraph" >
             <p class="contact__paragraph">Facultatea de Informatica, Universitatea "Al. I. Cuza", General Berthelot, 16, IASI 700483, ROMANIA</p>
-            <form class="" action="https://www.w3schools.com/html/" target="_blank" method="GET">
+            <br/>
+            <span id="msg" style="display:none;"></span>
                 <br>
-                <input class="contact_textstyleSend" type="text" placeholder="Name *">
-                <br>
-                <br>
-                <input class="contact_textstyleSend contact__inputposition1" type="text" placeholder="Email *">
+                <input class="contact_textstyleSend" type="text" placeholder="Name *" id="name" name="name">
                 <br>
                 <br>
-                <input class="contact_textstyleSend contact__inputposition2" type="text" placeholder="Subject">
+                <input class="contact_textstyleSend contact__inputposition1" type="text" name="email" placeholder="Email *" id = "email">
                 <br>
                 <br>
-                <textarea class="contact_textstyleSend contact__inputposition3" name="message" placeholder="Message"></textarea>
+                <input class="contact_textstyleSend contact__inputposition2" type="text" name="subject" placeholder="Subject" id = "subject">
                 <br>
                 <br>
-                <input class="contact__inputposition4 contact_textstyleSendbutton" type="submit" value="Send">
-            </form>
+                <textarea class="contact_textstyleSend contact__inputposition3" name="message" placeholder="Message" id = "message"></textarea>
+                <br>
+                <br>
+                <button class="contact__inputposition4 contact_textstyleSendbutton" type="submit"  value="Send" id ="submit">Send</button>
+
         </div>
     </div>
 </section>
-
-
+<script src="scripts/sendMail.js"></script>
 </body>
 </html>
