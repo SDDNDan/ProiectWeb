@@ -18,11 +18,11 @@
         <div class="form__line__container">
             <div class="label__container">
                 <label class="field__label">
-                    Username
+                    Email
                 </label>
             </div>
             <div class="field__container">
-                <input type="text" class="username__input" placeholder="Enter username" id="username">
+                <input type="text" class="username__input" placeholder="Enter Email" id="username">
             </div>
         </div>
         <div class="form__line__container">
