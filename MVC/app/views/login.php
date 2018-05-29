@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <?php include VIEWS.'partials/base_url.php' ?>
     <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login </title>

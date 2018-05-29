@@ -1,7 +1,15 @@
+<?php
+session_start();
+if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "student"){
+    header("location: index");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
+    <?php include VIEWS.'partials/base_url.php' ?>
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
 <body>

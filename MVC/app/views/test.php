@@ -1,13 +1,16 @@
-<!DOCTYPE HTML>
+<?php
+session_start();
+?>
 <html>
 <head>
-
+    <base href="http://dev.php.dan/public_html/">
 </head>
 <body>
-<form action="test/sendMail" method="POST">
+
+<?= isset($_SESSION['msg']) ? "<p>".$_SESSION['msg']."</p>" : ""; ?>
+<form action="login/testPOST" method="post">
     <input type="text" name="email">
-    <input type="text" name="msg">
-    <input type="submit" name="submit" value="Trimite">
+    <input type="submit" name="submit">
 </form>
 </body>
 </html>

@@ -6,9 +6,13 @@ function sendLoginData() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "http://localhost:8000/ProjectWeb/MVC/public_html/login/makeLogin", true);
+    xmlhttp.open("POST", "http://localhost:8000/ProjectWeb/MVC/public_html/login/makeLogin", false);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("username=" + username + "&password=" + password);
+    console.log("readyParca");
+    if(xmlhttp.status==200){
+        console.log("ready");
+    }
 }
 
 let loginButton = document.getElementById("login");

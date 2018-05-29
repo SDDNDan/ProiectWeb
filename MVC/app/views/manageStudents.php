@@ -1,8 +1,14 @@
+<?php
+session_start();
+if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
+    header("location: index");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
-
+    <?php include VIEWS.'partials/base_url.php' ?>
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
 <body>
@@ -25,6 +31,17 @@
         </div>
     </div>
 </header>
+
+<div class="search__container">
+    <label class="search__label" for="searchInput">
+        CAUTA STUDENT:
+    </label>
+    <input type="search" class="search__field" placeholder="Nume si Prenume" id="searchInput">
+    <button class="button__submit" id="searchButton">
+        Search
+    </button>
+</div>
+
 <section class="section__manage__student">
     <div class="student__name__container">
         <h1 class="name">
@@ -136,7 +153,7 @@
             <button class="button__submit" id="bonusButton">Submit Bonus</button>
         </div>
     </div>
-<script src="scripts/manageStudents.js"></script>
+    <script src="scripts/manageStudents.js"></script>
 </section>
 </body>
 </html>

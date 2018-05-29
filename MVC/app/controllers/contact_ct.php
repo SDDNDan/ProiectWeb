@@ -7,9 +7,10 @@
  */
 class contact_ct extends core_controller
 {
+    protected $contactModel;
     public function __construct()
     {
-
+        $this->contactModel = new contact_md();
     }
 
     public function index()
@@ -26,6 +27,7 @@ class contact_ct extends core_controller
         $name = $_POST['name'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
+        $this->contactModel->sendMail($email,$name,$subject,$message);
         return 200;
 
     }
