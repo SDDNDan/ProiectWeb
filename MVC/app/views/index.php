@@ -1,11 +1,10 @@
 <html>
 <head>
     <title>Web Technologies App</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../styles/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="indexbody">
-
 
     <header>
         <h1 class="index__title">Web Technologies App</h1>

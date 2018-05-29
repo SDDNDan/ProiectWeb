@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../styles/login.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login </title>
 </head>
@@ -54,9 +54,7 @@
         </div>
         <div class="form__line__container">
             <button class="login__button" id="login">Login</button>
-            <a href="http://www.google.ro" class="forgot__password__link">New here? <br> Sign up now!</a>
         </div>
-
     </form>
 </div>
 <script src="scripts/login.js"></script>
