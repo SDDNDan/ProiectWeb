@@ -18,4 +18,11 @@ class manageStudents_ct extends core_controller
         $this->returnView('manageStudents',[]);
         $this->view->renderView();
     }
+
+    public function getStudent()
+    {
+        $nume = $_POST['NumeInput'];
+        $prenume = $_POST['PrenumeInput'];
+        var_dump($nume);
+    }
 }

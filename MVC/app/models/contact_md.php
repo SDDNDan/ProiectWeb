@@ -24,7 +24,6 @@ class contact_md
         oci_execute($stid);
         oci_free_statement($stid);
         oci_close($this->conn);
-        var_dump("CARAPACE");
 
     }
 

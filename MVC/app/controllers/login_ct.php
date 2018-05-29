@@ -40,7 +40,6 @@ class login_ct extends core_controller
         $username = $_POST['username'];
         $password = $_POST['password'];
         $result = $this->loginModel->loginResult($username,$password);
-        var_dump($result);
         switch ($result)
         {
 

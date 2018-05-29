@@ -36,7 +36,8 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <label class="search__label" for="searchInput">
         CAUTA STUDENT:
     </label>
-    <input type="search" class="search__field" placeholder="Nume si Prenume" id="searchInput">
+    <input type="search" class="search__field" placeholder="Nume" id="NumeInput">
+    <input type="search" class="search__field" placeholder="Prenume" id="PrenumeInput">
     <button class="button__submit" id="searchButton">
         Search
     </button>
@@ -153,7 +154,8 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
             <button class="button__submit" id="bonusButton">Submit Bonus</button>
         </div>
     </div>
-    <script src="scripts/manageStudents.js"></script>
+
 </section>
+<script src="scripts/manageStudents.js"></script>
 </body>
 </html>
