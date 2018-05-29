@@ -1,0 +1,1 @@
+<base href="http://dev.php.dan/public_html/">
