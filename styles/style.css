@@ -1,5 +1,10 @@
-
-
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -667,7 +672,7 @@ h1 {
 /* MANAGE STUDENT*/
 
 .section__manage__student {
-    margin: 100px auto 30px;
+    margin: 50px auto 30px;
     width: 600px;
 }
 
@@ -783,6 +788,10 @@ head {
     background-color: black;
 }
 
+.button__submit:focus {
+    outline: none;
+}
+
 /*GRADE HIDDEN CONTENT*/
 .add__grade__container {
     display: none;
@@ -826,4 +835,46 @@ head {
 
 .grade__dropdown__item:hover {
     background-color: #6ea4ca;
+}
+
+/*  SEARCH CONTAINER  */
+
+.search__container {
+    position: relative;
+    height: 100px;
+    width: 400px;
+    margin: 100px auto auto;
+    display: flex;
+}
+
+.search__field {
+    margin: auto;
+    height: 30px;
+    color: #555555;
+    font: 15px normal poppinsregular sans-serif ;
+    font-family: 'poppinsregular', serif;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #b0b0b0;
+    padding: 10px;
+    transition: 0.3s all;
+}
+
+.search__field:hover {
+    border-color: #57b846;
+}
+
+.search__field:focus {
+    outline: none;
+    border-color: #57b846;
+}
+
+.search__label {
+    position: absolute;
+    left: -110px;
+    top: 42px;
+    font: 15px raleway sans-serif normal ;
+    font-family: "poppinsregular", serif;
+    font-weight: 900;
+    text-align: right;
 }
