@@ -45,12 +45,12 @@ class Application
             #Remove separator / from the request URL
             $URL = explode('/',$request);
             #If second parameter of URL is set then it will be controller else the controller will be default 'index_ct'
-            $this->controller = isset($URL[1]) ? $URL[1].'_ct' : 'index_ct';
+            $this->controller = isset($URL[3]) ? $URL[3].'_ct' : 'index_ct';
             #If action exists then the action will take a good value else default value
-            $this->action = isset($URL[2]) ? $URL[2] : 'index';
+            $this->action = isset($URL[4]) ? $URL[4] : 'index';
             #Remove the rest
             //var_dump($URL);
-            unset($URL[0],$URL[1]);
+            unset($URL[0],$URL[1],$URL[2],$URL[3],$URL[4]);
             #Set the remaining values as param
             $this->params = (!empty($URL)) ? array_values($URL) : [];
         }
