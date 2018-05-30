@@ -1,10 +1,11 @@
 <?php
-session_start();
-if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "student"){
-    header("location: index");
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+if($_SESSION['auth'] != "student"){
+    echo "<script>window.location.href='/ProjectWeb/MVC/public_html/login';</script>";
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

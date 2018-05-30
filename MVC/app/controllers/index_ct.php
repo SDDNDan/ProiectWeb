@@ -19,6 +19,14 @@ class index_ct extends core_controller
        $this->view->renderView();
 
     }
+    public function logout(){
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        session_destroy();
+        $this->returnView('login',[]);
+        $this->view->renderView();
+    }
 
 }
 ?>
