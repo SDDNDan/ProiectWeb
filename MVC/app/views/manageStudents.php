@@ -36,8 +36,8 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <label class="search__label" for="searchInput">
         CAUTA STUDENT:
     </label>
-    <input type="search" class="search__field" placeholder="Nume" id="NumeInput">
-    <input type="search" class="search__field" placeholder="Prenume" id="PrenumeInput">
+    <input type="search" class="search__field" placeholder="Duceac" id="NumeInput">
+    <input type="search" class="search__field" placeholder="George" id="PrenumeInput">
     <button class="button__submit" id="searchButton">
         Search
     </button>
@@ -52,20 +52,64 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <div class="grades__container">
         <ul class="grades__list">
             <li class="grade__item">
-                <p class="grade__value">7</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "grade_value_1"> </p>
+                <p class="grade__date"  id = "grade_date_1"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">7</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "grade_value_2"> </p>
+                <p class="grade__date"  id = "grade_date_2"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">7</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "grade_value_3"> </p>
+                <p class="grade__date"  id = "grade_date_3"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">7</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "grade_value_4"> </p>
+                <p class="grade__date"  id = "grade_date_4"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_5"> </p>
+                <p class="grade__date"  id = "grade_date_5"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_6"> </p>
+                <p class="grade__date"  id = "grade_date_6"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_7"> </p>
+                <p class="grade__date"  id = "grade_date_7"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_8"> </p>
+                <p class="grade__date"  id = "grade_date_8"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_9"> </p>
+                <p class="grade__date"  id = "grade_date_9"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_10"> </p>
+                <p class="grade__date"  id = "grade_date_10"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_11"> </p>
+                <p class="grade__date"  id = "grade_date_11"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_12"> </p>
+                <p class="grade__date"  id = "grade_date_12"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_13"> </p>
+                <p class="grade__date"  id = "grade_date_13"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_14"> </p>
+                <p class="grade__date"  id = "grade_date_14"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "grade_value_15"> </p>
+                <p class="grade__date"  id = "grade_date_15"> </p>
             </li>
         </ul>
     </div>
@@ -73,20 +117,64 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <div class="presence__container grades__container">
         <ul class="grades__list">
             <li class="grade__item">
-                <p class="grade__value">prezent/absent</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value"  id = "presence_value_1"> </p>
+                <p class="grade__date"   id = "presence_date_1"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">prezent/absent</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value"  id = "presence_value_2"> </p>
+                <p class="grade__date"   id = "presence_date_2"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">prezent/absent</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value"  id = "presence_value_3"> </p>
+                <p class="grade__date"   id = "presence_date_3"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">prezent/absent</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value"  id = "presence_value_4"> </p>
+                <p class="grade__date"   id = "presence_date_4"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_5"> </p>
+                <p class="grade__date"   id = "presence_date_5"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_6"> </p>
+                <p class="grade__date"   id = "presence_date_6"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_7"> </p>
+                <p class="grade__date"   id = "presence_date_7"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_8"> </p>
+                <p class="grade__date"   id = "presence_date_8"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_9"> </p>
+                <p class="grade__date"   id = "presence_date_9"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_10"> </p>
+                <p class="grade__date"   id = "presence_date_10"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_11"> </p>
+                <p class="grade__date"   id = "presence_date_11"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_12"> </p>
+                <p class="grade__date"   id = "presence_date_12"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_13"> </p>
+                <p class="grade__date"   id = "presence_date_13"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_14"> </p>
+                <p class="grade__date"   id = "presence_date_14"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value"  id = "presence_value_15"> </p>
+                <p class="grade__date"   id = "presence_date_15"> </p>
             </li>
         </ul>
     </div>
@@ -94,20 +182,32 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <div class="bonus__container grades__container">
         <ul class="grades__list">
             <li class="grade__item">
-                <p class="grade__value">Link catre detalii pentru interventie, poate chair un drop down.</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "bonus_value_1"> </p>
+                <p class="grade__date" id = "bonus_date_1"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">Link catre detalii pentru interventie, poate chair un drop down.</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "bonus_value_2"> </p>
+                <p class="grade__date" id = "bonus_date_2"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">Link catre detalii pentru interventie, poate chair un drop down.</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "bonus_value_3"> </p>
+                <p class="grade__date" id = "bonus_date_3"> </p>
             </li>
             <li class="grade__item">
-                <p class="grade__value">Link catre detalii pentru interventie, poate chair un drop down.</p>
-                <p class="grade__date">15 - 05 - 2018</p>
+                <p class="grade__value" id = "bonus_value_4"> </p>
+                <p class="grade__date" id = "bonus_date_4"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "bonus_value_5"> </p>
+                <p class="grade__date" id = "bonus_date_5"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "bonus_value_6"> </p>
+                <p class="grade__date" id = "bonus_date_6"> </p>
+            </li>
+            <li class="grade__item">
+                <p class="grade__value" id = "bonus_value_7"> </p>
+                <p class="grade__date" id = "bonus_date_7"> </p>
             </li>
         </ul>
     </div>
@@ -122,35 +222,35 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <div class="add__content__container">
         <div class="add__grade__container">
             <ul class="grades__dropdown__list">
-                <li class="grade__dropdown__item">1</li>
-                <li class="grade__dropdown__item">2</li>
-                <li class="grade__dropdown__item">3</li>
-                <li class="grade__dropdown__item">4</li>
-                <li class="grade__dropdown__item">5</li>
-                <li class="grade__dropdown__item">6</li>
-                <li class="grade__dropdown__item">7</li>
-                <li class="grade__dropdown__item">8</li>
-                <li class="grade__dropdown__item">9</li>
-                <li class="grade__dropdown__item">10</li>
+                <li><button class="grade__dropdown__item" id="grade_1">1</button></li>
+                <li><button class="grade__dropdown__item" id="grade_2">2</button></li>
+                <li><button class="grade__dropdown__item" id="grade_3">3</button></li>
+                <li><button class="grade__dropdown__item" id="grade_4">4</button></li>
+                <li><button class="grade__dropdown__item" id="grade_5">5</button></li>
+                <li><button class="grade__dropdown__item" id="grade_6">6</button></li>
+                <li><button class="grade__dropdown__item" id="grade_7">7</button></li>
+                <li><button class="grade__dropdown__item" id="grade_8">8</button></li>
+                <li><button class="grade__dropdown__item" id="grade_9">9</button></li>
+                <li><button class="grade__dropdown__item" id="grade_10">10</button></li>
             </ul>
         </div>
         <div class="add__presence__container">
             <div class="insert__container">
                 <label class="insert__date__label">Day:</label>
-                <input type="text" class="add__day">
+                <input type="text" class="add__day" id ="ziua">
             </div>
             <div class="insert__container">
                 <label class="insert__date__label">Month:</label>
-                <input type="text" class="add__month">
+                <input type="text" class="add__month"  id ="luna">
             </div>
             <div class="insert__container">
                 <label class="insert__date__label">Year:</label>
-                <input type="text" class="add__year">
+                <input type="text" class="add__year"  id ="anul">
             </div>
-            <button class="button__submit">Add Presence</button>
+            <button class="button__submit" id ="buttonPresence"">Add Presence</button>
         </div>
         <div class="add__bonus__container">
-            <textarea class="bonus__description"></textarea>
+            <textarea class="bonus__description" id = "bonus_description"></textarea>
             <button class="button__submit" id="bonusButton">Submit Bonus</button>
         </div>
     </div>

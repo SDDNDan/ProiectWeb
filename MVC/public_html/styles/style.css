@@ -841,7 +841,7 @@ head {
 
 .search__container {
     position: relative;
-    height: 100px;
+    height: 200px;
     width: 400px;
     margin: 100px auto auto;
     display: flex;

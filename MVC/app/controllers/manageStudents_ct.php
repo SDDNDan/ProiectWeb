@@ -8,9 +8,11 @@
 
 class manageStudents_ct extends core_controller
 {
+    protected $manageStudentsModel;
+
     public function __construct()
     {
-
+        $this->manageStudentsModel = new manageStudents_md();
     }
 
     public function index()
@@ -19,10 +21,56 @@ class manageStudents_ct extends core_controller
         $this->view->renderView();
     }
 
-    public function getStudent()
+    public function getPrezente()
     {
         $nume = $_POST['NumeInput'];
         $prenume = $_POST['PrenumeInput'];
-        var_dump($nume);
+        $result = $this->manageStudentsModel->getPrezente($nume,$prenume);
+        echo json_encode($result);
     }
+
+    public function getGrades()
+    {
+        $nume = $_POST['NumeInput'];
+        $prenume = $_POST['PrenumeInput'];
+        $result = $this->manageStudentsModel->getGrades($nume,$prenume);
+        echo json_encode($result);
+    }
+
+    public function getInterventions()
+    {
+        $nume = $_POST['NumeInput'];
+        $prenume = $_POST['PrenumeInput'];
+        $result = $this->manageStudentsModel->getInterventions($nume,$prenume);
+        echo json_encode($result);
+    }
+
+    public function insertGrades()
+    {
+        $nume = $_POST['NumeInput'];
+        $prenume = $_POST['PrenumeInput'];
+        $nota = $_POST['nota'];
+        $this->manageStudentsModel->insertGrade($nume,$prenume,$nota);
+    }
+
+    public function insertIntervention()
+    {
+        $nume = $_POST['NumeInput'];
+        $prenume = $_POST['PrenumeInput'];
+        $interventie = $_POST['Interventie'];
+        $this->manageStudentsModel->insertInterventie($nume,$prenume,$interventie);
+    }
+
+    public function insertPresence()
+    {
+        $nume = $_POST['NumeInput'];
+        $prenume = $_POST['PrenumeInput'];
+        $ziua = $_POST['ziua'];
+        $luna = $_POST['luna'];
+        $anul = $_POST['anul'];
+        $date = (string)$ziua."-".(string)$luna."-".(string)$anul;
+        var_dump($date);
+        $this->manageStudentsModel->insertPresence($nume,$prenume,$date);
+    }
+
 }
