@@ -1,7 +1,5 @@
 <?php
 session_start();
-var_dump("Carapacedsadsadadsadasd");
-var_dump($_SESSION['auth']);
 if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "student"){
     header("location: index");
 }

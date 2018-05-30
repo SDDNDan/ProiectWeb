@@ -36,7 +36,7 @@
 <div class = "aboutPlayers">
     <div class = "player">
         <div class = "playerPicture">
-            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
+            <img src="styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName"> Player 1<br><br><br></h1>
         </div>
         <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>
@@ -44,7 +44,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
+            <img src="styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName">Player 2 <br><br><br> </h1>
         </div>
         <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>
@@ -52,7 +52,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
+            <img src="styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName">Player 3 <br><br><br></h1>
         </div>
         <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>
@@ -60,7 +60,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
+            <img src="styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName">Player 4<br><br><br> </h1>
         </div>
         <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>

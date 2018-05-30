@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e46d71d-2d7c-492b-b52c-bf11be91b188" name="Default" comment="New folder">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/app/core/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/core/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js" afterDir="false" />
+    <list default="true" id="9e46d71d-2d7c-492b-b52c-bf11be91b188" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/app/views/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/app/views/partials/base_url.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/partials/base_url.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,11 +55,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manageStudents.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manageStudents.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
               <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GradeStatistics.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVC/app/views/about.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_url.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/base_url.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="46" selection-start-column="46" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageStudents.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/app/views/manageStudents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -119,9 +155,7 @@
         <option value="$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/manageStudents_ct.php" />
         <option value="$PROJECT_DIR$/MVC/app/views/partials/nav.php" />
-        <option value="$PROJECT_DIR$/MVC/app/views/about.php" />
         <option value="$PROJECT_DIR$/MVC/app/views/courses.php" />
-        <option value="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" />
         <option value="$PROJECT_DIR$/MVC/app/views/index.php" />
         <option value="$PROJECT_DIR$/MVC/app/models/login_md.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/index_ct.php" />
@@ -142,9 +176,11 @@
         <option value="$PROJECT_DIR$/MVC/app/views/contact.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/contact_ct.php" />
         <option value="$PROJECT_DIR$/MVC/app/core/core_view.php" />
-        <option value="$PROJECT_DIR$/MVC/app/views/partials/base_url.php" />
         <option value="$PROJECT_DIR$/MVC/app/core/Application.php" />
         <option value="$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js" />
+        <option value="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" />
+        <option value="$PROJECT_DIR$/MVC/app/views/partials/base_url.php" />
+        <option value="$PROJECT_DIR$/MVC/app/views/about.php" />
       </list>
     </option>
   </component>
@@ -182,14 +218,28 @@
               <item name="ProjectWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjectWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjectWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ProjectWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -581,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527667633358</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="New folder">
+      <created>1527667724160</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1527667724160</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -590,7 +647,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98052000" />
+    <option name="totallyTimeSpent" value="98225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -727,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/controllers/courses_ct.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -826,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/models/login_md.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -851,20 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/base_url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60" selection-start-column="60" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/manageStudents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -952,6 +981,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/manageStudents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/base_url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>
