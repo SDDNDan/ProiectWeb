@@ -8,8 +8,8 @@
 
 class Application
 {
-    protected $default_controller = 'index_ct';
-    protected $default_action = 'index';
+    protected $default_controller = 'login_ct';
+    protected $default_action = 'login';
     protected $controller = '';
     protected $action = '';
     protected $params = '';
@@ -46,7 +46,7 @@ class Application
             #Remove separator / from the request URL
             $URL = explode('/',$request);
             #If second parameter of URL is set then it will be controller else the controller will be default 'index_ct'
-            $this->controller = isset($URL[3]) ? $URL[3].'_ct' : 'index_ct';
+            $this->controller = isset($URL[3]) ? $URL[3].'_ct' : 'login_ct';
             #If action exists then the action will take a good value else default value
             $this->action = isset($URL[4]) ? $URL[4] : 'index';
             #Remove the rest

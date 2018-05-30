@@ -10,7 +10,6 @@
 
     <header>
         <h1 class="index__title">Web Technologies App</h1>
-        <button type = "button" class ="button__login"> Log In</button>
         <div class="content">
             <?php require_once("partials/nav.php"); ?>
         </div>
