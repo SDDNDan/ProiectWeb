@@ -11,7 +11,7 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
 <head>
     <title>Web Technologies App</title>
     <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="../../public_html/styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
 <body>
 
@@ -21,7 +21,7 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <div class="content">
         <?php require_once("partials/nav.php"); ?>
     </div>
-    
+
     <div class = "dropdown">
         <button class="dropdown__button">
         </button>
@@ -266,6 +266,6 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     </div>
 
 </section>
-<script src="../../public_html/scripts/manageStudents.js"></script>
+<script src="scripts/manageStudents.js"></script>
 </body>
 </html>
