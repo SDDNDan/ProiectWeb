@@ -42,6 +42,7 @@ class Application
         if(!empty($request))
         {
 
+
             #Remove separator / from the request URL
             $URL = explode('/',$request);
             #If second parameter of URL is set then it will be controller else the controller will be default 'index_ct'

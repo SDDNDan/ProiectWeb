@@ -180,6 +180,7 @@ function insertPresence(ziua,luna,anul)
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput + "&ziua=" +ziua + "&luna=" +luna + "&anul=" +anul);
 }
 
+
 let insertPresences = document.getElementById("buttonPresence");
 insertPresences.addEventListener("click", function () {
     insertPresence(document.getElementById("ziua").value,document.getElementById("luna").value,document.getElementById("anul").value);
