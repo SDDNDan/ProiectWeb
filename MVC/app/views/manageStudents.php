@@ -1,23 +1,27 @@
+
 <?php
 session_start();
 if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     header("location: index");
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
     <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public_html/styles/style.css"/>
 </head>
 <body>
 
 <header>
     <h1 class="index__title">Web Technologies App</h1>
+
     <div class="content">
         <?php require_once("partials/nav.php"); ?>
     </div>
+    
     <div class = "dropdown">
         <button class="dropdown__button">
         </button>
@@ -32,11 +36,18 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
 </header>
 
 <div class="search__container">
-    <label class="search__label" for="searchInput">
-        CAUTA STUDENT:
-    </label>
-    <input type="search" class="search__field" placeholder="Duceac" id="NumeInput">
-    <input type="search" class="search__field" placeholder="George" id="PrenumeInput">
+    <div class="search__line__container">
+        <label class="search__label" for="searchInput" id="numeLabel">
+            NUME:
+        </label>
+        <input type="search" class="search__field" placeholder="Nume" id="NumeInput">
+    </div>
+    <div class="search__line__container">
+        <label class="search__label" for="searchInput" id="prenumeLabel">
+             PRENUME:
+        </label>
+        <input type="search" class="search__field" placeholder="Prenume" id="PrenumeInput">
+    </div>
     <button class="button__submit" id="searchButton">
         Search
     </button>
@@ -255,6 +266,6 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     </div>
 
 </section>
-<script src="scripts/manageStudents.js"></script>
+<script src="../../public_html/scripts/manageStudents.js"></script>
 </body>
 </html>

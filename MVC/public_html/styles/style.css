@@ -841,14 +841,13 @@ head {
 
 .search__container {
     position: relative;
-    height: 200px;
+    height: 150px;
     width: 400px;
     margin: 100px auto auto;
-    display: flex;
+    display: block;
 }
 
 .search__field {
-    margin: auto;
     height: 30px;
     color: #555555;
     font: 15px normal poppinsregular sans-serif ;
@@ -856,8 +855,10 @@ head {
     font-weight: 500;
     border: none;
     border-bottom: 1px solid #b0b0b0;
-    padding: 10px;
+    padding: 10px 10px 10px 5px;
     transition: 0.3s all;
+    width: 50%;
+    margin: auto auto 10px;
 }
 
 .search__field:hover {
@@ -869,12 +870,27 @@ head {
     border-color: #57b846;
 }
 
+#searchButton {
+    margin-top: 30px;
+}
+
 .search__label {
     position: absolute;
-    left: -110px;
+    left: -20px;
     top: 42px;
     font: 15px raleway sans-serif normal ;
     font-family: "poppinsregular", serif;
     font-weight: 900;
     text-align: right;
+    width: 100px;
+}
+
+#numeLabel {
+    position: absolute;
+    top: 8px;
+}
+
+#prenumeLabel {
+    position: absolute;
+    top: 48px;
 }
