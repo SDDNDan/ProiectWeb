@@ -61,66 +61,7 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     </div>
     <div class="grades__container">
         <ul class="grades__list">
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_1"> </p>
-                <p class="grade__date"  id = "grade_date_1"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_2"> </p>
-                <p class="grade__date"  id = "grade_date_2"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_3"> </p>
-                <p class="grade__date"  id = "grade_date_3"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_4"> </p>
-                <p class="grade__date"  id = "grade_date_4"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_5"> </p>
-                <p class="grade__date"  id = "grade_date_5"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_6"> </p>
-                <p class="grade__date"  id = "grade_date_6"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_7"> </p>
-                <p class="grade__date"  id = "grade_date_7"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_8"> </p>
-                <p class="grade__date"  id = "grade_date_8"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_9"> </p>
-                <p class="grade__date"  id = "grade_date_9"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_10"> </p>
-                <p class="grade__date"  id = "grade_date_10"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_11"> </p>
-                <p class="grade__date"  id = "grade_date_11"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_12"> </p>
-                <p class="grade__date"  id = "grade_date_12"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_13"> </p>
-                <p class="grade__date"  id = "grade_date_13"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_14"> </p>
-                <p class="grade__date"  id = "grade_date_14"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_15"> </p>
-                <p class="grade__date"  id = "grade_date_15"> </p>
-            </li>
+
         </ul>
     </div>
 
@@ -192,32 +133,46 @@ if(!(isset($_SESSION['auth'])) || $_SESSION['auth'] =! "profesor"){
     <div class="bonus__container grades__container">
         <ul class="grades__list">
             <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_1"> </p>
-                <p class="grade__date" id = "bonus_date_1"> </p>
+                <div class="value__and__date__container">
+                    <button class="button__show__bonus" id = "bonus_value_1">Show intervention</button>
+                    <p class="grade__date" id = "bonus_date_1"> data</p>
+                </div>
+                <div class="bonus__dropdown__container">
+                    <p class="bonus__text">
+                        Studentul x a raspuns la curs. Mi-a placut de el.
+                        A citit cursul in prealabil si a dedus Teorema lui Lagrange
+                        din cap. 1 puncte bonus.
+                        Reminder: il luam la MO-Ariel.
+                    </p>
+                </div>
             </li>
             <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_2"> </p>
-                <p class="grade__date" id = "bonus_date_2"> </p>
+                <div class="value__and__date__container">
+                    <button class="button__show__bonus" id = "bonus_value_2">Show intervention</button>
+                    <p class="grade__date" id = "bonus_date_2"> data</p>
+                </div>
+                <div class="bonus__dropdown__container">
+                    <p class="bonus__text">
+                        Studentul x a raspuns la curs. Mi-a placut de el.
+                        A citit cursul in prealabil si a dedus Teorema lui Lagrange
+                        din cap. 2 puncte bonus.
+                        Reminder: il luam la MO-Ariel.
+                    </p>
+                </div>
             </li>
             <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_3"> </p>
-                <p class="grade__date" id = "bonus_date_3"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_4"> </p>
-                <p class="grade__date" id = "bonus_date_4"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_5"> </p>
-                <p class="grade__date" id = "bonus_date_5"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_6"> </p>
-                <p class="grade__date" id = "bonus_date_6"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_7"> </p>
-                <p class="grade__date" id = "bonus_date_7"> </p>
+                <div class="value__and__date__container">
+                    <button class="button__show__bonus" id = "bonus_value_3">Show intervention</button>
+                    <p class="grade__date" id = "bonus_date_3"> data</p>
+                </div>
+                <div class="bonus__dropdown__container">
+                    <p class="bonus__text">
+                        Studentul x a raspuns la curs. Mi-a placut de el.
+                        A citit cursul in prealabil si a dedus Teorema lui Lagrange
+                        din cap. 3 puncte bonus.
+                        Reminder: il luam la MO-Ariel.
+                    </p>
+                </div>
             </li>
         </ul>
     </div>

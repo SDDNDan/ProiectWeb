@@ -702,9 +702,10 @@ head {
     list-style-type: none;
     text-align: center;
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
 }
 
 .grade__item:hover {
@@ -717,6 +718,41 @@ head {
 
 .grade__date {
     text-align: right;
+}
+
+.value__and__date__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bonus__dropdown__container {
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f4eddd;
+    display: none;
+}
+
+.button__show__bonus {
+    border: none;
+    transition: all 0.3s;
+    background-color: #00afd4;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.button__show__bonus:hover {
+    background-color: black;
+}
+
+.button__show__bonus:focus {
+    outline: none;
+    background-color: black;
 }
 
 .add__data__container {
