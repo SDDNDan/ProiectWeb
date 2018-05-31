@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e46d71d-2d7c-492b-b52c-bf11be91b188" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/MVC/app/core/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/core/Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/app/controllers/index_ct.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/controllers/index_ct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/app/controllers/login_ct.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/controllers/login_ct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/app/views/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/app/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/app/views/courses.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/courses.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/app/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/app/views/manageStudents.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/manageStudents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/public_html/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/public_html/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/app/views/partials/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/partials/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/public_html/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/public_html/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/public_html/scripts/sendMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/public_html/scripts/sendMail.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,29 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/app/core/Application.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/public_html/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login_ct.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/controllers/login_ct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="324">
+              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="40" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -67,17 +51,8 @@
       <file leaf-file-name="GradeStatistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/app/views/about.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+            <state relative-caret-position="135">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -91,20 +66,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="76" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GradeStatistics_ct.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="courses.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/views/courses.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
               <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/app/views/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -118,11 +102,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/app/views/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="manageStudents.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MVC/app/views/manageStudents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="135">
+              <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_ct.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/app/controllers/index_ct.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -151,6 +153,7 @@
       <find>add_dro</find>
       <find>href</find>
       <find>renderView</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FileCSS.css" />
         <option value="$PROJECT_DIR$/FileHtml.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/contact.html" />
@@ -181,9 +183,7 @@
         <option value="$PROJECT_DIR$/MVC/app/controllers/contact.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/manageStudents_ct.php" />
-        <option value="$PROJECT_DIR$/MVC/app/views/partials/nav.php" />
         <option value="$PROJECT_DIR$/MVC/app/models/login_md.php" />
-        <option value="$PROJECT_DIR$/MVC/app/controllers/index_ct.php" />
         <option value="$PROJECT_DIR$/scripts/sendMail.js" />
         <option value="$PROJECT_DIR$/MVC/app/views/DAP.php" />
         <option value="$PROJECT_DIR$/scripts/login.js" />
@@ -196,18 +196,22 @@
         <option value="$PROJECT_DIR$/MVC/public_html/styles/style.css" />
         <option value="$PROJECT_DIR$/MVC/app/core/core_controller.php" />
         <option value="$PROJECT_DIR$/MVC/public_html/index.php" />
-        <option value="$PROJECT_DIR$/MVC/app/controllers/login_ct.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/contact_ct.php" />
         <option value="$PROJECT_DIR$/MVC/app/core/core_view.php" />
-        <option value="$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js" />
         <option value="$PROJECT_DIR$/MVC/app/views/partials/base_url.php" />
-        <option value="$PROJECT_DIR$/MVC/app/core/Application.php" />
         <option value="$PROJECT_DIR$/MVC/public_html/.htaccess" />
-        <option value="$PROJECT_DIR$/MVC/app/views/index.php" />
-        <option value="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" />
         <option value="$PROJECT_DIR$/MVC/app/views/about.php" />
         <option value="$PROJECT_DIR$/MVC/app/views/contact.php" />
         <option value="$PROJECT_DIR$/MVC/app/views/courses.php" />
+        <option value="$PROJECT_DIR$/MVC/app/core/Application.php" />
+        <option value="$PROJECT_DIR$/MVC/public_html/scripts/login.js" />
+        <option value="$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js" />
+        <option value="$PROJECT_DIR$/MVC/public_html/scripts/sendMail.js" />
+        <option value="$PROJECT_DIR$/MVC/app/controllers/index_ct.php" />
+        <option value="$PROJECT_DIR$/MVC/app/views/partials/nav.php" />
+        <option value="$PROJECT_DIR$/MVC/app/controllers/login_ct.php" />
+        <option value="$PROJECT_DIR$/MVC/app/views/index.php" />
+        <option value="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" />
         <option value="$PROJECT_DIR$/MVC/app/views/manageStudents.php" />
       </list>
     </option>
@@ -267,13 +271,6 @@
               <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ProjectWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -289,6 +286,20 @@
               <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjectWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ProjectWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MVC" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public_html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -333,12 +344,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.contact_ct.php">
+  <component name="RunManager" selected="JavaScript Debug.manageStudents.php">
     <configuration name="Application.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/MVC/app/core/Application.php" />
     <configuration name="contact_ct.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/MVC/app/controllers/contact_ct.php" />
     <configuration name="login.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/login.html" />
-    <configuration name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/ProjectWeb/login.html" />
     <configuration name="manageStudents.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/manageStudents.html" />
+    <configuration name="manageStudents.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8000/MVC/app/views/manageStudents.php" />
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -406,18 +417,18 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.login.html (1)" />
-      <item itemvalue="JavaScript Debug.login.html" />
       <item itemvalue="JavaScript Debug.manageStudents.html" />
       <item itemvalue="JavaScript Debug.Application.php" />
       <item itemvalue="JavaScript Debug.contact_ct.php" />
+      <item itemvalue="JavaScript Debug.manageStudents.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.manageStudents.php" />
         <item itemvalue="JavaScript Debug.contact_ct.php" />
         <item itemvalue="JavaScript Debug.Application.php" />
         <item itemvalue="JavaScript Debug.login.html (1)" />
         <item itemvalue="JavaScript Debug.manageStudents.html" />
-        <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
   </component>
@@ -462,6 +473,7 @@
       <workItem from="1527615551720" duration="3014000" />
       <workItem from="1527620458081" duration="60000" />
       <workItem from="1527665435277" duration="13000" />
+      <workItem from="1527704408552" duration="6367000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored files. Added the 'About' section. &#10;Refactored header and footer.">
       <created>1521296750789</created>
@@ -703,7 +715,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100389000" />
+    <option name="totallyTimeSpent" value="106756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -712,34 +724,22 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.17560463" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.17560463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32912722" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3125" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.17560463" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3296875" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +781,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/courses.html" />
     <entry file="file://$PROJECT_DIR$/.idea/php.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -789,13 +788,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Test.php" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/MVC/app/controllers/index_ct/.php" />
     <entry file="file://$PROJECT_DIR$/contact.html" />
@@ -819,28 +812,9 @@
     <entry file="file://$PROJECT_DIR$/manageStudents.html" />
     <entry file="file://$PROJECT_DIR$/login.html" />
     <entry file="file://$PROJECT_DIR$/GradeStatistics.html" />
-    <entry file="file://$PROJECT_DIR$/scripts/sendMail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/courses_ct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sendMail.js" />
     <entry file="file://$PROJECT_DIR$/MVC/app/views/DAP.php" />
-    <entry file="file://$PROJECT_DIR$/scripts/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="90" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/login.js" />
     <entry file="file://$PROJECT_DIR$/MVC/public_html/styles/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -848,27 +822,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="697" column="23" lean-forward="true" selection-end-line="828" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/public_html/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="828" column="1" selection-start-line="828" selection-start-column="1" selection-end-line="828" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/login.css" />
+    <entry file="file://$PROJECT_DIR$/styles/style.css" />
     <entry file="file://$PROJECT_DIR$/MVC/public_html/styles/login_page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -904,24 +859,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/manageStudents.js">
+    <entry file="file://$PROJECT_DIR$/scripts/manageStudents.js" />
+    <entry file="file://$PROJECT_DIR$/MVC/app/models/manageStudents_md.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="-3645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/public_html/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/nav.php">
+    <entry file="file://$PROJECT_DIR$/MVC/public_html/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="74">
+          <caret line="839" column="10" selection-start-line="839" selection-start-column="4" selection-end-line="839" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/public_html/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="20">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/core/core_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -939,40 +907,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php">
+    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/courses_ct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="378">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/controllers/manageStudents_ct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
+        <state relative-caret-position="27">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/public_html/fonts/specimen_files/grid_12-825-55-15.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/base_url.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/models/manageStudents_md.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3645" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/core/core_controller.php">
@@ -982,38 +928,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/core/core_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/index_ct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/login_ct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/core/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+        <state relative-caret-position="547">
+          <caret line="48" column="44" lean-forward="true" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/public_html/.htaccess">
+    <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="216">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/sendMail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/base_url.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1024,13 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/views/courses.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1038,17 +970,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
+    <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="80" column="80" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/index_ct.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+          <caret line="22" selection-start-line="22" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/partials/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="76" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/controllers/login_ct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1059,10 +1026,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/views/manageStudents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="135">
+          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
         </state>
       </provider>
     </entry>

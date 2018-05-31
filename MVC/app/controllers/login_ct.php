@@ -36,7 +36,9 @@ class login_ct extends core_controller
         header("location: test");
     }
     public function makeLogin(){
-        session_start();
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
         $username = $_POST['username'];
         $password = $_POST['password'];
         $result = $this->loginModel->loginResult($username,$password);

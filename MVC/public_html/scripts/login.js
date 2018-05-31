@@ -6,7 +6,7 @@ function sendLoginData() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "/public_html/login/makeLogin", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/login/makeLogin", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("username=" + username + "&password=" + password);
     console.log("readyParca");

@@ -5,7 +5,7 @@ function send() {
     let subject = document.getElementById("subject").value;
     let message = document.getElementById("message").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "/public_html/contact/sendMail", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/contact/sendMail", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("email=" + email + "&name=" + name + "&subject=" + subject + "&message=" + message);
     console.log("succ");

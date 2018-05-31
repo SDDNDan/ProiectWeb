@@ -101,7 +101,7 @@ function getPrezente() {
         }
     };
 
-    xmlhttp.open("POST", "/public_html/manageStudents/getPrezente", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/getPrezente", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput);
 
@@ -135,7 +135,7 @@ function getGrades() {
         }
     };
 
-    xmlhttp.open("POST", "/public_html/manageStudents/getGrades", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/getGrades", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput);
 
@@ -164,7 +164,7 @@ function getInterventions() {
         }
     };
 
-    xmlhttp.open("POST", "/public_html/manageStudents/getInterventions", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/getInterventions", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput);
 
@@ -176,7 +176,7 @@ function insertGrades(nota)
     let NumeInput = document.getElementById("NumeInput").value;
     let PrenumeInput = document.getElementById("PrenumeInput").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "/public_html/manageStudents/insertGrades", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/insertGrades", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput + "&nota=" +nota);
 }
@@ -187,7 +187,7 @@ function insertIntervention(interventie)
     let NumeInput = document.getElementById("NumeInput").value;
     let PrenumeInput = document.getElementById("PrenumeInput").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "/public_html/manageStudents/insertIntervention", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/insertIntervention", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput + "&Interventie=" +interventie);
 }
@@ -198,7 +198,7 @@ function insertPresence(ziua,luna,anul)
     let NumeInput = document.getElementById("NumeInput").value;
     let PrenumeInput = document.getElementById("PrenumeInput").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "/public_html/manageStudents/insertPresence", true);
+    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/insertPresence", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput + "&ziua=" +ziua + "&luna=" +luna + "&anul=" +anul);
 }
