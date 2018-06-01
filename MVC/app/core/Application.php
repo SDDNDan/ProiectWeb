@@ -9,7 +9,7 @@
 class Application
 {
     protected $default_controller = 'login_ct';
-    protected $default_action = 'login';
+    protected $default_action = 'index';
     protected $controller = '';
     protected $action = '';
     protected $params = '';

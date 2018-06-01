@@ -5,6 +5,14 @@
       <webServer id="108c2a4f-389a-4f32-8d66-3e1c5585d3b9" name="Apache" url="http://localhost:8000">
         <fileTransfer port="0" mountedRoot="C:\Apache24\htdocs" accessType="MOUNT" />
       </webServer>
+      <webServer id="1aad52dc-e574-4f82-b6f4-61f213a722ff" name="FtpConnection" url="http://ftp.epizy.com">
+        <fileTransfer host="ftp.epizy.com" port="21" rootFolder="/htdocs">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

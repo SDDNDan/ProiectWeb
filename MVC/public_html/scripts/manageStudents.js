@@ -67,35 +67,35 @@ function getPrezente() {
             returnval = JSON.parse(returnval);
             console.log(returnval);
             let i;
-            for (i = 0; i < returnval.length; i++) {
+            for (i = 1; i <= returnval.length; i++) {
 
-                /*
+                console.log(returnval[i]);
                 let valoare = "presence_date_" + i.toString();
                 let changeValue = document.getElementById(valoare);
                 changeValue.textContent = returnval[i].toString();
                 valoare = "presence_value_" + i.toString();
                 changeValue = document.getElementById(valoare);
                 changeValue.textContent = "Prezent";
-                */
 
-                let gradeText = document.createElement("p");
-                gradeText.className = "grade__date";
-                gradeText.textContent = returnval[i].grade;
-
-                let dateText = document.createElement("p");
-                dateText.className = "grade__date";
-                dateText.textContent = returnval[i].date;
-
-                let valueAndDateContainer = document.createElement("div");
-                valueAndDateContainer.className = "value__and__date__container";
-                valueAndDateContainer.appendChild(gradeText);
-                valueAndDateContainer.appendChild(dateText);
-
-                let listItem = document.createElement("li");
-                listItem.className = "grade__item";
-                listItem.appendChild(valueAndDateContainer);
-
-                document.getElementsByClassName("grades__list")[0].appendChild(listItem);
+                //
+                // let gradeText = document.createElement("p");
+                // gradeText.className = "grade__date";
+                // gradeText.textContent = returnval[i].grade;
+                //
+                // let dateText = document.createElement("p");
+                // dateText.className = "grade__date";
+                // dateText.textContent = returnval[i].date;
+                //
+                // let valueAndDateContainer = document.createElement("div");
+                // valueAndDateContainer.className = "value__and__date__container";
+                // valueAndDateContainer.appendChild(gradeText);
+                // valueAndDateContainer.appendChild(dateText);
+                //
+                // let listItem = document.createElement("li");
+                // listItem.className = "grade__item";
+                // listItem.appendChild(valueAndDateContainer);
+                //
+                // document.getElementsByClassName("grades__list")[0].appendChild(listItem);
 
             }
         }
