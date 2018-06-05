@@ -842,6 +842,10 @@ head {
     display: block;
 }
 
+.search__line__container {
+    position: relative;
+}
+
 .search__field {
     height: 30px;
     color: #555555;
@@ -872,22 +876,12 @@ head {
 .search__label {
     position: absolute;
     left: -20px;
-    top: 42px;
+    top: 8px;
     font: 15px raleway sans-serif normal ;
     font-family: "poppinsregular", serif;
     font-weight: 900;
     text-align: right;
     width: 100px;
-}
-
-#numeLabel {
-    position: absolute;
-    top: 8px;
-}
-
-#prenumeLabel {
-    position: absolute;
-    top: 48px;
 }
 
 /*   Grades and Statistics */
@@ -951,9 +945,35 @@ head {
 /* Progress Circle Code - END */
 
 .input__container {
-    margin-top: 30px;
+    width: 400px;
+    margin: 30px auto auto;
 }
 
 .progress__circle__input {
     margin: auto;
+}
+
+.suggestion__container {
+    width:600px;
+    margin: 30px auto auto;
+}
+
+.suggestion__title {
+    color: #555555;
+    font: 30px normal poppinsregular sans-serif ;
+    font-family: 'poppinsregular', serif;
+    font-weight: 900;
+}
+
+.suggestion__content {
+    width: 500px;
+    margin: 30px auto;
+    background-color: #f4eddd;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.suggestion__message {
+    padding: 10px;
 }
