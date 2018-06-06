@@ -51,7 +51,13 @@ if ($_SESSION['auth'] != "student") {
         <label class="search__label" for="searchInput" id="prenumeLabel">
             ID StackOverflow
         </label>
-        <input type="search" class="search__field" placeholder="ID" id="IdStack">
+        <input type="search" class="search__field" placeholder="ID Stack Overflow" id="IdStack">
+    </div>
+    <div class="search__line__container">
+        <label class="search__label" for="searchInput" id="grupaLabel">
+            Grupa
+        </label>
+        <input type="search" class="search__field" placeholder="Grupa studentului" id="IdGrupa">
     </div>
     <button class="button__submit" id="calculateButton">
         Calculeaza
