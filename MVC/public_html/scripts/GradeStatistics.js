@@ -35,10 +35,11 @@ function fillCounter(){
     counter.stroke();   // to fill stroke
 
     // now add condition
-
     if(no >= gradPromovabilitate)   // !!! in loc de 70 pui procentul pana la care trebuie sa se incarce
     {
+        no = 0;
         clearTimeout(fill);
+
         //fill is a variable that calls the function fillcounter()
     }
     no++;
@@ -51,8 +52,11 @@ function fillCounter(){
 let calculateButton = document.getElementById("calculateButton");
 calculateButton.addEventListener("click", function () {
     //getGithubCommits();
-    gradPromovabilitate = 50;
-    fill = setInterval(fillCounter,30);
+    if(no <= 1) {
+        gradPromovabilitate = 50;
+        fill = setInterval(fillCounter, 30);
+
+    }
 });
 
 function getGithubCommits() {
