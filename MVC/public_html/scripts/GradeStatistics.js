@@ -51,9 +51,37 @@ function fillCounter(){
 
 let calculateButton = document.getElementById("calculateButton");
 calculateButton.addEventListener("click", function () {
-    //getGithubCommits();
     if(no <= 1) {
-        gradPromovabilitate = 50;
+        
+        let suggestion = document.getElementById("suggestion");
+        gradPromovabilitate = 80;
+
+        switch (gradPromovabilitate){
+            case 100:
+                suggestion.textContent = "Felicitari,treceti!";
+                break;
+            case 90:
+                suggestion.textContent = "Felicitari,treceti!";
+                break;
+            case 80:
+                suggestion.textContent = "Esti aproape trecut!";
+                break;
+            case 70:
+                suggestion.textContent = "Esti aproape trecut!";
+                break;
+            case 60:
+                suggestion.textContent = "Esti aproape trecut!";
+                break;
+            case 50:
+                suggestion.textContent = "Mai ai de invatat!";
+                break;
+            case 40:
+                suggestion.textContent = "Mai ai de invatat!";
+                break;
+            default:
+                suggestion.textContent = "Nu Treceti!";
+        }
+
         fill = setInterval(fillCounter, 30);
 
     }
