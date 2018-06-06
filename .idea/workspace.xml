@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e46d71d-2d7c-492b-b52c-bf11be91b188" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js" afterDir="false" />
@@ -41,20 +42,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GradeStatistics.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GradeStatistics.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+            <state relative-caret-position="203">
+              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GradeStatistics_ct.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GradeStatistics_ct.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            <state relative-caret-position="360">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -107,8 +108,8 @@
       <file leaf-file-name="GradeStatistics_md.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -206,8 +207,8 @@
         <option value="$PROJECT_DIR$/MVC/public_html/styles/style.css" />
         <option value="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" />
         <option value="$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php" />
-        <option value="$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php" />
+        <option value="$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js" />
       </list>
     </option>
   </component>
@@ -430,7 +431,7 @@
       <workItem from="1527665435277" duration="13000" />
       <workItem from="1527704408552" duration="18882000" />
       <workItem from="1527842796378" duration="9797000" />
-      <workItem from="1528237524881" duration="10408000" />
+      <workItem from="1528237524881" duration="11314000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored files. Added the 'About' section. &#10;Refactored header and footer.">
       <created>1521296750789</created>
@@ -677,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528244504576</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Infrumusetare Grades And students&#10;Javascript request commits">
+      <created>1528248127271</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1528248127271</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -686,7 +694,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139476000" />
+    <option name="totallyTimeSpent" value="140382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -722,7 +730,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactored files. Added the 'About' section. &#10;Refactored header and footer." />
     <MESSAGE value="Modifications to 'About' section." />
     <MESSAGE value="Merge branch 'master' of https://github.com/SDDNDan/ProiectWeb&#10;&#10;# Conflicts:&#10;#&#9;styles/style.css" />
     <MESSAGE value="Am pus header la loc. &#10;Recentered 'Read More' button." />
@@ -747,7 +754,8 @@
     <MESSAGE value="New folder" />
     <MESSAGE value="Reparari" />
     <MESSAGE value="Session work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Session work" />
+    <MESSAGE value="Infrumusetare Grades And students&#10;Javascript request commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Infrumusetare Grades And students&#10;Javascript request commits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1001,24 +1009,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="360">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
         </state>
       </provider>
     </entry>

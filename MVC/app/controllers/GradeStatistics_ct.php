@@ -48,8 +48,10 @@ class GradeStatistics_ct extends core_controller
                 if (isset($repo2['author']['login']) && $repo2['author']['login'] == $NumeGithub) {
                     $counter++;
                 }
+
             endforeach;
         endforeach;
+        var_dump($counter);
         echo json_encode($counter);
     }
 

@@ -50,7 +50,9 @@ function fillCounter(){
 
 let calculateButton = document.getElementById("calculateButton");
 calculateButton.addEventListener("click", function () {
-    getGithubCommits();
+    //getGithubCommits();
+    gradPromovabilitate = 50;
+    fill = setInterval(fillCounter,30);
 });
 
 function getGithubCommits() {
