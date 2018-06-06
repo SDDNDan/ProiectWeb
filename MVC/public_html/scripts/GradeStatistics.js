@@ -8,7 +8,10 @@ var pointToFill = 4.72;  //Point from where you want to fill the circle
 var cw = counter.canvas.width;  //Return canvas width
 var ch = counter.canvas.height; //Return canvas height
 var diff;   // find the different between current value (no) and trageted value (100)
+var fill = 0;
 
+//Pentru grad de promovabilitate
+var gitCommits = 0;
 function fillCounter(){
     diff = ((no/100) * Math.PI*2*10);
 
@@ -35,7 +38,8 @@ function fillCounter(){
 
     if(no >= gradPromovabilitate)   // !!! in loc de 70 pui procentul pana la care trebuie sa se incarce
     {
-        clearTimeout(fill);     //fill is a variable that calls the function fillcounter()
+        clearTimeout(fill);
+        //fill is a variable that calls the function fillcounter()
     }
     no++;
 }
@@ -46,7 +50,27 @@ function fillCounter(){
 
 let calculateButton = document.getElementById("calculateButton");
 calculateButton.addEventListener("click", function () {
-    gradPromovabilitate = 57;
-    var fill = setInterval(fillCounter,30);
+    getGithubCommits();
 });
 
+function getGithubCommits() {
+    var returnval;
+    let NumeGithub = document.getElementById("NumeGithub").value;
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            returnval = xmlhttp.responseText;
+            returnval = JSON.parse(returnval);
+            gitCommits = returnval;
+            gradPromovabilitate = gitCommits;
+            fill = setInterval(fillCounter,30);
+        }
+    };
+
+    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/GradeStatistics/getGithubCommits", true);
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xmlhttp.send("NumeGithub=" + NumeGithub);
+
+
+
+}
