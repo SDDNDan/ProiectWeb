@@ -10,19 +10,46 @@ class login_md
     protected $conn;
     public function __construct()
     {
-        $this->conn = oci_connect('STUDENT', 'STUDENT', 'localhost/XE');
+
+        $this->conn = new mysqli('localhost','root','','student') or die ("Naspa");
+
     }
 
-    public function loginResult($username,$password)
+    public function loginResult($email,$password)
     {
-        $stid = oci_parse($this->conn, 'begin searchTabela(:email , :password , :result); end;');
-        oci_bind_by_name($stid, ':email', $username);
-        oci_bind_by_name($stid, ':password', $password);
-        oci_bind_by_name($stid, ':result', $result);
-        oci_execute($stid);
-        oci_free_statement($stid);
-        oci_close($this->conn);
-        return $result;
+
+        $numar = 0;
+        $result = $this->conn->prepare('select count(*) FROM studenti WHERE EMAIL = ? and PASSWORD = ?');
+        $result->bind_param('ss', $email,$password);
+        $result->execute();
+        $result->bind_result($numar);
+        while($result->fetch())
+        {
+            if($numar > 0)
+                return 'S';
+        }
+
+        $result = $this->conn->prepare('select count(*) FROM profesori WHERE EMAIL = ? and PASSWORD = ?');
+        $result->bind_param('ss', $email,$password);
+        $result->execute();
+        $result->bind_result($numar);
+        while($result->fetch())
+        {
+            if($numar > 0)
+                return 'P';
+        }
+
+        $result = $this->conn->prepare('select CREATED_AT FROM studenti');
+        $result->execute();
+        $result->bind_result($data);
+        while($result->fetch())
+        {
+            echo $data.' ';
+        }
+
+
+
+
 
     }
 

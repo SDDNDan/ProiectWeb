@@ -51,9 +51,6 @@ buttonAddBonus.addEventListener("click", function () {
 
 /* Calls to server, dynamic generation of items etc. */
 
-function getStudent() {
-
-}
 
 
 function getPrezente() {
@@ -67,13 +64,13 @@ function getPrezente() {
             returnval = JSON.parse(returnval);
             console.log(returnval);
             let i;
-            for (i = 1; i <= returnval.length; i++) {
+            for (i = 0; i < returnval.length; i++) {
 
-                console.log(returnval[i]);
-                let valoare = "presence_date_" + i.toString();
+                console.log(returnval[i]['DATA']);
+                let valoare = "presence_date_" + (i+1).toString();
                 let changeValue = document.getElementById(valoare);
-                changeValue.textContent = returnval[i].toString();
-                valoare = "presence_value_" + i.toString();
+                changeValue.textContent = returnval[i]['DATA'].toString();
+                valoare = "presence_value_" + (i+1).toString();
                 changeValue = document.getElementById(valoare);
                 changeValue.textContent = "Prezent";
 
@@ -101,7 +98,7 @@ function getPrezente() {
         }
     };
 
-    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/getPrezente", true);
+    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/manageStudents/getPrezente", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput);
 
@@ -119,23 +116,21 @@ function getGrades() {
             returnval = JSON.parse(returnval);
             console.log(returnval);
             var i;
-            var contor =1;
-            for (i = 1; i < returnval.length;i=i+2) {
-                 console.log(returnval[i]);
-                console.log(returnval[i-1]);
-                 var valoare = "grade_date_" + contor.toString();
-                 let changeValue = document.getElementById(valoare);
-                 changeValue.textContent = returnval[i].toString();
-                 valoare = "grade_value_" + contor.toString();
-                 changeValue = document.getElementById(valoare);
-                 changeValue.textContent = returnval[i-1].toString();
-                 contor = contor +1;
+
+            for (i = 0; i < returnval.length;i++) {
+                var valoare = "grade_date_" + (i+1).toString();
+                let changeValue = document.getElementById(valoare);
+                changeValue.textContent = returnval[i]['VALOARE'].toString();
+                valoare = "grade_value_" + (i+1).toString();
+                changeValue = document.getElementById(valoare);
+                changeValue.textContent = returnval[i]['DATA_NOTARE'].toString();
+
 
             }
         }
     };
 
-    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/getGrades", true);
+    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/manageStudents/getGrades", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput);
 
@@ -152,19 +147,19 @@ function getInterventions() {
             returnval = JSON.parse(returnval);
             console.log(returnval);
             var i;
-            for (i = 1; i <= returnval.length; i++) {
-                var valoare = "bonus_date_" + i.toString();
+            for (i = 0; i < returnval.length; i++) {
+                var valoare = "bonus_date_" + (i+1).toString();
                 let changeValue = document.getElementById(valoare);
                 changeValue.textContent = " ";
-                valoare = "bonus_value_" + i.toString();
+                valoare = "bonus_value_" + (i+1).toString();
                 changeValue = document.getElementById(valoare);
-                changeValue.textContent = returnval[i-1].toString();
+                changeValue.textContent = returnval[i]['INTERVENTIE'].toString();
 
             }
         }
     };
 
-    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/getInterventions", true);
+    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/manageStudents/getInterventions", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput);
 
@@ -176,7 +171,7 @@ function insertGrades(nota)
     let NumeInput = document.getElementById("NumeInput").value;
     let PrenumeInput = document.getElementById("PrenumeInput").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/insertGrades", true);
+    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/manageStudents/insertGrades", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput + "&nota=" +nota);
 }
@@ -187,7 +182,7 @@ function insertIntervention(interventie)
     let NumeInput = document.getElementById("NumeInput").value;
     let PrenumeInput = document.getElementById("PrenumeInput").value;
     let xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "/ProjectWeb/MVC/public_html/manageStudents/insertIntervention", true);
+    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/manageStudents/insertIntervention", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xmlhttp.send("NumeInput=" + NumeInput + "&PrenumeInput=" + PrenumeInput + "&Interventie=" +interventie);
 }

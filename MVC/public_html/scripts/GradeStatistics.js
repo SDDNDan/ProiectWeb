@@ -16,24 +16,24 @@ function fillCounter(){
 
     counter.lineWidth = 15;     // size of stroke
 
-    counter.fillStyle = '#fff';     // color that you want to fill in counter/circle
+    counter.fillStyle = '#000000';     // color that you want to fill in counter/circle
 
-    counter.strokeStyle = '#F5E0A9';    // Stroke Color
+    counter.strokeStyle = '#0c3c60';    // Stroke Color
 
     counter.textAlign = 'center';
 
-    counter.font = "25px monospace";    //set font size and face
+    counter.font = "80px monospace";    //set font size and face
 
-    counter.fillText(no+'%',100,110);       //fillText(text,x,y);
+    counter.fillText(no+'%',200,210);       //fillText(text,x,y);
 
     counter.beginPath();
-    counter.arc(100,100,90,pointToFill,diff/10+pointToFill);    //arc(x,y,radius,start,stop)
+    counter.arc(184,185,178,pointToFill,diff/10+pointToFill);    //arc(x,y,radius,start,stop)
 
     counter.stroke();   // to fill stroke
 
     // now add condition
 
-    if(no >= 70)   // !!! in loc de 70 pui procentul pana la care trebuie sa se incarce
+    if(no >= gradPromovabilitate)   // !!! in loc de 70 pui procentul pana la care trebuie sa se incarce
     {
         clearTimeout(fill);     //fill is a variable that calls the function fillcounter()
     }
@@ -42,4 +42,11 @@ function fillCounter(){
 
 //now call the function
 
-var fill = setInterval(fillCounter,30);     //call the fillCounter function after every 50MS
+     //call the fillCounter function after every 50MS
+
+let calculateButton = document.getElementById("calculateButton");
+calculateButton.addEventListener("click", function () {
+    gradPromovabilitate = 57;
+    var fill = setInterval(fillCounter,30);
+});
+

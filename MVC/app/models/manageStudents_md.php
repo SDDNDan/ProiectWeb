@@ -12,139 +12,106 @@ class manageStudents_md
 
     public function __construct()
     {
-        $this->conn = oci_connect('STUDENT', 'STUDENT', 'localhost/XE');
+        $dbHost = "localhost";
+        $dbUser = "root";
+        $dbPass = "";
+        $dbName = "student";
+        $this->conn = $this->connInit($dbHost, $dbUser, $dbPass, $dbName);
+        //$this->conn = new mysqli('localhost','root','','student') or die ("Naspa");
+    }
+
+    public function connInit($dbHost, $dbUser, $dbPass, $dbName)
+    {
+        try {
+
+            $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
+            $pdo->exec("set names utf8");
+            $pdo->setAttribute(
+                PDO::ATTR_ERRMODE,
+                PDO::ERRMODE_EXCEPTION
+            );
+            return $pdo;
+        } catch (PDOException $e) {
+            echo "Conectarea la baza de date a esuat." . $e->getMessage();
+        }
     }
 
     public function getPrezente($username, $prenume)
     {
-        $result = array();
-        $stid = oci_parse($this->conn, "SELECT DATA FROM PREZENTE where NUME = :nume and PRENUME = :prenume");
-        oci_bind_by_name($stid, ':nume', $username);
-        oci_bind_by_name($stid, ':prenume', $prenume);
-        oci_execute($stid);
-        while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-            foreach ($row as $item) {
-                array_push($result, $item);
-            }
-        }
-        oci_free_statement($stid);
-        oci_close($this->conn);
-        return $result;
 
+
+        $query = "SELECT DATA FROM prezente where NUME = ? and PRENUME = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$username, $prenume]);
+        return json_encode($statement->fetchAll());
     }
 
     public function getGrades($username, $prenume)
     {
-        $result = array();
-        $stid = oci_parse($this->conn, "SELECT ID FROM STUDENTI where NUME = :nume and PRENUME = :prenume");
-        oci_bind_by_name($stid, ':nume', $username);
-        oci_bind_by_name($stid, ':prenume', $prenume);
-        oci_execute($stid);
-        while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-            foreach ($row as $item) {
-                $idul = $item;
-            }
+
+
+        $query = "SELECT ID FROM STUDENTI where NUME = ? and PRENUME = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$username, $prenume]);
+        while ($row = $statement->fetch()) {
+            $idul = $row;
         }
 
-        $stid = oci_parse($this->conn, "SELECT VALOARE,DATA_NOTARE FROM NOTE where ID_STUDENT = :idul");
-        oci_bind_by_name($stid, ':idul', $idul);
-        oci_execute($stid);
-        while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-            foreach ($row as $item) {
-                array_push($result,$item);
-            }
-        }
-        oci_free_statement($stid);
-        oci_close($this->conn);
-        return $result;
+        $idul = $idul['ID'];
+        $query = "SELECT VALOARE,DATA_NOTARE FROM NOTE where ID_STUDENT = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$idul]);
+        return json_encode($statement->fetchAll());
     }
 
     public function getInterventions($username, $prenume)
     {
-        $result = array();
-        $stid = oci_parse($this->conn, "SELECT INTERVENTIE FROM INTERVENTI where NUME = :nume and PRENUME = :prenume");
-        oci_bind_by_name($stid, ':nume', $username);
-        oci_bind_by_name($stid, ':prenume', $prenume);
-        oci_execute($stid);
-        while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-            foreach ($row as $item) {
-                array_push($result, $item);
-            }
-        }
-        oci_free_statement($stid);
-        oci_close($this->conn);
-        return $result;
+
+
+        $query = "SELECT INTERVENTIE FROM INTERVENTI where NUME = ? and PRENUME = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$username, $prenume]);
+        return json_encode($statement->fetchAll());
+
     }
 
     public function insertGrade($username, $prenume, $nota)
     {
-        $stid = oci_parse($this->conn, "SELECT ID FROM STUDENTI where NUME = :nume and PRENUME = :prenume");
-        oci_bind_by_name($stid, ':nume', $username);
-        oci_bind_by_name($stid, ':prenume', $prenume);
-        oci_execute($stid);
-        while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-            foreach ($row as $item) {
-                $idul = $item;
-            }
-        }
-        $stid = oci_parse($this->conn, "SELECT max(ID) FROM note");
-        oci_execute($stid);
-        while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-            foreach ($row as $item) {
-                $maxidul = $item;
-            }
+        $query = "SELECT ID FROM STUDENTI where NUME = ? and PRENUME = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$username, $prenume]);
+        while ($row = $statement->fetch()) {
+            $idul = $row;
         }
 
-        $stid = oci_parse($this->conn, "SELECT sysdate from dual");
-        oci_execute($stid);
-        while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-            foreach ($row as $item) {
-                $datanotare = $item;
-            }
+        $query = "SELECT max(ID) FROM note";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$username, $prenume]);
+        while ($row = $statement->fetch()) {
+            $maxidul = $row;
         }
-        $intID = (int)$idul;
-        $intNotaId = (int)$maxidul +1;
-        $nota = (int)$nota;
-        var_dump($intID);
-        var_dump($intNotaId);
-        var_dump(5);
-        var_dump($nota);
-        var_dump($datanotare);
-        $created_at = $datanotare;
-        $updated_at = $datanotare;
-        $stid = oci_parse($this->conn, "INSERT INTO NOTE VALUES(:intNotaId,:intID,5,:nota,:datanotare,:created_at,:updated_at)");
-        oci_bind_by_name($stid, ':intID', $intID);
-        oci_bind_by_name($stid, ':intNotaId', $intNotaId);
-        oci_bind_by_name($stid, ':nota', $nota);
-        oci_bind_by_name($stid, ':datanotare', $datanotare);
-        oci_bind_by_name($stid, ':created_at', $created_at);
-        oci_bind_by_name($stid, ':updated_at', $updated_at);
-        oci_execute($stid);
-        oci_free_statement($stid);
-        oci_close($this->conn);
+
+        var_dump($maxidul);
+        $date = date('Y-m-d H:i:s');
+
+        $query = "INSERT INTO NOTE VALUES (?,?,?,?)";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([((int)$maxidul[0] + 1), (int)$idul, (int)$nota, $date]);
 
     }
 
-    public function insertInterventie($nume,$prenume,$interventie)
+    public function insertInterventie($nume, $prenume, $interventie)
     {
-        $stid = oci_parse($this->conn, "INSERT INTO INTERVENTI VALUES(:nume,:prenume,:interventie)");
-        oci_bind_by_name($stid, ':nume', $nume);
-        oci_bind_by_name($stid, ':prenume', $prenume);
-        oci_bind_by_name($stid, ':interventie', $interventie);
-        oci_execute($stid);
-        oci_free_statement($stid);
-        oci_close($this->conn);
+        $query = "INSERT INTO INTERVENTI VALUES (?,?,?)";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$nume, $prenume, $interventie]);
     }
 
-    public function insertPresence($nume,$prenume,$dataPresence)
+    public function insertPresence($nume, $prenume, $dataPresence)
     {
-        $stid = oci_parse($this->conn, "INSERT INTO PREZENTE VALUES(:nume,:prenume,:dataPresence)");
-        oci_bind_by_name($stid, ':nume', $nume);
-        oci_bind_by_name($stid, ':prenume', $prenume);
-        oci_bind_by_name($stid, ':dataPresence', $dataPresence);
-        oci_execute($stid);
-        oci_free_statement($stid);
-        oci_close($this->conn);
+        $query = "INSERT INTO PREZENTE VALUES (?,?,?)";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$nume, $prenume, $dataPresence]);
     }
 
 }

@@ -26,7 +26,8 @@ class manageStudents_ct extends core_controller
         $nume = $_POST['NumeInput'];
         $prenume = $_POST['PrenumeInput'];
         $result = $this->manageStudentsModel->getPrezente($nume,$prenume);
-        echo json_encode($result);
+        echo $result;
+//        var_dump("msg");
     }
 
     public function getGrades()
@@ -34,7 +35,7 @@ class manageStudents_ct extends core_controller
         $nume = $_POST['NumeInput'];
         $prenume = $_POST['PrenumeInput'];
         $result = $this->manageStudentsModel->getGrades($nume,$prenume);
-        echo json_encode($result);
+        echo $result;
     }
 
     public function getInterventions()
@@ -42,7 +43,7 @@ class manageStudents_ct extends core_controller
         $nume = $_POST['NumeInput'];
         $prenume = $_POST['PrenumeInput'];
         $result = $this->manageStudentsModel->getInterventions($nume,$prenume);
-        echo json_encode($result);
+        echo $result;
     }
 
     public function insertGrades()

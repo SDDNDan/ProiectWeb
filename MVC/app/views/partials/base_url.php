@@ -1,1 +1,1 @@
-<base href="http://dev.php.dan/ProjectWeb/MVC/public_html/">
+<base href="http://localhost/ProjectWeb/MVC/public_html/">

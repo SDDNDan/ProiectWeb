@@ -11,13 +11,13 @@ class GradeStatistics_md
     protected $conn;
     public function __construct()
     {
-        $this->conn = oci_connect('STUDENT', 'STUDENT', 'localhost/XE');
+        $this->conn = new mysqli('localhost','root','','student') or die ("Naspa");
     }
 
     function github_request($url)
     {
         $ch = curl_init();
-        $access = 'SDDNDan:67de8a73a1212283da65429fb31dc4364d9fa1ab';
+        $access = 'SDDNDan:1ac08a643c667be0a74668c6bd81e134aa57eefb';
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_USERAGENT, 'Agent smith');
         curl_setopt($ch, CURLOPT_HEADER, 0);

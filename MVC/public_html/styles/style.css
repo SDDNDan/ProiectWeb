@@ -779,6 +779,22 @@ head {
     transition: all 0.3s;
 }
 
+.button__submit_2 {
+    margin: auto;
+    background-color: #0c3c60;
+    border: transparent;
+    width: 130px;
+    height: 40px;
+    border-radius: 80px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
 .button__submit:hover {
     background-color: black;
 }
@@ -901,9 +917,9 @@ head {
 }
 
 #circle1{
-    height: 165px;
-    width: 165px;
-    background-color:#696878;
+    height: 370px;
+    width: 370px;
+    background-color:#FFFFFF;
     border-radius: 50%;
     position: absolute;
     top:50%;
@@ -913,8 +929,8 @@ head {
 }
 
 #shadowring{
-    height: 165px;
-    width: 165px;
+    height: 370px;
+    width: 370px;
     border-radius: 50%;
     box-shadow: 0 0 6px rgba(0,0,0,.5);
     position: absolute;
@@ -925,8 +941,8 @@ head {
 }
 
 #circle2{
-    height: 196px;
-    width: 196px;
+    height: 370px;
+    width: 370px;
     background-color:#BBD9DB;
     border-radius: 50%;
     position: absolute;
@@ -937,10 +953,11 @@ head {
 }
 
 .progress__circle__container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: auto;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 13%;
+    top: 35%;
 }
 /* Progress Circle Code - END */
 
