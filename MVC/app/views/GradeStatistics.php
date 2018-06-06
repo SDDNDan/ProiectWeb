@@ -1,4 +1,3 @@
-
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -39,25 +38,25 @@ if ($_SESSION['auth'] != "student") {
     </div>
 
 </header>
-
-<div class="search__container">
-    <div class="search__line__container">
-        <label class="search__label" for="searchInput" id="numeLabel">
-            Numele Github
-        </label>
-        <input type="search" class="search__field" placeholder="Nume" id="NumeGithub">
+<form method="POST" action="GradeStatistics/getGithubCommits" class="form__container">
+    <div class="search__container">
+        <div class="search__line__container">
+            <label class="search__label" for="searchInput" id="numeLabel">
+                Numele Github
+            </label>
+            <input type="search" name="NumeleGithub" class="search__field" placeholder="Nume" id="IdStack">
+        </div>
+        <div class="search__line__container">
+            <label class="search__label" for="searchInput" id="prenumeLabel">
+                ID StackOverflow
+            </label>
+            <input type="search" name="IdStack" class="search__field" placeholder="ID" id="NumeleGithub">
+        </div>
+        <button class="button__submit" id="calculateButton">
+            Calculeaza
+        </button>
     </div>
-    <div class="search__line__container">
-        <label class="search__label" for="searchInput" id="prenumeLabel">
-            ID StackOverflow
-        </label>
-        <input type="search" class="search__field" placeholder="ID" id="IdStack">
-    </div>
-    <button class="button__submit" id="calculateButton">
-        Calculeaza
-    </button>
-</div>
-
+</form>
 <div class="progress__circle__container">
     <div id="circle1"></div>
     <div id="shadowring"></div>
@@ -66,7 +65,7 @@ if ($_SESSION['auth'] != "student") {
 </div>
 
 <div class="suggestion__container">
-    <h1 class="suggestion__title" id="suggestion"> </h1>
+    <h1 class="suggestion__title" id="suggestion"></h1>
     <div class="suggestion__content">
         <p class="suggestion__message">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore

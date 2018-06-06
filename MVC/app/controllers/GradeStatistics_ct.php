@@ -37,7 +37,8 @@ class GradeStatistics_ct extends core_controller
 
     function getGithubCommits()
     {
-        $NumeGithub = $_POST['NumeGithub'];
+        $NumeGithub = $_POST['NumeleGithub'];
+        var_dump($NumeGithub);
         $repos = $this->gradeStatisticsModel->github_request('https://api.github.com/users/'.$NumeGithub.'/repos');
         $counter = 0;
         $today = date("Y-m-j" , strtotime("-3 months"));
@@ -54,6 +55,8 @@ class GradeStatistics_ct extends core_controller
         var_dump($counter);
         echo json_encode($counter);
     }
+
+
 
 
 

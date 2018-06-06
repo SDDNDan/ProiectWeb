@@ -17,7 +17,7 @@ class GradeStatistics_md
     function github_request($url)
     {
         $ch = curl_init();
-        $access = 'SDDNDan:ae46a372313dbc561e5c2963840667057473ce5f ';
+        $access = 'SDDNDan:9208b4ffeaa29527c4764c6fd6a9041647a04c26';
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_USERAGENT, 'Agent smith');
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -29,6 +29,7 @@ class GradeStatistics_md
         $output = curl_exec($ch);
         curl_close($ch);
         $result = json_decode(trim($output), true);
+
         return $result;
     }
 }

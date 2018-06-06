@@ -51,8 +51,9 @@ function fillCounter(){
 
 let calculateButton = document.getElementById("calculateButton");
 calculateButton.addEventListener("click", function () {
+    getGithubCommits();
     if(no <= 1) {
-        
+
         let suggestion = document.getElementById("suggestion");
         gradPromovabilitate = 80;
 
@@ -89,21 +90,19 @@ calculateButton.addEventListener("click", function () {
 
 function getGithubCommits() {
     var returnval;
-    let NumeGithub = document.getElementById("NumeGithub").value;
+    let NumeGithub = document.getElementById("NumeleGithub").value;
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             returnval = xmlhttp.responseText;
             returnval = JSON.parse(returnval);
             gitCommits = returnval;
-            gradPromovabilitate = gitCommits;
-            fill = setInterval(fillCounter,30);
         }
     };
 
     xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/GradeStatistics/getGithubCommits", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xmlhttp.send("NumeGithub=" + NumeGithub);
+    xmlhttp.send("NumeleGithub=" + NumeGithub);
 
 
 
