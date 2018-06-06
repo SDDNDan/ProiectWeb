@@ -779,20 +779,13 @@ head {
     transition: all 0.3s;
 }
 
-.button__submit_2 {
-    margin: auto;
+#calculateButton {
     background-color: #0c3c60;
-    border: transparent;
-    width: 130px;
-    height: 40px;
-    border-radius: 80px;
-    font-size: 17px;
-    font-weight: bold;
-    font-family: lulo-clean-w01-one-bold, sans-serif;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s;
+}
+
+#calculateButton:hover {
+    background-color: #00b3ff;
+    color: #0c3c60;
 }
 
 .button__submit:hover {
@@ -891,20 +884,16 @@ head {
 
 .search__label {
     position: absolute;
-    left: -20px;
+    left: -120px;
     top: 8px;
     font: 15px raleway sans-serif normal ;
     font-family: "poppinsregular", serif;
     font-weight: 900;
     text-align: right;
-    width: 100px;
+    width: 200px;
 }
 
 /*   Grades and Statistics */
-
-.grades__and__statistics__section {
-    margin-top: 150px;
-}
 
 /* Progress Circle Code - BEGIN*/
 
@@ -953,22 +942,13 @@ head {
 }
 
 .progress__circle__container {
-    position: absolute;
+    position: relative;
     width: 360px;
     height: 360px;
-    left: 13%;
-    top: 35%;
+    margin: 30px auto auto;
+
 }
 /* Progress Circle Code - END */
-
-.input__container {
-    width: 400px;
-    margin: 30px auto auto;
-}
-
-.progress__circle__input {
-    margin: auto;
-}
 
 .suggestion__container {
     width:600px;
@@ -980,6 +960,7 @@ head {
     font: 30px normal poppinsregular sans-serif ;
     font-family: 'poppinsregular', serif;
     font-weight: 900;
+    text-align: center;
 }
 
 .suggestion__content {

@@ -53,19 +53,31 @@ if ($_SESSION['auth'] != "student") {
         </label>
         <input type="search" class="search__field" placeholder="ID" id="IdStack">
     </div>
-    <button class="button__submit_2" id="calculateButton">
+    <button class="button__submit" id="calculateButton">
         Calculeaza
     </button>
 </div>
 
-<section class="grades__and__statistics__section">
-    <div class="progress__circle__container">
-        <div id="circle1"></div>
-        <div id="shadowring"></div>
-        <div id="circle2"></div>
-        <canvas height="370" width="370" id="counter"/>
+<div class="progress__circle__container">
+    <div id="circle1"></div>
+    <div id="shadowring"></div>
+    <div id="circle2"></div>
+    <canvas height="370" width="370" id="counter"></canvas>
+</div>
+
+<div class="suggestion__container">
+    <h1 class="suggestion__title"> Esti aproape trecut!</h1>
+    <div class="suggestion__content">
+        <p class="suggestion__message">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+        </p>
     </div>
-</section>
+</div>
+
 <script src="scripts/GradeStatistics.js"></script>
 
 </body>
