@@ -66,7 +66,7 @@ if ($_SESSION['auth'] != "student") {
 </div>
 
 <div class="suggestion__container">
-    <h1 class="suggestion__title"> Esti aproape trecut!</h1>
+    <h1 class="suggestion__title" id="suggestion"> </h1>
     <div class="suggestion__content">
         <p class="suggestion__message">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore

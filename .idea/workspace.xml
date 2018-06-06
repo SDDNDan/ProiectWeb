@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9e46d71d-2d7c-492b-b52c-bf11be91b188" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +35,17 @@
       <file leaf-file-name="GradeStatistics.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="79" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="79" />
+            <state relative-caret-position="158">
+              <caret line="70" column="39" lean-forward="true" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVC/public_html/styles/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="932" column="17" selection-start-line="932" selection-start-column="17" selection-end-line="932" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -43,8 +53,8 @@
       <file leaf-file-name="GradeStatistics.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="172">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -52,8 +62,8 @@
       <file leaf-file-name="GradeStatistics_ct.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+            <state relative-caret-position="-7">
+              <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -61,7 +71,7 @@
       <file leaf-file-name="contact_md.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/models/contact_md.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state>
               <caret line="13" column="5" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
@@ -70,17 +80,8 @@
       <file leaf-file-name="login_ct.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/controllers/login_ct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state>
               <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -88,8 +89,8 @@
       <file leaf-file-name="manageStudents_md.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/models/manageStudents_md.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="104" column="57" lean-forward="true" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="57" />
+            <state relative-caret-position="-7">
+              <caret line="104" column="57" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -97,7 +98,7 @@
       <file leaf-file-name="manageStudents_ct.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/controllers/manageStudents_ct.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state>
               <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
             </state>
           </provider>
@@ -106,8 +107,8 @@
       <file leaf-file-name="GradeStatistics_md.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="-7">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -115,7 +116,7 @@
       <file leaf-file-name="manageStudents.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="-7">
               <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
             </state>
           </provider>
@@ -203,9 +204,9 @@
         <option value="$PROJECT_DIR$/Github/index.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/login_ct.php" />
         <option value="$PROJECT_DIR$/MVC/public_html/styles/style.css" />
-        <option value="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" />
         <option value="$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php" />
         <option value="$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php" />
+        <option value="$PROJECT_DIR$/MVC/app/views/GradeStatistics.php" />
         <option value="$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js" />
       </list>
     </option>
@@ -306,7 +307,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="settings.editor.splitter.proportion" value="0.23980583" />
   </component>
   <component name="RecentsManager">
@@ -430,7 +431,7 @@
       <workItem from="1527704408552" duration="18882000" />
       <workItem from="1527842796378" duration="9797000" />
       <workItem from="1528237524881" duration="11342000" />
-      <workItem from="1528274593113" duration="1855000" />
+      <workItem from="1528274593113" duration="3957000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored files. Added the 'About' section. &#10;Refactored header and footer.">
       <created>1521296750789</created>
@@ -691,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528249012093</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Infrumusetare Grades And students&#10;Javascript request commits">
+      <created>1528303648783</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1528303648783</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -700,10 +708,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142265000" />
+    <option name="totallyTimeSpent" value="144367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -712,7 +721,7 @@
       <window_info anchor="bottom" id="Run" order="3" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Remote Host" order="0" weight="0.3296875" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39385065" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23279649" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.3296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -937,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/public_html/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="932" column="17" lean-forward="true" selection-start-line="932" selection-start-column="17" selection-end-line="932" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/views/courses.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -972,66 +974,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="79" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/models/contact_md.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state>
           <caret line="13" column="5" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/controllers/login_ct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state>
           <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/controllers/manageStudents_ct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state>
           <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/models/manageStudents_md.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="104" column="57" lean-forward="true" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="57" />
+        <state relative-caret-position="-7">
+          <caret line="104" column="57" selection-start-line="104" selection-start-column="57" selection-end-line="104" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/models/GradeStatistics_md.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="-7">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/app/controllers/GradeStatistics_ct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        <state relative-caret-position="-7">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/manageStudents.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="-7">
           <caret line="157" column="8" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/public_html/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="932" column="17" selection-start-line="932" selection-start-column="17" selection-end-line="932" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/app/views/GradeStatistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="70" column="39" lean-forward="true" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/public_html/scripts/GradeStatistics.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="172">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
         </state>
       </provider>
     </entry>
