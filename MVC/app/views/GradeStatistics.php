@@ -16,7 +16,7 @@ if ($_SESSION['auth'] != "student") {
 
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
-<body>
+<body id="gradebody">
 
 <header>
     <h1 class="index__title">Web Technologies App</h1>
@@ -40,21 +40,28 @@ if ($_SESSION['auth'] != "student") {
 </header>
 
 <div class="search__container">
-    <div class="search__line__container">
-        <label class="search__label" for="searchInput" id="numeLabel">
-            Numele Github
-        </label>
-        <input type="search" class="search__field" placeholder="Nume" id="NumeGithub">
-    </div>
-    <div class="search__line__container">
-        <label class="search__label" for="searchInput" id="prenumeLabel">
-            ID StackOverflow
-        </label>
-        <input type="search" class="search__field" placeholder="ID" id="IdStack">
-    </div>
-    <button class="button__submit" id="calculateButton">
-        Calculeaza
-    </button>
+    <form method="POST" class="form__container">
+        <div class="search__line__container">
+            <label class="search__label" for="searchInput" id="numeLabel">
+                Numele Github
+            </label>
+            <input type="search" name="NumeGithub" class="search__field" placeholder="Nume" id="NumeGithub">
+        </div>
+        <div class="search__line__container">
+            <label class="search__label" for="searchInput" id="prenumeLabel">
+                ID StackOverflow
+            </label>
+            <input type="search" name="IdStack" class="search__field" placeholder="ID" id="IdStack">
+        </div>
+        <button class="button__submit" id="calculateButton">
+            Calculeaza
+        </button>
+        <div class="search__line__container">
+            <label class="search__label_loading" id="loadingLabel">
+            </label>
+        </div>
+
+    </form>
 </div>
 
 <div class="progress__circle__container">

@@ -107,6 +107,19 @@ h6 {
     -o-background-size: cover;
     background-size: cover;
 }
+#gradebody{
+    margin: 0;
+    /* The image used */
+    background-image: url("silky-blue-background.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .bodyContent{
     background-color: #0c3c60;
 }
@@ -778,7 +791,17 @@ head {
     cursor: pointer;
     transition: all 0.3s;
 }
-
+.label_loading{
+    margin: auto;
+    background-color: rgb(254, 97, 97);
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: lulo-clean-w01-one-bold, sans-serif;
+    color: white;
+    text-align: center;
+}
 #calculateButton {
     background-color: #0c3c60;
 }
@@ -886,6 +909,17 @@ head {
     position: absolute;
     left: -120px;
     top: 8px;
+    font: 15px raleway sans-serif normal ;
+    font-family: "poppinsregular", serif;
+    font-weight: 900;
+    text-align: right;
+    width: 200px;
+}
+
+.search__label_loading {
+    position: absolute;
+    left: 40px;
+    top: 10px;
     font: 15px raleway sans-serif normal ;
     font-family: "poppinsregular", serif;
     font-weight: 900;

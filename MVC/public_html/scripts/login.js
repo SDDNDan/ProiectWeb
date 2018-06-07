@@ -1,3 +1,5 @@
+let loginButton = document.getElementById("login");
+
 /**
  * Created by bgaid on 5/23/2018.
  */
@@ -14,8 +16,6 @@ function sendLoginData() {
         console.log("ready");
     }
 }
-
-let loginButton = document.getElementById("login");
 loginButton.addEventListener("click", function(){
     sendLoginData();
 });

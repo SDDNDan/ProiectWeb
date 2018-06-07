@@ -71,7 +71,6 @@ function getGithubCommits() {
             gitCommits = returnval[0];
             stackQuestions = returnval[1];
             getResult();
-            // console.log(gitCommits);
             let loadingLabel = document.getElementById("loadingLabel");
             loadingLabel.textContent = "";
         }
@@ -79,7 +78,7 @@ function getGithubCommits() {
 
     xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/GradeStatistics/getGithubCommits", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xmlhttp.send("NumeleGithub=" + NumeGithub);
+    xmlhttp.send("NumeGithub=" + NumeGithub);
 
 
 

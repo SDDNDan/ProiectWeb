@@ -24,26 +24,16 @@ class GradeStatistics_ct extends core_controller
 
 
 
-    function stackOverFlow($url)
-    {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'Agent smith');
-        $output = curl_exec($ch);
-        curl_close($ch);
-        $result = json_decode(trim($output), true);
-        return $result;
-    }
+
 
     function getGithubCommits()
     {
-        $NumeGithub = $_POST['NumeleGithub'];
-        var_dump($NumeGithub);
+        $NumeGithub = $_POST['NumeGithub'];
         $repos = $this->gradeStatisticsModel->github_request('https://api.github.com/users/'.$NumeGithub.'/repos');
         $counter = 0;
         $today = date("Y-m-j" , strtotime("-3 months"));
         foreach ($repos as $repo):
-            $url = 'https://api.github.com/repos/' . $NumeGithub . '/' . $repo['name'] . '/commits?since='.$today;
+            $url = 'https://api.github.com/repos/'.$repo['full_name'].'/commits?since='.$today;
             $repos2 = $this->gradeStatisticsModel->github_request($url);
             foreach ($repos2 as $repo2):
                 if (isset($repo2['author']['login']) && $repo2['author']['login'] == $NumeGithub) {
@@ -52,8 +42,14 @@ class GradeStatistics_ct extends core_controller
 
             endforeach;
         endforeach;
-        var_dump($counter);
-        echo json_encode($counter);
+        $reposstack = $this->gradeStatisticsModel->stackOverFlow("https://api.stackexchange.com/2.2/users/6582264/questions?order=desc&sort=activity&site=stackoverflow");
+        $rezultat = array();
+        array_push($rezultat,$counter);
+        array_push($rezultat,$reposstack);
+        echo json_encode($rezultat);
+
+        //$this->returnView('GradeStatistics', []);
+        //$this->view->renderView();
     }
 
 
