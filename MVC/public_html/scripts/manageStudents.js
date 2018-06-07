@@ -2,6 +2,7 @@
  * Created by bgaid on 5/23/2018.
  */
 
+
 /* Functionality for bottom buttons */
 
 let buttonAddGrade = document.getElementById("grade");
@@ -51,8 +52,6 @@ buttonAddBonus.addEventListener("click", function () {
 
 /* Calls to server, dynamic generation of items etc. */
 
-
-
 function getPrezente() {
     let returnval;
     let NumeInput = document.getElementById("NumeInput").value;
@@ -66,34 +65,24 @@ function getPrezente() {
             let i;
             for (i = 0; i < returnval.length; i++) {
 
-                console.log(returnval[i]['DATA']);
-                let valoare = "presence_date_" + (i+1).toString();
-                let changeValue = document.getElementById(valoare);
-                changeValue.textContent = returnval[i]['DATA'].toString();
-                valoare = "presence_value_" + (i+1).toString();
-                changeValue = document.getElementById(valoare);
-                changeValue.textContent = "Prezent";
+                let gradeText = document.createElement("p");
+                gradeText.className = "grade__value";
+                gradeText.textContent = 'PREZENT';
 
-                //
-                // let gradeText = document.createElement("p");
-                // gradeText.className = "grade__date";
-                // gradeText.textContent = returnval[i].grade;
-                //
-                // let dateText = document.createElement("p");
-                // dateText.className = "grade__date";
-                // dateText.textContent = returnval[i].date;
-                //
-                // let valueAndDateContainer = document.createElement("div");
-                // valueAndDateContainer.className = "value__and__date__container";
-                // valueAndDateContainer.appendChild(gradeText);
-                // valueAndDateContainer.appendChild(dateText);
-                //
-                // let listItem = document.createElement("li");
-                // listItem.className = "grade__item";
-                // listItem.appendChild(valueAndDateContainer);
-                //
-                // document.getElementsByClassName("grades__list")[0].appendChild(listItem);
+                let dateText = document.createElement("p");
+                dateText.className = "grade__date";
+                dateText.textContent = returnval[i]['DATA'].toString();
 
+                let valueAndDateContainer = document.createElement("div");
+                valueAndDateContainer.className = "value__and__date__container";
+                valueAndDateContainer.appendChild(gradeText);
+                valueAndDateContainer.appendChild(dateText);
+
+                let listItem = document.createElement("li");
+                listItem.className = "grade__item";
+                listItem.appendChild(valueAndDateContainer);
+
+                document.getElementsByClassName("grades__list")[1].appendChild(listItem);
             }
         }
     };
@@ -106,7 +95,7 @@ function getPrezente() {
 
 function getGrades() {
 
-    var returnval;
+    let returnval;
     let NumeInput = document.getElementById("NumeInput").value;
     let PrenumeInput = document.getElementById("PrenumeInput").value;
     let xmlhttp = new XMLHttpRequest();
@@ -115,17 +104,28 @@ function getGrades() {
             returnval = xmlhttp.responseText;
             returnval = JSON.parse(returnval);
             console.log(returnval);
-            var i;
+            let i;
 
             for (i = 0; i < returnval.length;i++) {
-                var valoare = "grade_date_" + (i+1).toString();
-                let changeValue = document.getElementById(valoare);
-                changeValue.textContent = returnval[i]['VALOARE'].toString();
-                valoare = "grade_value_" + (i+1).toString();
-                changeValue = document.getElementById(valoare);
-                changeValue.textContent = returnval[i]['DATA_NOTARE'].toString();
 
+                let gradeText = document.createElement("p");
+                gradeText.className = "grade__value";
+                gradeText.textContent = returnval[i]['VALOARE'].toString();
 
+                let dateText = document.createElement("p");
+                dateText.className = "grade__date";
+                dateText.textContent = returnval[i]['DATA_NOTARE'].toString();
+
+                let valueAndDateContainer = document.createElement("div");
+                valueAndDateContainer.className = "value__and__date__container";
+                valueAndDateContainer.appendChild(gradeText);
+                valueAndDateContainer.appendChild(dateText);
+
+                let listItem = document.createElement("li");
+                listItem.className = "grade__item";
+                listItem.appendChild(valueAndDateContainer);
+
+                document.getElementsByClassName("grades__list")[0].appendChild(listItem);
             }
         }
     };
@@ -137,7 +137,7 @@ function getGrades() {
 }
 
 function getInterventions() {
-    var returnval;
+    let returnval;
     let NumeInput = document.getElementById("NumeInput").value;
     let PrenumeInput = document.getElementById("PrenumeInput").value;
     let xmlhttp = new XMLHttpRequest();
@@ -146,16 +146,42 @@ function getInterventions() {
             returnval = xmlhttp.responseText;
             returnval = JSON.parse(returnval);
             console.log(returnval);
-            var i;
+            let i;
             for (i = 0; i < returnval.length; i++) {
-                var valoare = "bonus_date_" + (i+1).toString();
-                let changeValue = document.getElementById(valoare);
-                changeValue.textContent = " ";
-                valoare = "bonus_value_" + (i+1).toString();
-                changeValue = document.getElementById(valoare);
-                changeValue.textContent = returnval[i]['INTERVENTIE'].toString();
 
+                let buttonShowBonus = document.createElement("button");
+                buttonShowBonus.className = "button__show__bonus";
+                buttonShowBonus.append("Show Activity");
+
+                let dateText = document.createElement("p");
+                dateText.className = "grade__date";
+                // Aici o sa schimbi requestul la server, si ii spui sa iti dea si data
+                // la care a fost pusa interventia. Apoi decomentezi linia de mai jos
+                // si o stergi pe cea dedesubtul ei.
+                // dateText.textContent = returnval[i]['DATA'].toString();
+                dateText.textContent = 'Data la care a fost pusa interventia';
+
+                let bonusInterventionMessage = document.createElement("p");
+                bonusInterventionMessage.className = "bonus__text";
+                bonusInterventionMessage.textContent = returnval[i]['INTERVENTIE'].toString();
+
+                let dropdownContainer = document.createElement("div");
+                dropdownContainer.className = "bonus__dropdown__container";
+                dropdownContainer.appendChild(bonusInterventionMessage);
+
+                let valueAndDateContainer = document.createElement("div");
+                valueAndDateContainer.className = "value__and__date__container";
+                valueAndDateContainer.appendChild(buttonShowBonus);
+                valueAndDateContainer.appendChild(dateText);
+
+                let listItem = document.createElement("li");
+                listItem.className = "grade__item";
+                listItem.appendChild(valueAndDateContainer);
+                listItem.appendChild(dropdownContainer);
+
+                document.getElementsByClassName("grades__list")[2].appendChild(listItem);
             }
+            monitorBonusButtons();
         }
     };
 
@@ -266,33 +292,26 @@ insertGrade10.addEventListener("click", function () {
 });
 
 /*  Bonus buttons  */
-let buttonShowBonus = document.getElementsByClassName("button__show__bonus");
-let bonusDropdownContainer = document.getElementsByClassName("bonus__dropdown__container");
 
-function showBonus(i) {
-    if (bonusDropdownContainer[i].style.display === "none") {
-        bonusDropdownContainer[i].style.display = "block";
+function monitorBonusButtons() {
+    let buttonShowBonus = document.getElementsByClassName("button__show__bonus");
+    let bonusDropdownContainer = document.getElementsByClassName("bonus__dropdown__container");
+
+    function showBonus(i) {
+        if (bonusDropdownContainer[i].style.display === "none") {
+            bonusDropdownContainer[i].style.display = "block";
+        }
+        else {
+            bonusDropdownContainer[i].style.display = "none";
+            buttonShowBonus[i].blur();
+        }
     }
-    else {
-        bonusDropdownContainer[i].style.display = "none";
-        buttonShowBonus[i].blur();
+
+    for (let i = 0; i < buttonShowBonus.length; i++) {
+        bonusDropdownContainer[i].style.display="none";
+        buttonShowBonus[i].addEventListener("click", function () {
+            showBonus(i);
+        });
     }
 }
-
-for (let i = 0; i < buttonShowBonus.length; i++) {
-    bonusDropdownContainer[i].style.display="none";
-    buttonShowBonus[i].addEventListener("click", function () {
-        showBonus(i);
-    });
-}
-/*
-
-//Cod pentru adaugat buton
-
-let buttonExperimental = document.createElement("button");
-buttonExperimental.className = "button__show__bonus";
-buttonExperimental.append("EXPERIMENT");
-document.body.appendChild(buttonExperimental);
-*/
-
 

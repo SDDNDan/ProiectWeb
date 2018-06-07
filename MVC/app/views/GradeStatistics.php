@@ -38,25 +38,25 @@ if ($_SESSION['auth'] != "student") {
     </div>
 
 </header>
-<form method="POST" action="GradeStatistics/getGithubCommits" class="form__container">
-    <div class="search__container">
-        <div class="search__line__container">
-            <label class="search__label" for="searchInput" id="numeLabel">
-                Numele Github
-            </label>
-            <input type="search" name="NumeleGithub" class="search__field" placeholder="Nume" id="IdStack">
-        </div>
-        <div class="search__line__container">
-            <label class="search__label" for="searchInput" id="prenumeLabel">
-                ID StackOverflow
-            </label>
-            <input type="search" name="IdStack" class="search__field" placeholder="ID" id="NumeleGithub">
-        </div>
-        <button class="button__submit" id="calculateButton">
-            Calculeaza
-        </button>
+
+<div class="search__container">
+    <div class="search__line__container">
+        <label class="search__label" for="searchInput" id="numeLabel">
+            Numele Github
+        </label>
+        <input type="search" class="search__field" placeholder="Nume" id="NumeGithub">
     </div>
-</form>
+    <div class="search__line__container">
+        <label class="search__label" for="searchInput" id="prenumeLabel">
+            ID StackOverflow
+        </label>
+        <input type="search" class="search__field" placeholder="ID" id="IdStack">
+    </div>
+    <button class="button__submit" id="calculateButton">
+        Calculeaza
+    </button>
+</div>
+
 <div class="progress__circle__container">
     <div id="circle1"></div>
     <div id="shadowring"></div>

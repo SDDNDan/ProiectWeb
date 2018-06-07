@@ -49,6 +49,12 @@ if($_SESSION['auth'] != "profesor"){
         </label>
         <input type="search" class="search__field" placeholder="Prenume" id="PrenumeInput">
     </div>
+    <div class="search__line__container">
+        <label class="search__label" for="searchInput" id="grupaLabel">
+            Grupa
+        </label>
+        <input type="search" class="search__field" placeholder="Grupa studentului" id="IdGrupa">
+    </div>
     <button class="button__submit" id="searchButton">
         Search
     </button>
@@ -57,169 +63,25 @@ if($_SESSION['auth'] != "profesor"){
 <section class="section__manage__student">
     <div class="student__name__container">
         <h1 class="name">
-            Numele studentului si grupa
+            Numele Prenume Grupa
         </h1>
     </div>
+
     <div class="grades__container">
         <ul class="grades__list">
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_1"> </p>
-                <p class="grade__date"  id = "grade_date_1"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_2"> </p>
-                <p class="grade__date"  id = "grade_date_2"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_3"> </p>
-                <p class="grade__date"  id = "grade_date_3"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_4"> </p>
-                <p class="grade__date"  id = "grade_date_4"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_5"> </p>
-                <p class="grade__date"  id = "grade_date_5"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_6"> </p>
-                <p class="grade__date"  id = "grade_date_6"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_7"> </p>
-                <p class="grade__date"  id = "grade_date_7"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_8"> </p>
-                <p class="grade__date"  id = "grade_date_8"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_9"> </p>
-                <p class="grade__date"  id = "grade_date_9"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_10"> </p>
-                <p class="grade__date"  id = "grade_date_10"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_11"> </p>
-                <p class="grade__date"  id = "grade_date_11"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_12"> </p>
-                <p class="grade__date"  id = "grade_date_12"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_13"> </p>
-                <p class="grade__date"  id = "grade_date_13"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_14"> </p>
-                <p class="grade__date"  id = "grade_date_14"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "grade_value_15"> </p>
-                <p class="grade__date"  id = "grade_date_15"> </p>
-            </li>
+
         </ul>
     </div>
 
     <div class="presence__container grades__container">
         <ul class="grades__list">
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_1"> </p>
-                <p class="grade__date"   id = "presence_date_1"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_2"> </p>
-                <p class="grade__date"   id = "presence_date_2"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_3"> </p>
-                <p class="grade__date"   id = "presence_date_3"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_4"> </p>
-                <p class="grade__date"   id = "presence_date_4"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_5"> </p>
-                <p class="grade__date"   id = "presence_date_5"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_6"> </p>
-                <p class="grade__date"   id = "presence_date_6"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_7"> </p>
-                <p class="grade__date"   id = "presence_date_7"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_8"> </p>
-                <p class="grade__date"   id = "presence_date_8"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_9"> </p>
-                <p class="grade__date"   id = "presence_date_9"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_10"> </p>
-                <p class="grade__date"   id = "presence_date_10"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_11"> </p>
-                <p class="grade__date"   id = "presence_date_11"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_12"> </p>
-                <p class="grade__date"   id = "presence_date_12"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_13"> </p>
-                <p class="grade__date"   id = "presence_date_13"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_14"> </p>
-                <p class="grade__date"   id = "presence_date_14"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value"  id = "presence_value_15"> </p>
-                <p class="grade__date"   id = "presence_date_15"> </p>
-            </li>
+
         </ul>
     </div>
 
     <div class="bonus__container grades__container">
         <ul class="grades__list">
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_1"> </p>
-                <p class="grade__date" id = "bonus_date_1"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_2"> </p>
-                <p class="grade__date" id = "bonus_date_2"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_3"> </p>
-                <p class="grade__date" id = "bonus_date_3"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_4"> </p>
-                <p class="grade__date" id = "bonus_date_4"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_5"> </p>
-                <p class="grade__date" id = "bonus_date_5"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_6"> </p>
-                <p class="grade__date" id = "bonus_date_6"> </p>
-            </li>
-            <li class="grade__item">
-                <p class="grade__value" id = "bonus_value_7"> </p>
-                <p class="grade__date" id = "bonus_date_7"> </p>
-            </li>
+
         </ul>
     </div>
 
