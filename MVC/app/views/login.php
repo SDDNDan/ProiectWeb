@@ -8,7 +8,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <head>
     <meta charset="UTF-8">
-    <?php include VIEWS.'partials/base_url.php' ?>
+    <?php include VIEWS . 'partials/base_url.php' ?>
     <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login </title>
@@ -21,7 +21,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <div class="login__picture">
         </div>
     </div>
-    <form  method="POST" action="login/makeLogin" class="form__container">
+    <form method="POST" action="login/makeLogin" class="form__container">
 
         <div class="form__line__container">
             <div class="label__container">
@@ -40,9 +40,16 @@ if (session_status() == PHP_SESSION_NONE) {
                 </label>
             </div>
             <div class="field__container">
-                <input type="password" name="password" class="password__input" placeholder="Enter password" id="password">
+                <input type="password" name="password" class="password__input" placeholder="Enter password"
+                       id="password">
             </div>
         </div>
+        <div class="form__line__container">
+            <button class="login__button" id="login">Login</button>
+            <a href="http://www.google.ro" class="forgot__password__link">New here? <br> Sign up now!</a>
+        </div>
+    </form>
+    <form method="POST" action="login/forgotPassword" class="form__container2">
         <div class="checkboxes__container">
             <div class="remember__me__container">
                 <label>
@@ -53,17 +60,12 @@ if (session_status() == PHP_SESSION_NONE) {
                 </label>
             </div>
             <div class="forgot__password__container">
-                <a href="http://www.google.ro" class="forgot__password__link">
-                    Forgot password?
-                </a>
+                <button id="forgot_password" class="forgot__password__link">Forgot password?</button>
             </div>
         </div>
-        <div class="form__line__container">
-            <button class="login__button" id="login">Login</button>
-            <a href="http://www.google.ro" class="forgot__password__link">New here? <br> Sign up now!</a>
-        </div>
-
     </form>
+
+
 </div>
 <script src="scripts/login.js"></script>
 </body>

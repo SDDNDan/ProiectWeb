@@ -95,7 +95,6 @@ class GradeStatistics_md
 
     function getMedia($username,$prenume)
     {
-
         $media = 0;
         $counter = 0;
         $query = "SELECT ID FROM STUDENTI where NUME = ? and PRENUME = ?";

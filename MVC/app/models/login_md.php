@@ -60,6 +60,7 @@ class login_md
 
     public function getNandP($email)
     {
+
         $query = "SELECT NUME,PRENUME FROM STUDENTI where EMAIL = ?";
         $statement = $this->conn->prepare($query);
         $statement->execute([$email]);

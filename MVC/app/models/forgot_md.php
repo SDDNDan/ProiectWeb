@@ -66,11 +66,11 @@ class forgot_md{
 //$mail->AddAttachment("c:/temp/11-10-00.zip");
 
         $mail->IsHTML(true); // set email format to HTML
+
         $mail->Subject = "Recuperare Parola";
         $mail->Body = "Parola dumneavoastra este : ".$password;
 
-        if($mail->Send()) {echo "Send mail successfully";}
-        else {echo "Send mail fail";}
+         $mail->Send();
 
     }
 

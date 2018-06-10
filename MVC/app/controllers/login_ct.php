@@ -67,6 +67,11 @@ class login_ct extends core_controller
 
     }
 
+    public function forgotPassword(){
+        $this->returnView('forgot',[]);
+        $this->view->renderView();
+    }
+
 
 
 }

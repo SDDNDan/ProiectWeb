@@ -41,7 +41,13 @@ body {
 
 .form__container {
     position: relative;
-    height: 70%;
+    width: 60%;
+    margin: 30px 35px 0 200px;
+    padding-top: 30px;
+}
+
+.form__container2 {
+    position: relative;
     width: 60%;
     margin: 30px 35px 0 200px;
     padding-top: 30px;

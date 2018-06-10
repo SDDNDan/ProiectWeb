@@ -25,7 +25,7 @@ class forgot_ct extends core_controller
 
     public function getPassword()
     {
-        $email = $_POST['email'];
+        $email = $_POST['thatEmail'];
         $password = $this->forgotModel->getPassword($email);
         $this->forgotModel->sendMail($email,$password);
         $this->returnView('login',[]);
