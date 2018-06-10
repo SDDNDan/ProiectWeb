@@ -94,28 +94,31 @@ function getResult()
     if(no <= 1) {
 
         let suggestion = document.getElementById("suggestion");
-        gradPromovabilitate = gitCommits + stackQuestions + media + prezente;
-
-        switch (gradPromovabilitate){
-            case 100:
+        gradPromovabilitate = (media * 0.7);
+        gradPromovabilitate += (prezente * 0.10);
+        gradPromovabilitate += ((gitCommits*0.4) * 0.1);
+        gradPromovabilitate += ((stackQuestions*0.4) * 0.1);
+        gradPromovabilitate *= 10;
+        switch (true){
+            case gradPromovabilitate>90:
                 suggestion.textContent = "Felicitari,treceti!";
                 break;
-            case 90:
+            case gradPromovabilitate>80:
                 suggestion.textContent = "Felicitari,treceti!";
                 break;
-            case 80:
+            case gradPromovabilitate>70:
                 suggestion.textContent = "Esti aproape trecut!";
                 break;
-            case 70:
+            case gradPromovabilitate>60:
                 suggestion.textContent = "Esti aproape trecut!";
                 break;
-            case 60:
+            case gradPromovabilitate>50:
                 suggestion.textContent = "Esti aproape trecut!";
                 break;
-            case 50:
+            case gradPromovabilitate>40:
                 suggestion.textContent = "Mai ai de invatat!";
                 break;
-            case 40:
+            case gradPromovabilitate>30:
                 suggestion.textContent = "Mai ai de invatat!";
                 break;
             default:
