@@ -69,8 +69,9 @@ class forgot_md{
 
         $mail->Subject = "Recuperare Parola";
         $mail->Body = "Parola dumneavoastra este : ".$password;
-
-         $mail->Send();
+        if(!$mail->Send()) {
+            echo $mail->ErrorInfo;
+        }
 
     }
 

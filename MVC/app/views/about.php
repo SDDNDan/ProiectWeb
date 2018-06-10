@@ -27,42 +27,40 @@
 
 <section class="about__page">
     <h1 class="about__title  ">ABOUT US</h1>
-    <p class="about__subtitle" >I'm a paragraph. Click here to add your own text and edit me. It’s
-        easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a
-        great place for you to tell a story and let your users know a little more about you.</p>
+
 </section>
 
 <div class = "aboutPlayers">
     <div class = "player">
         <div class = "playerPicture">
             <img src="styles/Profile.jpg" class = "imgPlayer">
-            <h1 class = "playerName"> Player 1<br><br><br></h1>
+            <h1 class = "playerName"> Slusariuc Dan<br><br><br></h1>
         </div>
-        <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>
+        <div class = "playerJob">M-am ocupat partea de BackEnd</div>
     </div>
 
     <div class = "player">
         <div class = "playerPicture">
             <img src="styles/Profile.jpg" class = "imgPlayer">
-            <h1 class = "playerName">Player 2 <br><br><br> </h1>
+            <h1 class = "playerName">Gaidur Bogdan<br><br><br> </h1>
         </div>
-        <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>
+        <div class = "playerJob">M-am ocupat cu partea de FrontEnd</div>
     </div>
 
     <div class = "player">
         <div class = "playerPicture">
             <img src="styles/Profile.jpg" class = "imgPlayer">
-            <h1 class = "playerName">Player 3 <br><br><br></h1>
+            <h1 class = "playerName">Timofte Stefan<br><br><br></h1>
         </div>
-        <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>
+        <div class = "playerJob">M-am ocupat cu partea de FrontEnd</div>
     </div>
 
     <div class = "player">
         <div class = "playerPicture">
             <img src="styles/Profile.jpg" class = "imgPlayer">
-            <h1 class = "playerName">Player 4<br><br><br> </h1>
+            <h1 class = "playerName">Pavaloi Alexandru<br><br><br> </h1>
         </div>
-        <div class = "playerJob">Fiecare ce a avut de facut si ce a realizat din task-uri.</div>
+        <div class = "playerJob">Coordonator</div>
     </div>
 
 
