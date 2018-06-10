@@ -13,7 +13,8 @@ var fill = 0;
 //Pentru grad de promovabilitate
 var gitCommits = -1;
 var stackQuestions = -1;
-
+var media = -1;
+var prezente = -1;
 function fillCounter(){
     diff = ((no/100) * Math.PI*2*10);
 
@@ -63,6 +64,7 @@ function getGithubCommits() {
     loadingLabel.textContent = "Loading...";
     var returnval;
     let NumeGithub = document.getElementById("NumeGithub").value;
+    let IdStack = document.getElementById("IdStack").value;
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -70,15 +72,18 @@ function getGithubCommits() {
             returnval = JSON.parse(returnval);
             gitCommits = returnval[0];
             stackQuestions = returnval[1];
+            media = returnval[2];
+            prezente = returnval[3];
+            console.log(returnval);
             getResult();
             let loadingLabel = document.getElementById("loadingLabel");
             loadingLabel.textContent = "";
         }
     };
 
-    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/GradeStatistics/getGithubCommits", true);
+    xmlhttp.open("POST", "http://localhost/ProjectWeb/MVC/public_html/GradeStatistics/getResults", true);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xmlhttp.send("NumeGithub=" + NumeGithub);
+    xmlhttp.send("NumeGithub=" + NumeGithub + "&IdStack=" + IdStack);
 
 
 
@@ -89,7 +94,7 @@ function getResult()
     if(no <= 1) {
 
         let suggestion = document.getElementById("suggestion");
-        gradPromovabilitate = gitCommits + stackQuestions;
+        gradPromovabilitate = gitCommits + stackQuestions + media + prezente;
 
         switch (gradPromovabilitate){
             case 100:

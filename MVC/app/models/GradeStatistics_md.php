@@ -51,6 +51,25 @@ class GradeStatistics_md
 
         return $result;
     }
+    function getGitHubNumber($NumeGithub)
+    {
+        $repos = $this->github_request('https://api.github.com/users/'.$NumeGithub.'/repos');
+        $counter = 0;
+        $today = date("Y-m-j" , strtotime("-3 months"));
+        foreach ($repos as $repo):
+            var_dump($repo);
+            $url = 'https://api.github.com/repos/'.$repo['full_name'].'/commits?since='.$today;
+            $repos2 = $this->github_request($url);
+            foreach ($repos2 as $repo2):
+                if (isset($repo2['author']['login']) && $repo2['author']['login'] == $NumeGithub) {
+                    $counter++;
+                }
+
+            endforeach;
+        endforeach;
+
+        return $counter;
+    }
 
     function stackOverFlow($url)
     {
@@ -99,12 +118,22 @@ class GradeStatistics_md
         return json_encode($media/$counter);
     }
 
-    function getNumberOfPresences($nume, $prenume) {
-        $numar = 0;
-        $result = $this->conn->prepare('select count(*) FROM prezente WHERE NUME = ? and PRENUME = ?');
-        $result->bind_param('ss', $nume, $prenume);
-        $result->execute();
-        $result->bind_result($numar);
+    function getNumberOfPresences($username, $prenume) {
+        $query = "SELECT count(*) FROM prezente where NUME = ? and PRENUME = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$username, $prenume]);
+        while ($row = $statement->fetch()) {
+            $numar = $row[0];
+        }
+
         return $numar;
+    }
+
+    function datediffInWeeks($date1, $date2)
+    {
+        if($date1 > $date2) return $this->datediffInWeeks($date2, $date1);
+        $first = DateTime::createFromFormat('m/d/Y', $date1);
+        $second = DateTime::createFromFormat('m/d/Y', $date2);
+        return floor($first->diff($second)->days/7);
     }
 }
