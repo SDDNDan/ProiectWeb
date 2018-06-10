@@ -46,19 +46,11 @@ if (session_status() == PHP_SESSION_NONE) {
         </div>
         <div class="form__line__container">
             <button class="login__button" id="login">Login</button>
-            <a href="http://www.google.ro" class="forgot__password__link">New here? <br> Sign up now!</a>
+
         </div>
     </form>
-    <form method="POST" action="login/forgotPassword" class="form__container2">
+    <form method="POST" action="login/forgotPassword" class="form__container">
         <div class="checkboxes__container">
-            <div class="remember__me__container">
-                <label>
-                    <input type="checkbox" name="rememberMe" class="remember__me__checkbox">
-                </label>
-                <label class="field__label remember__me__label">
-                    Remember me
-                </label>
-            </div>
             <div class="forgot__password__container">
                 <button id="forgot_password" class="forgot__password__link">Forgot password?</button>
             </div>
