@@ -5,6 +5,7 @@
  * Date: 5/29/2018
  * Time: 6:55 PM
  */
+require("../PHPMailer_5.2.4/class.phpmailer.php");
 class contact_md
 {
     protected $conn;
@@ -15,15 +16,29 @@ class contact_md
 
     public function sendMail($email,$name,$subject,$message)
     {
+        $mail = new PHPMailer();
+        $mail->IsSMTP(); // set mailer to use SMTP
+        $mail->SMTPDebug  = 2;
+        $mail->From = "danutsddn11@gmail.com";
+        $mail->FromName = "Slusariuc Dan";
+        $mail->Host = "smtp.gmail.com"; // specif smtp server
+        $mail->SMTPSecure= "ssl"; // Used instead of TLS when only POP mail is selected
+        $mail->Port = 465; // Used instead of 587 when only POP mail is selected
+        $mail->SMTPAuth = true;
+        $mail->Username = "danutsddn11@gmail.com"; // SMTP username
+        $mail->Password = "Bocsardi9339!"; // SMTP password
+        $mail->AddAddress($email, "Slusariuc"); //replace myname and mypassword to yours
+        $mail->AddReplyTo("danut_sddn11@gmail.com", "Slusariuc");
+        $mail->WordWrap = 50; // set word wrap
+//$mail->AddAttachment("c:\\temp\\js-bak.sql"); // add attachments
+//$mail->AddAttachment("c:/temp/11-10-00.zip");
 
-//        $stid = oci_parse($this->conn, 'begin SENDMAIL(:name , :email , :subject , :message); end;');
-//        oci_bind_by_name($stid, ':name', $name);
-//        oci_bind_by_name($stid, ':email', $email);
-//        oci_bind_by_name($stid, ':subject', $subject);
-//        oci_bind_by_name($stid, ':message', $message);
-//        oci_execute($stid);
-//        oci_free_statement($stid);
-//        oci_close($this->conn);
+        $mail->IsHTML(true); // set email format to HTML
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+
+        if($mail->Send()) {echo "Send mail successfully";}
+        else {echo "Send mail fail";}
 
     }
 

@@ -102,7 +102,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
 <footer>
-    <h6>2018 Web Technologies Project proudly created by Gaidur Bogdan | Timofe Stefan | Slusariuc Dan Nicolae. </h6>
+    <h6>2018 Web Technologies Project proudly created by Slusariuc Dan Dragos Nicolae | Gaidur Bogdan | Timofte Stefan. </h6>
 </footer>
 
 </body>

@@ -74,6 +74,21 @@ function getGithubCommits() {
             stackQuestions = returnval[1];
             media = returnval[2];
             prezente = returnval[3];
+            sugestia = returnval[4];
+
+            let container = document.createElement('div');
+            container.className ="suggestion__content";
+            let containerBase = document.getElementsByClassName("suggestion__container");
+
+            let psugestion = document.createElement('p');
+            psugestion.textContent = sugestia;
+            psugestion.className ="suggestion__message";
+
+            container.appendChild(psugestion);
+            containerBase[0].appendChild(container);
+
+
+
             console.log(returnval);
             getResult();
             let loadingLabel = document.getElementById("loadingLabel");
@@ -94,6 +109,7 @@ function getResult()
     if(no <= 1) {
 
         let suggestion = document.getElementById("suggestion");
+        let message = document.getElementById("suggestion__message");
         gradPromovabilitate = (media * 0.7);
         gradPromovabilitate += (prezente * 0.10);
         gradPromovabilitate += ((gitCommits*0.4) * 0.1);

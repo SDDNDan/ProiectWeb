@@ -136,4 +136,38 @@ class GradeStatistics_md
         $second = DateTime::createFromFormat('m/d/Y', $date2);
         return floor($first->diff($second)->days/7);
     }
+
+    function getSuggestion($rezultat)
+    {
+        $media = ($rezultat[2] * 0.7);
+        $media += ($rezultat[3] * 0.10);
+        $media += (($rezultat[0]*0.4) * 0.1);
+        $media += (($rezultat[1]*0.4) * 0.1);
+        $media *= 10;
+        $numar = -1;
+        switch(true)
+        {
+            case ($media>80):
+                $numar = 4;
+                break;
+            case ($media>50):
+                $numar = 3;
+                break;
+            case ($media>40):
+                $numar = 2;
+                break;
+            case ($media>0):
+                $numar = 1;
+                break;
+        }
+        $sugestia = '';
+        $query = "SELECT SUGGETION FROM suggetions where ID = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$numar]);
+        while ($row = $statement->fetch()) {
+            return $sugestia = $row[0];
+
+        }
+
+    }
 }
