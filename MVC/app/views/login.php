@@ -46,13 +46,11 @@ if (session_status() == PHP_SESSION_NONE) {
         </div>
         <div class="form__line__container">
             <button class="login__button" id="login">Login</button>
+
         </div>
     </form>
-    <form method="POST" action="login/forgotPassword" class="form__container2">
+    <form method="POST" action="login/forgotPassword" class="form__container">
         <div class="checkboxes__container">
-            <div class="remember__me__container">
-
-            </div>
             <div class="forgot__password__container">
                 <button id="forgot_password" class="forgot__password__link">Forgot password?</button>
             </div>

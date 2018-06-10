@@ -46,13 +46,6 @@ body {
     padding-top: 30px;
 }
 
-.form__container2 {
-    position: relative;
-    width: 60%;
-    margin: 30px 35px 0 200px;
-    padding-top: 30px;
-}
-
 .label__container {
     position: absolute;
     left: -100px;
@@ -135,6 +128,7 @@ body {
 
 
 .forgot__password__container {
+    margin-left: 60%;
     display: inline-block;
 }
 
@@ -142,20 +136,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top:15px;
+    padding-top: 15px;
     margin-top: 20px;
 }
 
 .forgot__password__link {
     text-decoration: none;
-    color: #b3a6a9;
+    color: white;
     font: 14px sans-serif;
     font-family: 'poppinsregular', serif;
+    border-radius: 20px;
+    background-color: #d10000;
+    border: none;
+    padding: 10px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .forgot__password__link:hover {
-    color: #57b846;
+    background-color: black;
 }
 
 .login__button {
