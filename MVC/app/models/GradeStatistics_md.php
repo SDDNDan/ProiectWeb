@@ -54,4 +54,13 @@ class GradeStatistics_md
         endforeach;
         return 0;
     }
+
+    function getNumberOfPresences($nume, $prenume) {
+        $numar = 0;
+        $result = $this->conn->prepare('select count(*) FROM prezente WHERE NUME = ? and PRENUME = ?');
+        $result->bind_param('ss', $nume, $prenume);
+        $result->execute();
+        $result->bind_result($numar);
+        return $numar;
+    }
 }
