@@ -42,9 +42,9 @@ class login_ct extends core_controller
         $username = $_POST['username'];
         $password = $_POST['password'];
         $result = $this->loginModel->loginResult($username,$password);
+        $getNandP = $this->loginModel->getNandP($username);
         switch ($result)
         {
-
             case 'N':
                 $this->returnView('login',[]);
                 $this->view->renderView();
@@ -52,6 +52,8 @@ class login_ct extends core_controller
 
             case 'S':
                 $_SESSION['auth']="student";
+                $_SESSION['username'] = $getNandP[0];
+                $_SESSION['prenume'] = $getNandP[1];
                 $this->returnView('index',[]);
                 $this->view->renderView();
                       break;
