@@ -46,7 +46,7 @@ class GradeStatistics_ct extends core_controller
 //
 //            endforeach;
 //        endforeach;
-        $media = $this->gradeStatisticsModel->getMedia("Slusariuc" , "Dan");
+        $media = $this->gradeStatisticsModel->getMedia($_SESSION['username'] , $_SESSION['prenume']);
         var_dump($media);
         $reposstack = $this->gradeStatisticsModel->stackOverFlow("https://api.stackexchange.com/2.2/users/6582264/questions?order=desc&sort=activity&site=stackoverflow");
         $rezultat = array();
