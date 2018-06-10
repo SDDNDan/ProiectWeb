@@ -11,13 +11,32 @@ class GradeStatistics_md
     protected $conn;
     public function __construct()
     {
-        $this->conn = new mysqli('localhost','root','','student') or die ("Naspa");
+        $dbHost = "localhost";
+        $dbUser = "root";
+        $dbPass = "";
+        $dbName = "student";
+        $this->conn = $this->connInit($dbHost, $dbUser, $dbPass, $dbName);
+    }
+    public function connInit($dbHost, $dbUser, $dbPass, $dbName)
+    {
+        try {
+
+            $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
+            $pdo->exec("set names utf8");
+            $pdo->setAttribute(
+                PDO::ATTR_ERRMODE,
+                PDO::ERRMODE_EXCEPTION
+            );
+            return $pdo;
+        } catch (PDOException $e) {
+            echo "Conectarea la baza de date a esuat." . $e->getMessage();
+        }
     }
 
     function github_request($url)
     {
         $ch = curl_init();
-        $access = 'SDDNDan:7d910e86cc8063bebd09615e48fd31d3211da05d';
+        $access = 'SDDNDan:6adbf210e314382fd6478776e688628e561ca577';
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_USERAGENT, 'Agent smith');
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -53,5 +72,30 @@ class GradeStatistics_md
             break;
         endforeach;
         return 0;
+    }
+
+    function getMedia($username,$prenume)
+    {
+
+        $media = 0;
+        $counter = 0;
+        $query = "SELECT ID FROM STUDENTI where NUME = ? and PRENUME = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$username, $prenume]);
+        while ($row = $statement->fetch()) {
+            $idul = $row;
+        }
+
+        $idul = $idul['ID'];
+        $query = "SELECT VALOARE FROM NOTE where ID_STUDENT = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$idul]);
+        while ($row = $statement->fetch()) {
+
+           $media += $row[0];
+           $counter++;
+        }
+
+        return json_encode($media/$counter);
     }
 }

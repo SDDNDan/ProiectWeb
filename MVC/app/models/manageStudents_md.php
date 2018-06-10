@@ -12,6 +12,7 @@ class manageStudents_md
 
     public function __construct()
     {
+        
         $dbHost = "localhost";
         $dbUser = "root";
         $dbPass = "";

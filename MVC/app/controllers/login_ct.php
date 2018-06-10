@@ -52,6 +52,7 @@ class login_ct extends core_controller
 
             case 'S':
                 $_SESSION['auth']="student";
+                $_SESSION['username'] = $username;
                 $this->returnView('index',[]);
                 $this->view->renderView();
                       break;
