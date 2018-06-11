@@ -54,12 +54,13 @@ class GradeStatistics_md
 
     function getGitHubNumber($NumeGithub)
     {
+        
         $repos = $this->github_request('https://api.github.com/users/' . $NumeGithub . '/repos?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543');
         $repos3 = $this->github_request('https://api.github.com/users/' . $NumeGithub . '/events');
-        return count($repos3);
+
         $counter = 0;
 
-        $today = date("Y-m-j", strtotime("-3 months"));
+        $today = date("Y-m-j", strtotime("-1 months"));
         foreach ($repos as $repo):
             $url = 'https://api.github.com/repos/' . $repo['full_name'] . '/commits?since=' . $today . '?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543';
             $repos2 = $this->github_request($url);
@@ -71,7 +72,7 @@ class GradeStatistics_md
             endforeach;
         endforeach;
 
-        return $counter;
+        return (int)$repos3+(int)$counter;
     }
 
     function stackOverFlow($url)
