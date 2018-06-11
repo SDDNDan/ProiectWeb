@@ -17,7 +17,7 @@
 footer {
     color: #0c3c60;
     background: #d1e0eb;
-    font-size: xx-large;
+    font-size: large;
     line-height: normal;
     height: 4%;
     text-align: left;
@@ -38,13 +38,16 @@ h6 {
     line-height: 22px;
     background: #6ea4ca;
     padding: 10px 30px;
-    font: xx-large normal open raleway, sans-serif;
+    font: small normal open raleway, sans-serif;
     width: fit-content;
 }
 
+.white__background{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 .section__about_first{
-    margin-top: 40%;
+    margin-top: 20%;
 }
 #big_title, #up_title, .bibliography{
 
@@ -86,7 +89,7 @@ h6 {
     font-family: raleway, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 15px;
     stroke-width: 50%;
     align-content: center;
     margin-left: 15%;
@@ -156,7 +159,7 @@ h1 {
     position: relative;
     background-color: rgba(255, 255, 255, 0.5);
     padding-top: 2.5%;
-}
+}F.
 
 .button__login {
     margin-left: 200px;
@@ -487,15 +490,21 @@ h1 {
     height: 60vh;
 }
 
+.section__bibliography{
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    padding-left:5%;
+}
 .section__title {
     top: 40px;
     margin: auto;
     width: 100%;
-    height: 30%;
+    height: 15%;
     text-align: center;
     color: rgb(12, 60, 96);
     line-height: 95px;
-    font: 600 65px normal raleway, sans-serif;
+    font: 600 30px normal raleway, sans-serif;
     padding: 3% auto auto;
 }
 
@@ -508,12 +517,12 @@ h1 {
     top: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
     height: 40%;
     text-align: center;
     color: #0c3c60;
     line-height: 21px;
-    font: 400 14px normal open sans, sans-serif;
+    font: 400 13px normal open sans, sans-serif;
 }
 
 .more {

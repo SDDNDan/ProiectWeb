@@ -1,13 +1,17 @@
+
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 ?>
+
 <html>
 <head>
     <title>Web Technologies App</title>
     <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+
+
+    <link rel="stylesheet" type="text/css" href="../../public_html/styles/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="indexbody">
@@ -16,7 +20,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <header>
         <h1 class="index__title">Web Technologies App</h1>
         <div class="content">
-            <?php require_once("partials/nav.php"); ?>
+           <!-- <?php require_once("partials/nav.php"); ?> -->
         </div>
 
 
@@ -42,6 +46,8 @@ if (session_status() == PHP_SESSION_NONE) {
             HTML - CSS - JS
         </h1>
 
+<div class = "white__background">
+<div class = "section__bibliography">
         <div class = "bibliography" id = "homeLeft">
             <p class = "abreviations">
                 HTML
@@ -79,7 +85,8 @@ if (session_status() == PHP_SESSION_NONE) {
             </a>
          </div>
 
-
+</div>
+</div>
 
     </section>
 
@@ -88,10 +95,10 @@ if (session_status() == PHP_SESSION_NONE) {
             ABOUT US
         </h1>
         <p class="section__text">
-            Scopul aplicatiei.
+         Fiecare student va putea afla, in mod estimativ, daca va promova sau nu materia "Tehnologii Web". De asemenea, sistemul ii va oferi sugestii pentru a-si imbunatati performanta. Se vor pune la dispozitie doua tipuri de conturi: profesori si studenti. Profesorii au datoria de a consemna intreaga activitate a fiecarui student: prezente, interventii interesante, punctaje etc. (inclusiv date preluate dintr-un fisier CSV). Fiecare student, in functie de cele introduse de profesori si de statistica generala, va avea un profil personal de promovabilitate (de exemplu, daca a acumulat 8 prezente si cel mai bun din an are 10, atunci va avea 80% sanse de promovare). Aceasta statistica se va combina cu una proprie, ajustabila, bazata pe profilul persoanei in cadrul unor aplicatii Web sociale oferind API-uri de interes -- exemple: pentru Github, via GraphQL, se poate determina cate operatii de tip commit a efectuat persoana in ultima saptamana; pentru Facebook: numarul de participari la evenimente vizand tehnologiile Web etc. Va rezulta astfel un scor final public si un pronostic "DA/NU" de promovabilitate a materiei. Daca rezultatul este "NU", atunci se vor recomanda resurse de studiu in functie de saptamana curenta a semestrului scolar. Informatiile vor putea fi partajate pe diverse retele sociale, fiind disponibile in formatele HTML, CSV si XML. Functionalitatile vor fi expuse si de un API respectand paradigma REST.
         </p>
         <div class="button__container">
-            <a href="https://www.fullonline.ro/foto/adrian-copilul-minune-sunt-socat-mi-e-frica-sa" class="more">
+            <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/projects/xml-transform.php?pag=projects" class="more">
                 Read more
             </a>
         </div>
