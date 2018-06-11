@@ -42,18 +42,20 @@ class login_md
         $query = "SELECT count(*) FROM STUDENTI where EMAIL = ? and PASSWORD = ?";
         $statement = $this->conn->prepare($query);
         $statement->execute([$email,$password]);
-        if(count($statement->fetchAll())>0)
-        {
-            return 'S';
+        $numar = 0;
+        while ($row = $statement->fetch()) {
+            $numar = (int)$row[0];
         }
-
+        if($numar == 1)
+            return 'S';
         $query = "SELECT count(*) FROM profesori where EMAIL = ? and PASSWORD = ?";
         $statement = $this->conn->prepare($query);
         $statement->execute([$email,$password]);
-        if(count($statement->fetchAll())>0)
-        {
-            return 'P';
+        while ($row = $statement->fetch()) {
+            $numar = (int)$row[0];
         }
+        if($numar == 1)
+            return 'P';
 
        return 'N';
     }

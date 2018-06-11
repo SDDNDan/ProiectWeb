@@ -50,7 +50,6 @@ class forgot_md{
     {
         $mail = new PHPMailer();
         $mail->IsSMTP(); // set mailer to use SMTP
-        $mail->SMTPDebug  = 2;
         $mail->From = "danutsddn11@gmail.com";
         $mail->FromName = "Slusariuc Dan";
         $mail->Host = "smtp.gmail.com"; // specif smtp server
@@ -69,11 +68,9 @@ class forgot_md{
 
         $mail->Subject = "Recuperare Parola";
         $mail->Body = "Parola dumneavoastra este : ".$password;
-        if(!$mail->Send()) {
-            echo $mail->ErrorInfo;
-        }
-
     }
+
+
 
 
 }
