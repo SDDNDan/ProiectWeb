@@ -177,10 +177,11 @@ h1 {
 }
 
 .courses__page {
-    height: 100vh;
+    height: 200vh;
     background-color: #3699ec;
     margin: auto;
-    overflow: auto;
+
+
 }
 
 .p-top-60 {
@@ -991,7 +992,7 @@ head {
     width: 360px;
     height: 360px;
     margin: 30px auto auto;
-
+    z-index: -1;
 }
 /* Progress Circle Code - END */
 

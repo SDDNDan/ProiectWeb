@@ -9,6 +9,7 @@
 class GradeStatistics_md
 {
     protected $conn;
+
     public function __construct()
     {
         $dbHost = "localhost";
@@ -17,6 +18,7 @@ class GradeStatistics_md
         $dbName = "student";
         $this->conn = $this->connInit($dbHost, $dbUser, $dbPass, $dbName);
     }
+
     public function connInit($dbHost, $dbUser, $dbPass, $dbName)
     {
         try {
@@ -49,16 +51,17 @@ class GradeStatistics_md
 
         return $result;
     }
+
     function getGitHubNumber($NumeGithub)
     {
-        $repos = $this->github_request('https://api.github.com/users/'.$NumeGithub.'/repos?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543');
-        $repos3 = $this->github_request('https://api.github.com/users/'.$NumeGithub.'/events');
+        $repos = $this->github_request('https://api.github.com/users/' . $NumeGithub . '/repos?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543');
+        $repos3 = $this->github_request('https://api.github.com/users/' . $NumeGithub . '/events');
         return count($repos3);
         $counter = 0;
 
-        $today = date("Y-m-j" , strtotime("-3 months"));
+        $today = date("Y-m-j", strtotime("-3 months"));
         foreach ($repos as $repo):
-            $url = 'https://api.github.com/repos/'.$repo['full_name'].'/commits?since='.$today.'?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543';
+            $url = 'https://api.github.com/repos/' . $repo['full_name'] . '/commits?since=' . $today . '?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543';
             $repos2 = $this->github_request($url);
             foreach ($repos2 as $repo2):
                 if (isset($repo2['author']['login']) && $repo2['author']['login'] == $NumeGithub) {
@@ -93,7 +96,7 @@ class GradeStatistics_md
         return 0;
     }
 
-    function getMedia($username,$prenume)
+    function getMedia($username, $prenume)
     {
 
         $media = 0;
@@ -111,13 +114,14 @@ class GradeStatistics_md
         $statement->execute([$idul]);
         while ($row = $statement->fetch()) {
 
-           $media += $row[0];
-           $counter++;
+            $media += $row[0];
+            $counter++;
         }
-        return json_encode($media/$counter);
+        return json_encode($media / $counter);
     }
 
-    function getNumberOfPresences($username, $prenume) {
+    function getNumberOfPresences($username, $prenume)
+    {
         $query = "SELECT count(*) FROM prezente where NUME = ? and PRENUME = ?";
         $statement = $this->conn->prepare($query);
         $statement->execute([$username, $prenume]);
@@ -130,43 +134,135 @@ class GradeStatistics_md
 
     function datediffInWeeks($date1, $date2)
     {
-        if($date1 > $date2) return $this->datediffInWeeks($date2, $date1);
+        if ($date1 > $date2) return $this->datediffInWeeks($date2, $date1);
         $first = DateTime::createFromFormat('m/d/Y', $date1);
         $second = DateTime::createFromFormat('m/d/Y', $date2);
-        return floor($first->diff($second)->days/7);
+        return floor($first->diff($second)->days / 7);
     }
 
     function getSuggestion($rezultat)
     {
         $media = ($rezultat[2] * 0.7);
         $media += ($rezultat[3] * 0.10);
-        $media += (($rezultat[0]*0.4) * 0.1);
-        $media += (($rezultat[1]*0.4) * 0.1);
+        $media += (($rezultat[0] * 0.4) * 0.1);
+        $media += (($rezultat[1] * 0.4) * 0.1);
         $media *= 10;
         $numar = -1;
-        switch(true)
-        {
-            case ($media>80):
+        switch (true) {
+            case ($media > 80):
                 $numar = 4;
                 break;
-            case ($media>50):
+            case ($media > 50):
                 $numar = 3;
                 break;
-            case ($media>40):
+            case ($media > 40):
                 $numar = 2;
                 break;
-            case ($media>0):
+            case ($media > 0):
                 $numar = 1;
                 break;
         }
-        $sugestia = '';
+        $sugestia = array();
         $query = "SELECT SUGGETION FROM suggetions where ID = ?";
         $statement = $this->conn->prepare($query);
         $statement->execute([$numar]);
         while ($row = $statement->fetch()) {
-            return $sugestia = $row[0];
+            array_push($sugestia,$row[0]);
+            array_push($sugestia,$media);
+            return $sugestia;
 
         }
 
+    }
+
+    function getSuggestionCSS($gradePromovability)
+    {
+        $numar = 1;
+        switch (true) {
+            case ($gradePromovability > 80):
+                $numar = 3;
+                break;
+            case ($gradePromovability > 50):
+                $numar = 2;
+                break;
+            default:
+                $numar = 1;
+        }
+
+        $query = "SELECT SUGESTIE FROM css where NIVEL = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$numar]);
+        while ($row = $statement->fetch()) {
+            $cssSuggestion = $row[0];
+            return$cssSuggestion;
+        }
+    }
+    function getSuggestionJS($gradePromovability)
+    {
+        $numar = 1;
+        switch (true) {
+            case ($gradePromovability > 80):
+                $numar = 3;
+                break;
+            case ($gradePromovability > 50):
+                $numar = 2;
+                break;
+            default:
+                $numar = 1;
+        }
+
+        $query = "SELECT SUGESTIE FROM javascript where NIVEL = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$numar]);
+        while ($row = $statement->fetch()) {
+            $suggestion = $row[0];
+            return $suggestion;
+        }
+    }
+
+    function getSuggestionHtml($gradePromovability)
+    {
+        $numar = 1;
+        switch (true) {
+            case ($gradePromovability > 80):
+                $numar = 3;
+                break;
+            case ($gradePromovability > 50):
+                $numar = 2;
+                break;
+            default:
+                $numar = 1;
+        }
+
+        $query = "SELECT SUGESTIE FROM html where NIVEL = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$numar]);
+        while ($row = $statement->fetch()) {
+            $suggestion = $row[0];
+            return $suggestion;
+        }
+    }
+
+    function getSuggestionPhp($gradePromovability)
+    {
+        $numar = 1;
+        switch (true) {
+            case ($gradePromovability > 80):
+                $numar = 3;
+                break;
+            case ($gradePromovability > 50):
+                $numar = 2;
+                break;
+            default:
+                $numar = 1;
+        }
+
+        $query = "SELECT SUGESTIE FROM php where NIVEL = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$numar]);
+        while ($row = $statement->fetch()) {
+            $suggestion = $row[0];
+            return $suggestion;
+        }
     }
 }

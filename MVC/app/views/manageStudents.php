@@ -15,7 +15,7 @@ if($_SESSION['auth'] != "profesor"){
 <head>
     <title>Web Technologies App</title>
     <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
 <body>
 

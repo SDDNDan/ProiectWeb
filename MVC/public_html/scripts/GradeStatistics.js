@@ -75,20 +75,31 @@ function getGithubCommits() {
             media = returnval[2];
             prezente = returnval[3];
             sugestia = returnval[4];
-
             let container = document.createElement('div');
             container.className ="suggestion__content";
             let containerBase = document.getElementsByClassName("suggestion__container");
-
             let psugestion = document.createElement('p');
-            psugestion.textContent = sugestia;
+            psugestion.textContent = sugestia ;
             psugestion.className ="suggestion__message";
+            let psugestion2 = document.createElement('p');
+            psugestion2.textContent = returnval[5] ;
+            psugestion2.className ="suggestion__message";
+            let psugestion3 = document.createElement('p');
+            psugestion3.textContent = returnval[6] ;
+            psugestion3.className ="suggestion__message";
+            let psugestion4 = document.createElement('p');
+            psugestion4.textContent = returnval[7] ;
+            psugestion4.className ="suggestion__message";
+            let psugestion5 = document.createElement('p');
+            psugestion5.textContent = returnval[8] ;
+            psugestion5.className ="suggestion__message";
 
             container.appendChild(psugestion);
+            container.appendChild(psugestion2);
+            container.appendChild(psugestion3);
+            container.appendChild(psugestion4);
+            container.appendChild(psugestion5);
             containerBase[0].appendChild(container);
-
-
-
             console.log(returnval);
             getResult();
             let loadingLabel = document.getElementById("loadingLabel");

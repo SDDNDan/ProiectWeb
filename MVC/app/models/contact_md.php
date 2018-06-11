@@ -26,7 +26,7 @@ class contact_md
         $mail->SMTPAuth = true;
         $mail->Username = "danutsddn11@gmail.com"; // SMTP username
         $mail->Password = "Bocsardi9339!"; // SMTP password
-        $mail->AddAddress($email, "Slusariuc"); //replace myname and mypassword to yours
+        $mail->AddAddress("danutsddn11@gmail.com", "Slusariuc"); //replace myname and mypassword to yours
         $mail->AddReplyTo("danut_sddn11@gmail.com", "Slusariuc");
         $mail->WordWrap = 50; // set word wrap
 //$mail->AddAttachment("c:\\temp\\js-bak.sql"); // add attachments
@@ -34,7 +34,7 @@ class contact_md
 
         $mail->IsHTML(true); // set email format to HTML
         $mail->Subject = $subject;
-        $mail->Body = $message;
+        $mail->Body = 'From :'.$email.'<br><br> Message :<br><br>'.$message;
 
         if($mail->Send()) {echo "Send mail successfully";}
         else {echo "Send mail fail";}

@@ -45,7 +45,12 @@ class GradeStatistics_ct extends core_controller
         array_push($rezultat,$reposstack);
         array_push($rezultat,(int)$media);
         array_push($rezultat,(int)$prezente);
-        array_push($rezultat,$this->gradeStatisticsModel->getSuggestion($rezultat));
+        $suggestion = $this->gradeStatisticsModel->getSuggestion($rezultat);
+        array_push($rezultat,$suggestion[0]);
+        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionCSS($suggestion[1]));
+        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionHtml($suggestion[1]));
+        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionJS($suggestion[1]));
+        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionPhp($suggestion[1]));
         echo json_encode($rezultat);
 
         //$this->returnView('GradeStatistics', []);
