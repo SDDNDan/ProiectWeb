@@ -23,7 +23,7 @@ class contact_ct extends core_controller
 
     public function sendMail()
     {
-        
+
         $email = $_POST['email'];
         $name = $_POST['name'];
         $subject = $_POST['subject'];

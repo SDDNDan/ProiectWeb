@@ -1,5 +1,5 @@
 /**
- * Created by bgaid on 6/4/2018.
+ * Created by Slusariuc on 6/4/2018.
  */
 
 var counter = document.getElementById('counter').getContext('2d');

@@ -18,7 +18,6 @@ class contact_md
     {
         $mail = new PHPMailer();
         $mail->IsSMTP(); // set mailer to use SMTP
-        $mail->SMTPDebug  = 2;
         $mail->From = "danutsddn11@gmail.com";
         $mail->FromName = "Slusariuc Dan";
         $mail->Host = "smtp.gmail.com"; // specif smtp server

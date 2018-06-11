@@ -36,11 +36,9 @@ class GradeStatistics_md
     function github_request($url)
     {
         $ch = curl_init();
-        $access = 'SDDNDan:6adbf210e314382fd6478776e688628e561ca577';
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_USERAGENT, 'Agent smith');
         curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt($ch, CURLOPT_USERPWD, $access);
         curl_setopt($ch, CURLOPT_TIMEOUT, 30);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
@@ -53,12 +51,14 @@ class GradeStatistics_md
     }
     function getGitHubNumber($NumeGithub)
     {
-        $repos = $this->github_request('https://api.github.com/users/'.$NumeGithub.'/repos');
+        $repos = $this->github_request('https://api.github.com/users/'.$NumeGithub.'/repos?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543');
+        $repos3 = $this->github_request('https://api.github.com/users/'.$NumeGithub.'/events');
+        return count($repos3);
         $counter = 0;
+
         $today = date("Y-m-j" , strtotime("-3 months"));
         foreach ($repos as $repo):
-            var_dump($repo);
-            $url = 'https://api.github.com/repos/'.$repo['full_name'].'/commits?since='.$today;
+            $url = 'https://api.github.com/repos/'.$repo['full_name'].'/commits?since='.$today.'?client_id=22d672cab4d7c171c9cf&client_secret=86e5538e9b0c2cc193578a61d5b59e7dd1c6d543';
             $repos2 = $this->github_request($url);
             foreach ($repos2 as $repo2):
                 if (isset($repo2['author']['login']) && $repo2['author']['login'] == $NumeGithub) {
@@ -95,6 +95,7 @@ class GradeStatistics_md
 
     function getMedia($username,$prenume)
     {
+
         $media = 0;
         $counter = 0;
         $query = "SELECT ID FROM STUDENTI where NUME = ? and PRENUME = ?";
@@ -113,7 +114,6 @@ class GradeStatistics_md
            $media += $row[0];
            $counter++;
         }
-
         return json_encode($media/$counter);
     }
 
