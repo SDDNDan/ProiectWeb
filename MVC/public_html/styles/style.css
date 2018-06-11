@@ -180,6 +180,7 @@ h1 {
     height: 100vh;
     background-color: #3699ec;
     margin: auto;
+    overflow: auto;
 }
 
 .p-top-60 {
@@ -507,6 +508,7 @@ h1 {
     font: 600 30px normal raleway, sans-serif;
     padding: 3% auto auto;
 }
+
 
 #about_us {
     padding-top: 3.5%;
