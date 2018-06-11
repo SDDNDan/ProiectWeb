@@ -88,10 +88,13 @@ if (session_status() == PHP_SESSION_NONE) {
             ABOUT US
         </h1>
         <p class="section__text">
-            Scopul aplicatiei.
+            Aplicatia noastra are scopul de a ajuta studentii sa isi imbunatateasca
+            performanta la materia Tehnologii Web, de a vedea care sunt sansele lor de
+            a promova materia, si de a ajuta profesorii in consemnarea activitatii studentilor
+            atat la seminar cat si la curs.
         </p>
         <div class="button__container">
-            <a href="https://www.fullonline.ro/foto/adrian-copilul-minune-sunt-socat-mi-e-frica-sa" class="more">
+            <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/projects/xml-transform.php?pag=projects" class="more">
                 Read more
             </a>
         </div>

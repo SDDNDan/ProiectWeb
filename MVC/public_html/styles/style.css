@@ -20,12 +20,14 @@ footer {
     font-size: xx-large;
     line-height: normal;
     height: 4%;
-    text-align: left;
     bottom:0;
+    padding: 40px;
+    text-align: center;
 }
 
 h6 {
     margin-left: 2%;
+    background-color: #d1e0eb;
 }
 
 .readMore{
@@ -458,6 +460,7 @@ h1 {
     footer {
         height: 7%;
         font-size: 1em;
+        padding: 40px;
     }
 
     h6 {
@@ -508,7 +511,7 @@ h1 {
     top: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 50%;
     height: 40%;
     text-align: center;
     color: #0c3c60;
