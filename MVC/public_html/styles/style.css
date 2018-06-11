@@ -265,7 +265,7 @@ h1 {
     height: 30%;
     text-align: center;
     color: #3699ec;
-    font: 700 79px normal raleway, sans-serif;
+    font: 700 45px normal raleway, sans-serif;
     margin: 3% auto;
 
 }
@@ -574,7 +574,7 @@ h1 {
     height: 30%;
     text-align: center;
     color: white;
-    font: 700 79px normal raleway, sans-serif;
+    font: 700 45px normal raleway, sans-serif;
     margin-top:3%;
 }
 
@@ -587,7 +587,7 @@ h1 {
 .contact__paragraph{
     width: 350px;
     top: 0;
-    font-size: x-large;
+    font-size: large;
     color: #ffffff;
 }
 

@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
-    <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+<!--    <?php include VIEWS.'partials/base_url.php' ?> -->
+    <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
 
 </head>
 <body class = "bodyContent">
 <header>
     <h1 class="index__title">Web Technologies App</h1>
     <div class="content">
-        <?php require_once("partials/nav.php"); ?>
+<!--        <?php require_once("partials/nav.php"); ?> -->
     </div>
     <div class = "dropdown">
         <button class="dropdown__button">

@@ -1,3 +1,5 @@
+
+
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -7,12 +9,13 @@ if($_SESSION['auth'] != "profesor"){
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
     <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
 </head>
 <body>
 
@@ -20,7 +23,7 @@ if($_SESSION['auth'] != "profesor"){
     <h1 class="index__title">Web Technologies App</h1>
 
     <div class="content">
-        <?php require_once("partials/nav.php"); ?>
+    <?php require_once("partials/nav.php"); ?>
     </div>
 
     <div class = "dropdown">

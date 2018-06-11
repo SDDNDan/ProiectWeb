@@ -1,3 +1,5 @@
+
+
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -7,14 +9,15 @@ if ($_SESSION['auth'] != "student") {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Web Technologies App</title>
 
-    <?php include VIEWS . 'partials/base_url.php' ?>
+   <?php include VIEWS . 'partials/base_url.php' ?>
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public_html/styles/style.css"/>
 </head>
 <body id="gradebody">
 

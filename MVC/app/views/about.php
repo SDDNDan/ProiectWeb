@@ -3,13 +3,13 @@
 <head>
     <title>Web Technologies App</title>
     <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
 </head>
 <body>
     <header >
         <h1 class="index__title">Web Technologies App</h1>
         <div class="content">
-            <?php require_once("partials/nav.php"); ?>
+          <?php require_once("partials/nav.php"); ?>
         </div>
 
         <div class = "dropdown">
@@ -33,7 +33,7 @@
 <div class = "aboutPlayers">
     <div class = "player">
         <div class = "playerPicture">
-            <img src="styles/Profile.jpg" class = "imgPlayer">
+            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName"> Slusariuc Dan<br><br><br></h1>
         </div>
         <div class = "playerJob">M-am ocupat partea de BackEnd</div>
@@ -41,7 +41,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="styles/Profile.jpg" class = "imgPlayer">
+            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName">Gaidur Bogdan<br><br><br> </h1>
         </div>
         <div class = "playerJob">M-am ocupat cu partea de FrontEnd</div>
@@ -49,7 +49,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="styles/Profile.jpg" class = "imgPlayer">
+            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName">Timofte Stefan<br><br><br></h1>
         </div>
         <div class = "playerJob">M-am ocupat cu partea de FrontEnd</div>
@@ -57,7 +57,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="styles/Profile.jpg" class = "imgPlayer">
+            <img src="../../public_html/styles/Profile.jpg" class = "imgPlayer">
             <h1 class = "playerName">Pavaloi Alexandru<br><br><br> </h1>
         </div>
         <div class = "playerJob">Coordonator</div>

@@ -3,7 +3,7 @@
 <head>
     <title>Web Technologies App</title>
   <?php include VIEWS.'partials/base_url.php' ?>
-    <link rel="stylesheet" type="text/css" href="../../public_html/styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/login_page.css"/>
 </head>
 <body>
     <header>
