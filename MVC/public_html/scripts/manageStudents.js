@@ -155,12 +155,6 @@ function getInterventions() {
 
                 let dateText = document.createElement("p");
                 dateText.className = "grade__date";
-                // Aici o sa schimbi requestul la server, si ii spui sa iti dea si data
-                // la care a fost pusa interventia. Apoi decomentezi linia de mai jos
-                // si o stergi pe cea dedesubtul ei.
-                // dateText.textContent = returnval[i]['DATA'].toString();
-                dateText.textContent = 'Data la care a fost pusa interventia';
-
                 let bonusInterventionMessage = document.createElement("p");
                 bonusInterventionMessage.className = "bonus__text";
                 bonusInterventionMessage.textContent = returnval[i]['INTERVENTIE'].toString();

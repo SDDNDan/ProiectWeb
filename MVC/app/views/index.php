@@ -20,7 +20,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <header>
         <h1 class="index__title">Web Technologies App</h1>
         <div class="content">
-           <!-- <?php require_once("partials/nav.php"); ?> -->
+            <?php require_once("partials/nav.php"); ?>
         </div>
 
 

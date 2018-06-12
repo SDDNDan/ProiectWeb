@@ -5,4 +5,5 @@
     <li class = "link__header"><a class = "list__link" href="GradeStatistics">Grade & Statistics</a></li>
     <li class = "link__header"><a class = "list__link" href="about">About</a></li>
     <li class = "link__header"><a class = "list__link" href="contact">Contact</a></li>
+    <li class = "link__header"><a class = "list__link" href="documentatie">DOC</a></li>
 </ul>

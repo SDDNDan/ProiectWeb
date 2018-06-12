@@ -17,7 +17,7 @@ if ($_SESSION['auth'] != "student") {
 
    <?php include VIEWS . 'partials/base_url.php' ?>
 
-    <link rel="stylesheet" type="text/css" href="../../public_html/styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
 </head>
 <body id="gradebody">
 
