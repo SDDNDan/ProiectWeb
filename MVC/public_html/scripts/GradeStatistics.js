@@ -2,6 +2,7 @@
  * Created by Slusariuc on 6/4/2018.
  */
 
+
 var counter = document.getElementById('counter').getContext('2d');
 var no = 0; // Starting Point
 var pointToFill = 4.72;  //Point from where you want to fill the circle
@@ -69,12 +70,26 @@ function getGithubCommits() {
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             returnval = xmlhttp.responseText;
+            console.log(returnval);
             returnval = JSON.parse(returnval);
-            gitCommits = returnval[0];
-            stackQuestions = returnval[1];
-            media = returnval[2];
-            prezente = returnval[3];
-            sugestia = returnval[4];
+            gitCommits = returnval.numberOfCommits;
+            stackQuestions = returnval.numberOfStackQuestions;
+            media = parseInt(returnval.mediaNotelor);
+            prezente = parseInt(returnval.numberOfPresences);
+            numberOfInterventions = returnval.numberOfInterventions;
+            sugestia = returnval.sugestia;
+            sugestiaHTML = returnval.sugestiaHTML;
+            sugestiaCSS = returnval.sugestiaCSS;
+            sugestiaJavascript = returnval.sugestiaJavascript;
+            sugestiaPHP = returnval.sugestiaPHP;
+
+            console.log(gitCommits);
+            console.log(stackQuestions);
+            console.log(media);
+            console.log(prezente);
+            console.log(sugestia);
+            console.log(returnval.numberOfCommits);
+
             let container = document.createElement('div');
             container.className ="suggestion__content";
             let containerBase = document.getElementsByClassName("suggestion__container");
@@ -82,16 +97,17 @@ function getGithubCommits() {
             psugestion.textContent = sugestia ;
             psugestion.className ="suggestion__message";
             let psugestion2 = document.createElement('p');
-            psugestion2.textContent = returnval[5] ;
+            psugestion2.textContent = sugestiaHTML ;
             psugestion2.className ="suggestion__message";
             let psugestion3 = document.createElement('p');
-            psugestion3.textContent = returnval[6] ;
+            psugestion3.textContent = sugestiaCSS ;
             psugestion3.className ="suggestion__message";
             let psugestion4 = document.createElement('p');
-            psugestion4.textContent = returnval[7] ;
+            psugestion4.textContent = sugestiaJavascript;
             psugestion4.className ="suggestion__message";
             let psugestion5 = document.createElement('p');
-            psugestion5.textContent = returnval[8] ;
+            psugestion5.textContent = sugestiaPHP ;
+
             psugestion5.className ="suggestion__message";
 
             container.appendChild(psugestion);
@@ -123,8 +139,9 @@ function getResult()
         let message = document.getElementById("suggestion__message");
         gradPromovabilitate = (media * 0.7);
         gradPromovabilitate += (prezente * 0.10);
-        gradPromovabilitate += ((gitCommits*0.4) * 0.1);
-        gradPromovabilitate += ((stackQuestions*0.4) * 0.1);
+        gradPromovabilitate += ((gitCommits*0.2) * 0.1);
+        gradPromovabilitate += ((stackQuestions*0.1) * 0.1);
+        gradPromovabilitate += ((numberOfInterventions*0.3) * 0.1);
         gradPromovabilitate *= 10;
         switch (true){
             case gradPromovabilitate>90:

@@ -23,15 +23,13 @@ class GradeStatistics_ct extends core_controller
 
 
 
-
-
-
     function getResults()
     {
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
         //6582264
+
         $NumeGithub = $_POST['NumeGithub'];
         $IdStack = $_POST['IdStack'];
         $astazi = date("j/m/Y");
@@ -39,19 +37,28 @@ class GradeStatistics_ct extends core_controller
         $gitCommits = (int)$this->gradeStatisticsModel->getGitHubNumber($NumeGithub);
         $media = $this->gradeStatisticsModel->getMedia($_SESSION['username'] , $_SESSION['prenume']);
         $prezente = $this->gradeStatisticsModel->getNumberOfPresences($_SESSION['username'] , $_SESSION['prenume']);
+        $numarInterventii = count(json_decode($this->gradeStatisticsModel->getInterventions($_SESSION['username'] , $_SESSION['prenume'])));
         $reposstack = $this->gradeStatisticsModel->stackOverFlow("https://api.stackexchange.com/2.2/users/".$IdStack."/questions?order=desc&sort=activity&site=stackoverflow");
+
         $rezultat = array();
         array_push($rezultat,$gitCommits);
         array_push($rezultat,$reposstack);
         array_push($rezultat,(int)$media);
         array_push($rezultat,(int)$prezente);
+        array_push($rezultat,(int)$numarInterventii);
+
+        $mediaFinala = $this->gradeStatisticsModel->getMediaFinala($rezultat);
         $suggestion = $this->gradeStatisticsModel->getSuggestion($rezultat);
-        array_push($rezultat,$suggestion[0]);
-        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionCSS($suggestion[1]));
-        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionHtml($suggestion[1]));
-        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionJS($suggestion[1]));
-        array_push($rezultat,$this->gradeStatisticsModel->getSuggestionPhp($suggestion[1]));
-        echo json_encode($rezultat);
+
+        $suggestionCSS = $this->gradeStatisticsModel->getSuggestionCSS($mediaFinala);
+        $suggestionHTML = $this->gradeStatisticsModel->getSuggestionHtml($mediaFinala);
+        $suggestionJavascript = $this->gradeStatisticsModel->getSuggestionJS($mediaFinala);
+        $suggestionPHP = $this->gradeStatisticsModel->getSuggestionPhp($mediaFinala);
+
+        $promovability = new PromovabilityData($gitCommits, $reposstack, $media, $prezente, $numarInterventii, $suggestion
+        , $suggestionHTML, $suggestionCSS, $suggestionJavascript, $suggestionPHP);
+
+        echo json_encode($promovability);
 
         //$this->returnView('GradeStatistics', []);
         //$this->view->renderView();

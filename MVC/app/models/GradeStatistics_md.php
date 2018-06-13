@@ -35,6 +35,16 @@ class GradeStatistics_md
         }
     }
 
+    public function getInterventions($nume, $prenume)
+    {
+
+        $query = "SELECT INTERVENTIE FROM INTERVENTI where NUME = ? and PRENUME = ?";
+        $statement = $this->conn->prepare($query);
+        $statement->execute([$nume, $prenume]);
+        return json_encode($statement->fetchAll());
+
+    }
+
     function github_request($url)
     {
         $ch = curl_init();
@@ -141,12 +151,25 @@ class GradeStatistics_md
         return floor($first->diff($second)->days / 7);
     }
 
+    function getMediaFinala($rezultat) {
+        $media = ($rezultat[2] * 0.7);
+        $media += ($rezultat[3] * 0.10);
+        $media += (($rezultat[0] * 0.2) * 0.1);
+        $media += (($rezultat[1] * 0.1) * 0.1);
+        $media += (($rezultat[4] * 0.3) * 0.1);
+
+        $media *= 10;
+        return $media;
+    }
+
     function getSuggestion($rezultat)
     {
         $media = ($rezultat[2] * 0.7);
         $media += ($rezultat[3] * 0.10);
-        $media += (($rezultat[0] * 0.4) * 0.1);
-        $media += (($rezultat[1] * 0.4) * 0.1);
+        $media += (($rezultat[0] * 0.2) * 0.1);
+        $media += (($rezultat[1] * 0.1) * 0.1);
+        $media += (($rezultat[4] * 0.3) * 0.1);
+
         $media *= 10;
         $numar = -1;
         switch (true) {
@@ -164,14 +187,12 @@ class GradeStatistics_md
                 break;
         }
         $sugestia = array();
-        $query = "SELECT SUGGETION FROM suggetions where ID = ?";
+        $query = "SELECT SUGGESTION FROM suggestions where ID = ?";
         $statement = $this->conn->prepare($query);
         $statement->execute([$numar]);
         while ($row = $statement->fetch()) {
             array_push($sugestia,$row[0]);
-            array_push($sugestia,$media);
             return $sugestia;
-
         }
 
     }
