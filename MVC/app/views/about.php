@@ -16,11 +16,13 @@
             <button class="dropdown__button">
             </button>
             <div class="dropdown__content">
-                <a href="index.php" class="dropdown__link">Home</a>
-                <a href="courses.php" class="dropdown__link">Courses</a>
-                <a href="GradeStatistics.php" class="dropdown__link">Grades & Statistics</a>
-                <a href="about.php" class="dropdown__link">About </a>
-                <a href="contact.php" class="dropdown__link">Contact </a>
+                <a class = "dropdown__link" href="index/logout">Logout</a>
+                <a class = "dropdown__link" href="index">Home</a>
+                <a class = "dropdown__link" href="courses">Courses</a>
+                <a class = "dropdown__link" href="GradeStatistics">Grade & Statistics</a>
+                <a class = "dropdown__link" href="about">About</a>
+                <a class = "dropdown__link" href="contact">Contact</a>
+                <a class = "dropdown__link" href="documentatie">DOC</a>
             </div>
         </div>
     </header>
@@ -41,7 +43,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="styles/Profile.jpg" class = "imgPlayer">
+            <img src="images/bogdan.png" class = "imgPlayer">
             <h1 class = "playerName">Gaidur Bogdan<br><br><br> </h1>
         </div>
         <div class = "playerJob">M-am ocupat cu partea de FrontEnd</div>
@@ -49,7 +51,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="styles/Profile.jpg" class = "imgPlayer">
+            <img src="images/stefan.png" class = "imgPlayer">
             <h1 class = "playerName">Timofte Stefan<br><br><br></h1>
         </div>
         <div class = "playerJob">M-am ocupat cu partea de FrontEnd</div>
@@ -57,7 +59,7 @@
 
     <div class = "player">
         <div class = "playerPicture">
-            <img src="styles/Profile.jpg" class = "imgPlayer">
+            <img src="images/pava.jpg" class = "imgPlayer">
             <h1 class = "playerName">Pavaloi Alexandru<br><br><br> </h1>
         </div>
         <div class = "playerJob">Coordonator</div>

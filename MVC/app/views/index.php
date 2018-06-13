@@ -28,11 +28,13 @@ if (session_status() == PHP_SESSION_NONE) {
             <button class="dropdown__button">
             </button>
             <div class="dropdown__content">
-                <a href="index.php" class="dropdown__link" id="dropdown__first__link">Home</a>
-                <a href="courses.php" class="dropdown__link">Courses</a>
-                <a href="GradeStatistics.php" class="dropdown__link">Grades & Statistics</a>
-                <a href="about.php" class="dropdown__link">About </a>
-                <a href="contact.php" class="dropdown__link">Contact </a>
+                <a class = "dropdown__link" href="index/logout">Logout</a>
+                <a class = "dropdown__link" href="index">Home</a>
+                <a class = "dropdown__link" href="courses">Courses</a>
+                <a class = "dropdown__link" href="GradeStatistics">Grade & Statistics</a>
+                <a class = "dropdown__link" href="about">About</a>
+                <a class = "dropdown__link" href="contact">Contact</a>
+                <a class = "dropdown__link" href="documentatie">DOC</a>
             </div>
         </div>
     </header>
@@ -94,10 +96,10 @@ if (session_status() == PHP_SESSION_NONE) {
         <h1 class="section__title" id="about_us">
             ABOUT US
         </h1>
-        <p class="section__text">
+        <p class="section__text" id="indexPageText">
          Fiecare student va putea afla, in mod estimativ, daca va promova sau nu materia "Tehnologii Web". De asemenea, sistemul ii va oferi sugestii pentru a-si imbunatati performanta. Se vor pune la dispozitie doua tipuri de conturi: profesori si studenti. Profesorii au datoria de a consemna intreaga activitate a fiecarui student: prezente, interventii interesante, punctaje etc. (inclusiv date preluate dintr-un fisier CSV). Fiecare student, in functie de cele introduse de profesori si de statistica generala, va avea un profil personal de promovabilitate (de exemplu, daca a acumulat 8 prezente si cel mai bun din an are 10, atunci va avea 80% sanse de promovare). Aceasta statistica se va combina cu una proprie, ajustabila, bazata pe profilul persoanei in cadrul unor aplicatii Web sociale oferind API-uri de interes -- exemple: pentru Github, via GraphQL, se poate determina cate operatii de tip commit a efectuat persoana in ultima saptamana; pentru Facebook: numarul de participari la evenimente vizand tehnologiile Web etc. Va rezulta astfel un scor final public si un pronostic "DA/NU" de promovabilitate a materiei. Daca rezultatul este "NU", atunci se vor recomanda resurse de studiu in functie de saptamana curenta a semestrului scolar. Informatiile vor putea fi partajate pe diverse retele sociale, fiind disponibile in formatele HTML, CSV si XML. Functionalitatile vor fi expuse si de un API respectand paradigma REST.
         </p>
-        <div class="button__container">
+        <div class="button__container" id="readMore">
             <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/projects/xml-transform.php?pag=projects" class="more">
                 Read more
             </a>
