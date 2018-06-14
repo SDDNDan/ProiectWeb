@@ -21,6 +21,27 @@ if ($_SESSION['auth'] != "student") {
 </head>
 <body id="gradebody">
 
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '2106153756319051',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v3.0'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
 <header>
     <h1 class="index__title">Web Technologies App</h1>
     <div class="content">
@@ -67,6 +88,10 @@ if ($_SESSION['auth'] != "student") {
         </div>
 
     </form>
+</div>
+
+<div class="share__buttons">
+
 </div>
 
 <div class="progress__circle__container">

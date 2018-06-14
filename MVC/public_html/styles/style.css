@@ -1007,6 +1007,40 @@ head {
 }
 /* Progress Circle Code - END */
 
+/* Share buttons BEGIN */
+
+.share__buttons {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.share__button {
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+
+.image__share__button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#twitter {
+    content:url("../images/shareTweet.jpg")
+}
+
+#facebook {
+    content:url("../images/shareFB.jpg")
+}
+
+
+/* Share buttons END */
+
 .suggestion__container {
     width:600px;
     margin: 30px auto auto;

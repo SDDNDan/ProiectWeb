@@ -120,6 +120,55 @@ function getGithubCommits() {
             getResult();
             let loadingLabel = document.getElementById("loadingLabel");
             loadingLabel.textContent = "";
+
+            //Button Twitter
+
+            buttonTwitter = document.createElement("button");
+            buttonTwitter.className = "share__button";
+            buttonTwitter.id = "twitter";
+
+            buttonTwitter.addEventListener("click", function () {
+                // Opens a pop-up with twitter sharing dialog
+                var shareURL = "http://twitter.com/share?"; //url base
+                //params
+                var params = {
+                    url: "www.twitter.com   ",
+                    text: "Sansele mele de promovare la TW sunt de: " + parseInt(gradPromovabilitate) + "% . Yeee!! \n \n",
+                    hashtags: "almostThere,TehnologiiWEB"
+                }
+                for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
+                window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+            });
+
+            let imageTwitter = document.createElement("image");
+            imageTwitter.className = "image__share__button";
+            imageTwitter.id = "twitter";
+            buttonTwitter.appendChild(imageTwitter);
+
+            //Button Facebook
+
+            buttonFacebook = document.createElement("button");
+            buttonFacebook.className = "share__button";
+            buttonFacebook.id = "facebook";
+
+            buttonFacebook.addEventListener("click", function () {
+                FB.ui({
+                    method: 'share',
+                    display: 'popup',
+                    hashtag : '#TehnologiiWEB',
+                    href : 'https://profs.info.uaic.ro/~busaco/teach/courses/web/',
+                    quote: 'Sansele mele de promovare sunt de ' + parseInt(gradPromovabilitate) + '%! Incearca si tu! '
+                }, function(response){});
+            });
+
+            let imageFacebook = document.createElement("image");
+            imageFacebook.className = "image__share__button";
+            imageFacebook.id = "facebook";
+            buttonFacebook.appendChild(imageFacebook);
+
+            document.getElementsByClassName("share__buttons")[0].appendChild(buttonTwitter);
+            document.getElementsByClassName("share__buttons")[0].appendChild(buttonFacebook);
+
         }
     };
 
@@ -139,9 +188,9 @@ function getResult()
         let message = document.getElementById("suggestion__message");
         gradPromovabilitate = (media * 0.7);
         gradPromovabilitate += (prezente * 0.10);
-        gradPromovabilitate += ((gitCommits*0.2) * 0.1);
-        gradPromovabilitate += ((stackQuestions*0.1) * 0.1);
-        gradPromovabilitate += ((numberOfInterventions*0.3) * 0.1);
+        gradPromovabilitate += ((gitCommits*0.2) * 0.5);
+        gradPromovabilitate += ((stackQuestions*0.1) * 0.5);
+        gradPromovabilitate += ((numberOfInterventions*0.3) * 0.5);
         gradPromovabilitate *= 10;
         switch (true){
             case gradPromovabilitate>90:
@@ -173,3 +222,4 @@ function getResult()
 
     }
 }
+

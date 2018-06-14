@@ -154,9 +154,9 @@ class GradeStatistics_md
     function getMediaFinala($rezultat) {
         $media = ($rezultat[2] * 0.7);
         $media += ($rezultat[3] * 0.10);
-        $media += (($rezultat[0] * 0.2) * 0.1);
-        $media += (($rezultat[1] * 0.1) * 0.1);
-        $media += (($rezultat[4] * 0.3) * 0.1);
+        $media += (($rezultat[0] * 0.2) * 0.5);
+        $media += (($rezultat[1] * 0.1) * 0.5);
+        $media += (($rezultat[4] * 0.3) * 0.5);
 
         $media *= 10;
         return $media;
